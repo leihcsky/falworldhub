@@ -1,0 +1,3752 @@
+[
+  {
+    "id": "IceAge",
+    "name": "Absolute Frost",
+    "description": "Throws icicles in a wide area from under the enemy's feet.",
+    "type": "Ice",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "AcidRain",
+    "name": "Acid Rain",
+    "description": "Creates acidic clouds that pour down acid rain on enemies.",
+    "type": "Water",
+    "power": 120,
+    "coolTime": 8,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_WhiteShieldDragon_ShieldTackle",
+    "name": "Aegis Charge",
+    "description": "WhiteShieldDragon's exclusive skill. Deploys a shield in front that reduces all types of attacks, then charges forward, crushing the enemy.",
+    "type": "Dragon",
+    "power": 600,
+    "coolTime": 30,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "AirBlade",
+    "name": "Air Blade",
+    "description": "Sends out sharp blades of air in a fan shape.",
+    "type": "Neutral",
+    "power": 160,
+    "coolTime": 8,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "AirCanon",
+    "name": "Air Cannon",
+    "description": "Quickly fires a burst of highly pressurized air.",
+    "type": "Neutral",
+    "power": 40,
+    "coolTime": 2,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "RangeThunder",
+    "name": "All Range Thunder",
+    "description": "Generates lightning strikes that travel in a straight line in all directions.",
+    "type": "Electric",
+    "power": 500,
+    "coolTime": 24,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Deer_PushupHorn",
+    "name": "Antler Uppercut",
+    "description": "Eikthyrdeer's exclusive skill. Charges at foes and uses antlers to launch them into the air. When used while riding, the direction of the charge can be controlled.",
+    "type": "Neutral",
+    "power": 90,
+    "coolTime": 4,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Apocalypse",
+    "name": "Apocalypse",
+    "description": "Generates several dark vortexes around the enemy.",
+    "type": "Dark",
+    "power": 400,
+    "coolTime": 20,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_KingWhale_AquaBlade",
+    "name": "Aqua Blade",
+    "description": "KingWhale's exclusive skill. Launches sharp water blades at enemies.",
+    "type": "Water",
+    "power": 300,
+    "coolTime": 16,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "WaterBall",
+    "name": "Aqua Burst",
+    "description": "Creates a giant ball of water and hurls it at an enemy.",
+    "type": "Water",
+    "power": 200,
+    "coolTime": 12,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "WaterGun",
+    "name": "Aqua Gun",
+    "description": "Hurls a ball of water straight at an enemy.",
+    "type": "Water",
+    "power": 50,
+    "coolTime": 2,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "RipTide",
+    "name": "Aqua Surge",
+    "description": "Generates waves that surge around the enemy from all sides. They converge and explode at the center, erupting into a column of water.",
+    "type": "Water",
+    "power": 500,
+    "coolTime": 24,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_KingWhale_AquaTornado",
+    "name": "Aqua Tornado",
+    "description": "KingWhale's exclusive skill. Soars into the sky and generates multiple massive tornadoes that slowly track enemies.",
+    "type": "Water",
+    "power": 800,
+    "coolTime": 40,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_DarkMechaDragon_ConvergentBeam",
+    "name": "Astral Ray",
+    "description": "DarkMechaDragon's exclusive skill. Concentrates energy filled with darkness and releases it all at once in a straight line.",
+    "type": "Dark",
+    "power": 500,
+    "coolTime": 24,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_BlueSkyDragon_SweepBreath",
+    "name": "Azure Dracoflare",
+    "description": "BlueSkyDragon's exclusive skill. Breathes Dragon-elemental flames in a sweeping motion, scorching the surrounding area.",
+    "type": "Dragon",
+    "power": 600,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_JetDragon_JumpBeam",
+    "name": "Beam Comet",
+    "description": "JetDragon's exclusive skill. Illuminates its wings and fires innumerable beams as it flies towards the enemy. The beams explode on impact.",
+    "type": "Dragon",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_DarkMechaDragon_BeamSlash",
+    "name": "Beam Slash",
+    "description": "DarkMechaDragon's exclusive skill. Generates a high-output beam sword with the right hand and delivers two powerful slashes while moving at high speed.",
+    "type": "Dragon",
+    "power": 450,
+    "coolTime": 20,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "BeamSlicer",
+    "name": "Beam Slicer",
+    "description": "Mows down the area in front with a beam imbued with dragon power. The area struck by the beam will also explode after a short delay.",
+    "type": "Dragon",
+    "power": 350,
+    "coolTime": 16,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_ThunderDog_InazumaShorai",
+    "name": "Beckon Lightning",
+    "description": "ThunderDog's exclusive skill. Summons lightning one after another in front, then charges forward at high speed through the gaps between the falling bolts.",
+    "type": "Electric",
+    "power": 100,
+    "coolTime": 8,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "SelfDestruct_Bee",
+    "name": "Bee Quiet",
+    "description": "Risks its life to cause a violent explosion, but receives the honor of falling in battle.",
+    "type": "Grass",
+    "power": 300,
+    "coolTime": 16,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_MonochromeQueen_BalletJump",
+    "name": "Black Quilled Ballet",
+    "description": "MonochromeQueen's exclusive skill. Jumps diagonally and throws sharp black feathers at enemies.",
+    "type": "Dark",
+    "power": 500,
+    "coolTime": 24,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "BlastCanon",
+    "name": "Blast Cannon",
+    "description": "Fires an energy bullet imbued with dragon power at the enemy's location. Upon impact, the bullet shatters and creates a frontal long-range explosion.",
+    "type": "Dragon",
+    "power": 200,
+    "coolTime": 12,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_GrassPanda_Electric_ElectricPunch",
+    "name": "Blast Punch",
+    "description": "GrassPanda_Electric's exclusive skill. Winds up its right arm before delivering an electrically charged punch.",
+    "type": "Electric",
+    "power": 180,
+    "coolTime": 8,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_GhostDragon_PhosphorousBeam",
+    "name": "Blazing Beam",
+    "description": "GhostDragon's exclusive skill. Emits a superheated light beam for a short time. At the final moment, the targeted area is engulfed in a massive explosion.",
+    "type": "Dragon",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_FlameBuffalo_FlameHorn",
+    "name": "Blazing Horn",
+    "description": "FlameBuffalo's exclusive skill. Takes aim and charges with fierce momentum while raising its horn.",
+    "type": "Fire",
+    "power": 80,
+    "coolTime": 4,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_WhiteTiger_IceScratch",
+    "name": "Blizzard Claw",
+    "description": "WhiteTiger's exclusive skill. First, it strikes with its claws, followed by a second slash, and culminates with a powerful slash using its entire body. When swinging the claws, ice pillars are launched forward in a fan shape.",
+    "type": "Ice",
+    "power": 300,
+    "coolTime": 16,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "IcicleThrow",
+    "name": "Blizzard Spike",
+    "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.",
+    "type": "Ice",
+    "power": 450,
+    "coolTime": 20,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "BlueThunderHorse_PartnerSkill",
+    "name": "BlueThunderHorse_PartnerSkill",
+    "description": "",
+    "type": "Electric",
+    "power": 30,
+    "coolTime": 55,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "MudShot",
+    "name": "Bog Blast",
+    "description": "Hurls sticky mud at an enemy.",
+    "type": "Ground",
+    "power": 40,
+    "coolTime": 2,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_BlueThunderHorse_FlashDash",
+    "name": "Bolt Blink",
+    "description": "BlueThunderHorse's exclusive skill. Moves with the speed of lightning, engulfing everything in its path.",
+    "type": "Electric",
+    "power": 600,
+    "coolTime": 30,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_FlowerDinosaur_Whip",
+    "name": "Botanical Smash",
+    "description": "Dinossom's exclusive skill. Uses its large tail to strike the ground in front of it, delivering a shockwave in a straight line.",
+    "type": "Grass",
+    "power": 80,
+    "coolTime": 4,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_LilyQueen_LilyHealing",
+    "name": "Bountiful Protection",
+    "description": "Lyleen's exclusive skill. Restores health to all allies within range using the power of healing.",
+    "type": "Grass",
+    "power": 0,
+    "coolTime": 240,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_KingBahamut_ArmSmash",
+    "name": "Brawn Impact",
+    "description": "Blazamut's exclusive skill. Raises and inflates its arms, then slams them together, causing a massive explosion in the surrounding area.",
+    "type": "Fire",
+    "power": 600,
+    "coolTime": 30,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "BubbleShot",
+    "name": "Bubble Blast",
+    "description": "Fires numerous bubbles that slowly pursue an enemy.",
+    "type": "Water",
+    "power": 80,
+    "coolTime": 4,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_KingWhale_HomingBubble",
+    "name": "Bubble Rain",
+    "description": "KingWhale's exclusive skill. Fires a large cluster of homing bubbles that remain in place upon landing. Bubbles burst and deal damage upon contact or after several seconds.",
+    "type": "Water",
+    "power": 200,
+    "coolTime": 12,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_GrassMinotaur_BullRush_Lower",
+    "name": "Bull Rush",
+    "description": "GrassMinotaur's exclusive skill. Enters a wild frenzy and unleashes two consecutive Grass-element charge attacks.",
+    "type": "Grass",
+    "power": 250,
+    "coolTime": 12,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_NaughtyCat_CatPress",
+    "name": "Cat Press",
+    "description": "Grintale's exclusive skill. Grins menacingly before leaping into the air and smashing foes with its body.",
+    "type": "Neutral",
+    "power": 120,
+    "coolTime": 8,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_BlueSkyDragon_DrainStorm",
+    "name": "Celestial Vortex",
+    "description": "BlueSkyDragon's exclusive skill. Summons a massive vortex reaching into the heavens. The vortex draws in and eliminates all surrounding enemies at once.",
+    "type": "Water",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_IceCrocodile_SpitAttack",
+    "name": "Chaotic Spray",
+    "description": "IceCrocodile's exclusive skill. Coughs up three cold grenades kept undigested inside its body and lobs them at enemies. May occasionally spit out something more dangerous...?",
+    "type": "Ice",
+    "power": 180,
+    "coolTime": 8,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "ChargeCanon",
+    "name": "Charge Cannon",
+    "description": "Fires an energy orb infused with draconic power at the enemy. The orb causes a wide-area explosion upon impact.",
+    "type": "Dragon",
+    "power": 400,
+    "coolTime": 20,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_ChickenPal_ChickenPeck",
+    "name": "Chicken Rush",
+    "description": "ChickenPal's exclusive skill. Flies at enemies in its sights, attacking them with its sharp beak.",
+    "type": "Neutral",
+    "power": 30,
+    "coolTime": 2,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "RootLance",
+    "name": "Circle Vine",
+    "description": "Sprouts sharp roots in and around the enemy's location.",
+    "type": "Grass",
+    "power": 300,
+    "coolTime": 16,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_FengyunDeeper_CloudTempest",
+    "name": "Cloud Tempest",
+    "description": "FengyunDeeper's exclusive skill. Charges forward while manipulating the atmosphere to create a pressurized wind tunnel around itself.",
+    "type": "Neutral",
+    "power": 120,
+    "coolTime": 8,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "ThreeCommet",
+    "name": "Comet Barrage",
+    "description": "Drops meteorites one after another, generating shock waves around the impact areas.",
+    "type": "Dragon",
+    "power": 450,
+    "coolTime": 20,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Commet",
+    "name": "Comet Strike",
+    "description": "Drops a meteorite straight down, generating a shock wave around the impact area.",
+    "type": "Dragon",
+    "power": 180,
+    "coolTime": 8,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_DarkMechaDragon_WarpComet",
+    "name": "Cosmic Meteor",
+    "description": "DarkMechaDragon's exclusive skill. Soars into the air at the speed of light and releases countless meteor projectiles. Afterwards, transforms into a comet and charges forward, causing a massive explosion upon impact.",
+    "type": "Dragon",
+    "power": 600,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_GoldenHorse_StoneDash",
+    "name": "Crash Dash",
+    "description": "GoldenHorse's exclusive skill. Charges forward, hurling rocks to the left and right with great force.",
+    "type": "Ground",
+    "power": 500,
+    "coolTime": 24,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "CreepingBubble",
+    "name": "Creeping Bubbles",
+    "description": "KingWhale's exclusive skill. Generates a multitude of bubbles around the enemy to surround and attack them.",
+    "type": "Water",
+    "power": 200,
+    "coolTime": 12,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "CrossWind",
+    "name": "Crosswind",
+    "description": "Conjures blades of wind in front of the enemy, converging to deliver a cutting cross attack.",
+    "type": "Grass",
+    "power": 500,
+    "coolTime": 24,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_GrassPanda_MusclePunch",
+    "name": "Crushing Punch",
+    "description": "GrassPanda's exclusive skill. Winds up its right arm before striking an enemy with a devastating punch.",
+    "type": "Grass",
+    "power": 120,
+    "coolTime": 8,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "FrostBreath",
+    "name": "Crystal Breath",
+    "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.",
+    "type": "Ice",
+    "power": 160,
+    "coolTime": 8,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_IceHorse_IceBladeAttack",
+    "name": "Crystal Wing",
+    "description": "Frostallion's exclusive skill. Dashes forward while concentrating frigid air around its wings, using them to slash enemies with icy blade.",
+    "type": "Ice",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_CubeTurtle_CubePress",
+    "name": "Cube Press",
+    "description": "CubeTurtle's exclusive skill. Leaps into the air and crushes enemies with its massive weight.",
+    "type": "Ground",
+    "power": 600,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "WallSplash",
+    "name": "Curtain Splash",
+    "description": "Continously creates walls made from water columns at the enemy's location.",
+    "type": "Water",
+    "power": 300,
+    "coolTime": 16,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_AmaterasuWolf_FireCharge",
+    "name": "Daring Flames",
+    "description": "AmaterasuWolf's exclusive skill. Charges forward with great speed while enveloped in intense blue flames.",
+    "type": "Fire",
+    "power": 200,
+    "coolTime": 12,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_AmaterasuWolf_Dark_DarkCharge",
+    "name": "Daring Shadowstorm",
+    "description": "AmaterasuWolf_Dark's exclusive skill. Charges forward with great speed while enveloped in intense purple flames.",
+    "type": "Dark",
+    "power": 250,
+    "coolTime": 12,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "DarkArrow",
+    "name": "Dark Arrow",
+    "description": "Fires off dark energy that homes in on an enemy.",
+    "type": "Dark",
+    "power": 120,
+    "coolTime": 8,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "DarkBall",
+    "name": "Dark Ball",
+    "description": "Unleashes a sphere of darkness that slowly tracks down an enemy.",
+    "type": "Dark",
+    "power": 50,
+    "coolTime": 2,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "DarkCanon",
+    "name": "Dark Cannon",
+    "description": "Hurls an energy ball imbued with dark energy at an enemy.",
+    "type": "Dark",
+    "power": 70,
+    "coolTime": 4,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_FireKirin_Dark_DarkTossin",
+    "name": "Dark Charge",
+    "description": "FireKirin_Dark's exclusive skill. Charges forward while engulfed in a veil of dark flames. Flames continue to burn in its path.",
+    "type": "Dark",
+    "power": 300,
+    "coolTime": 16,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "DarkLaser",
+    "name": "Dark Laser",
+    "description": "Charges dark energy before blasting enemies with a powerful beam.",
+    "type": "Dark",
+    "power": 450,
+    "coolTime": 20,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_WhiteDeer_Dark_DarkPillar",
+    "name": "Dark Nova",
+    "description": "WhiteDeer_Dark's exclusive skill. After igniting a burst of darkness across a vast area ahead, it strides forward, generating pillars of darkness around itself.",
+    "type": "Dark",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_GrassGolem_Dark_DarkArmCannon",
+    "name": "Dark Root",
+    "description": "GrassGolem_Darks exclusive skill. Fires a Dark-elemental energy projectile from its arm. Upon impact, the blast transforms into persistent roots that track and pierce the enemy from below.",
+    "type": "Dark",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "GravityShot",
+    "name": "Dark Shot",
+    "description": "Fires a dark energy projectile that accelerates over time.",
+    "type": "Dark",
+    "power": 40,
+    "coolTime": 2,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "DarkLegion",
+    "name": "Dark Whisp",
+    "description": "Fires a menacing ball of dark energy that pursues enemies.",
+    "type": "Dark",
+    "power": 600,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_IceHorse_Dark_DarkBladeAttack",
+    "name": "Dark Wing",
+    "description": "Frostallion Noct's exclusive skill. Dashes forward while concentrating dark energy around its wings, using them to slash enemies, then converting that energy into homing shots",
+    "type": "Dark",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_TropicalOstrich_DashKick",
+    "name": "Dash Kick",
+    "description": "TropicalOstrich's exclusive skill. Dashes to build up speed, then launches a devastating airborne kick at its target.",
+    "type": "Grass",
+    "power": 300,
+    "coolTime": 16,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Plesiosaur_LongBreath",
+    "name": "Deep Breath",
+    "description": "Plesiosaur's exclusive skill. From the base of its long neck to the tip of its snout, it gradually spreads the breath of grass element.",
+    "type": "Grass",
+    "power": 400,
+    "coolTime": 20,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "DiamondFall",
+    "name": "Diamond Rain",
+    "description": "Creates numerous lumps of ice that are consecutively dropped on a foe's head.",
+    "type": "Ice",
+    "power": 600,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_BlackGriffon_TackleLaser",
+    "name": "Divine Disaster",
+    "description": "Charges forward, generating orbs of light that automatically target enemies and unleash a barrage of lasers.",
+    "type": "Dark",
+    "power": 400,
+    "coolTime": 20,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_BlackGriffon_TackleLaser2",
+    "name": "Divine Disaster II",
+    "description": "Shadowbeak's exclusive skill. As it charges forward, emits countless blue rays that automatically locate and pursue the enemy.",
+    "type": "Dark",
+    "power": 600,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_LegendDeer_RadiantWingRush",
+    "name": "Divine Wing",
+    "description": "LegendDeer' exclusive skill. Leaps back and sprouts wings of light, then dives toward the enemy.",
+    "type": "Neutral",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "DoubleIcicleThrow",
+    "name": "Double Blizzard Spike",
+    "description": "Creates two huge ice blocks and fires them at the enemy one after another. On impact, it also shocks those close by.",
+    "type": "Ice",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Garm_BiteV2",
+    "name": "Double Fang",
+    "description": "Launches a rapid succession of bites at the enemy.",
+    "type": "Neutral",
+    "power": 40,
+    "coolTime": 2,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_GuardianDog_BiteV2",
+    "name": "Double Fang",
+    "description": "Bites rapidly in succession to attack enemies.",
+    "type": "Neutral",
+    "power": 40,
+    "coolTime": 2,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_AmaterasuWolf_Dark_BiteV2",
+    "name": "Double Fang (Dark)",
+    "description": "Bites rapidly in succession to attack enemies.",
+    "type": "Dark",
+    "power": 40,
+    "coolTime": 2,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_BlackPuppy_BiteV2",
+    "name": "Double Fang (Dark)",
+    "description": "Bites rapidly in succession to attack enemies.",
+    "type": "Dark",
+    "power": 40,
+    "coolTime": 2,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_ThunderDog_BiteV2",
+    "name": "Double Fang (Electric)",
+    "description": "Bites rapidly in succession to attack enemies.",
+    "type": "Electric",
+    "power": 40,
+    "coolTime": 2,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_ElecPomeranian_BiteV2",
+    "name": "Double Fang (Electric)",
+    "description": "Bites rapidly in succession to attack enemies.",
+    "type": "Electric",
+    "power": 40,
+    "coolTime": 2,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_AmaterasuWolf_BiteV2",
+    "name": "Double Fang (Fire)",
+    "description": "Bites rapidly in succession to attack enemies.",
+    "type": "Fire",
+    "power": 40,
+    "coolTime": 2,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_GoldenHorse_BiteV2",
+    "name": "Double Fang (Ground)",
+    "description": "Bites rapidly in succession to attack enemies.",
+    "type": "Ground",
+    "power": 40,
+    "coolTime": 2,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_SamuraiDog_BiteV2",
+    "name": "Double Fang (Ground)",
+    "description": "Bites rapidly in succession to attack enemies.",
+    "type": "Ground",
+    "power": 40,
+    "coolTime": 2,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_ThunderDog_Ice_BiteV2",
+    "name": "Double Fang (Ice)",
+    "description": "Bites rapidly in succession to attack enemies.",
+    "type": "Ice",
+    "power": 40,
+    "coolTime": 2,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "DragonBreath",
+    "name": "Dragon Breath",
+    "description": "Exhales breath imbued with draconic energy, dealing continuous damage to those in front of it.",
+    "type": "Dragon",
+    "power": 160,
+    "coolTime": 8,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "DragonWave",
+    "name": "Dragon Burst",
+    "description": "Quickly discharges draconic energy, damaging those around it.",
+    "type": "Dragon",
+    "power": 80,
+    "coolTime": 4,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "DragonCanon",
+    "name": "Dragon Cannon",
+    "description": "Hurls an energy ball imbued with draconic energy at an enemy.",
+    "type": "Dragon",
+    "power": 40,
+    "coolTime": 2,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "DragonMeteor",
+    "name": "Dragon Meteor",
+    "description": "Summons numerous small meteorites and launches them at an enemy.",
+    "type": "Dragon",
+    "power": 600,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_FeatherOstrich_Tossin",
+    "name": "Earth Dash",
+    "description": "Dazemu's exclusive skill. Accelerates all at once and dashes forward at high speed.",
+    "type": "Ground",
+    "power": 250,
+    "coolTime": 12,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Grassmammoth_Earthquake",
+    "name": "Earth Impact",
+    "description": "Mammorest's exclusive skill. Uses its massive body to shake the earth, dealing damage over a wide area.",
+    "type": "Ground",
+    "power": 300,
+    "coolTime": 16,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "ThunderBall",
+    "name": "Electric Ball",
+    "description": "Fires an electric ball that slowly pursues an enemy.",
+    "type": "Electric",
+    "power": 100,
+    "coolTime": 8,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_CaptainPenguin_BodySlide",
+    "name": "Emperor Slide",
+    "description": "CaptainPenguin's exclusive skill. Lies on its belly while generating frozen air all around it before sliding at enemies at high speed.",
+    "type": "Ice",
+    "power": 140,
+    "coolTime": 8,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Throw",
+    "name": "en Text",
+    "description": "en Text",
+    "type": "Neutral",
+    "power": 60,
+    "coolTime": 1,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Scratch",
+    "name": "en Text",
+    "description": "en Text",
+    "type": "Neutral",
+    "power": 100,
+    "coolTime": 2,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_DarkAlien_JumpScractch",
+    "name": "Evil Slash",
+    "description": "Xenovader's exclusive skill. Swiftly pounces and slashes with its left hand.",
+    "type": "Dark",
+    "power": 350,
+    "coolTime": 16,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Garm_Bite",
+    "name": "Fierce Fang",
+    "description": "Swiftly leaps at an enemy and bites into them.",
+    "type": "Neutral",
+    "power": 50,
+    "coolTime": 2,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_GuardianDog_Bite",
+    "name": "Fierce Fang",
+    "description": "Quickly lunges at the enemy and bites to deal damage.",
+    "type": "Neutral",
+    "power": 50,
+    "coolTime": 2,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_AmaterasuWolf_Dark_Bite",
+    "name": "Fierce Fang (Dark)",
+    "description": "Quickly lunges at the enemy and bites to deal damage.",
+    "type": "Dark",
+    "power": 50,
+    "coolTime": 2,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_BlackPuppy_Bite",
+    "name": "Fierce Fang (Dark)",
+    "description": "Quickly lunges at the enemy and bites to deal damage.",
+    "type": "Dark",
+    "power": 50,
+    "coolTime": 2,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_ThunderDog_Bite",
+    "name": "Fierce Fang (Electric)",
+    "description": "Quickly lunges at the enemy and bites to deal damage.",
+    "type": "Electric",
+    "power": 50,
+    "coolTime": 2,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_ElecPomeranian_Bite",
+    "name": "Fierce Fang (Electric)",
+    "description": "Quickly lunges at the enemy and bites to deal damage.",
+    "type": "Electric",
+    "power": 50,
+    "coolTime": 2,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_AmaterasuWolf_Bite",
+    "name": "Fierce Fang (Fire)",
+    "description": "Quickly lunges at the enemy and bites to deal damage.",
+    "type": "Fire",
+    "power": 50,
+    "coolTime": 2,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_GoldenHorse_Bite",
+    "name": "Fierce Fang (Ground)",
+    "description": "Quickly lunges at the enemy and bites to deal damage.",
+    "type": "Ground",
+    "power": 50,
+    "coolTime": 2,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_SamuraiDog_Bite",
+    "name": "Fierce Fang (Ground)",
+    "description": "Quickly lunges at the enemy and bites to deal damage.",
+    "type": "Ground",
+    "power": 50,
+    "coolTime": 2,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_ThunderDog_Ice_Bite",
+    "name": "Fierce Fang (Ice)",
+    "description": "Quickly lunges at the enemy and bites to deal damage.",
+    "type": "Ice",
+    "power": 50,
+    "coolTime": 2,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "FireBall",
+    "name": "Fire Ball",
+    "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.",
+    "type": "Fire",
+    "power": 600,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_BluePlatypus_Toboggan_Fire",
+    "name": "Fire Tackle",
+    "description": "",
+    "type": "Fire",
+    "power": 115,
+    "coolTime": 120,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_BlackMetalDragon_FirePunch",
+    "name": "Firefist Breathstorm",
+    "description": "BlackMetalDragon's exclusive skill. After throwing two punches forward, it exhales a dragon breath downward.",
+    "type": "Dragon",
+    "power": 450,
+    "coolTime": 20,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_BirdDragon_FireBreath",
+    "name": "Flame Breath",
+    "description": "BirdDragons exclusive skill. Advances while breathing fire from its mouth.",
+    "type": "Fire",
+    "power": 200,
+    "coolTime": 12,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_WingGolem_Fire_FlameCutter",
+    "name": "Flame Cutter",
+    "description": "WingGolem_Fire's exclusive skill. Takes a big swing and throws the flaming ring from its back. The ring flies in a circular trajectory.",
+    "type": "Fire",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "FlameFunnel",
+    "name": "Flame Funnel",
+    "description": "Creates multiple spheres of fiery energy, from which countless fireballs shoot towards the enemy.",
+    "type": "Fire",
+    "power": 300,
+    "coolTime": 16,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "FlameWall",
+    "name": "Flame Wall",
+    "description": "Creates a wall of flames at the enemy's location. The wall of flames will remain for a while, and deal damage to the enemies it touches.",
+    "type": "Fire",
+    "power": 250,
+    "coolTime": 12,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_NightLady_FlameNightmare",
+    "name": "Flame Waltz",
+    "description": "NightLady_Dark's exclusive skill. With a graceful dance, conjuries expanding rings of fire, then unleashes eerie flames that seek the enemies.",
+    "type": "Dark",
+    "power": 450,
+    "coolTime": 20,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "FlareArrow",
+    "name": "Flare Arrow",
+    "description": "Fires three flaming arrows in succession that home in on an enemy.",
+    "type": "Fire",
+    "power": 120,
+    "coolTime": 8,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "FlareTornado",
+    "name": "Flare Storm",
+    "description": "Generates two flaming tornadoes on either side before launching them at an enemy.",
+    "type": "Fire",
+    "power": 200,
+    "coolTime": 12,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_BlueThunderHorse_Tossin",
+    "name": "Flash Charge",
+    "description": "BlueThunderHorse's exclusive skill. Cloaks the body in lightning and performs a high-speed charge toward the enemy.",
+    "type": "Electric",
+    "power": 500,
+    "coolTime": 24,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_RedFlowerBird_JumpKick",
+    "name": "Flower Stomp",
+    "description": "RedFlowerBird's exclusive skill. Leaps lightly into the air, then forcefully slams its sharp claws into the ground.",
+    "type": "Grass",
+    "power": 550,
+    "coolTime": 24,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Alpaca_Tackle",
+    "name": "Fluffy Tackle",
+    "description": "Alpaca's exclusive skill. Charges forward while surrounded by an adorable aura.",
+    "type": "Neutral",
+    "power": 50,
+    "coolTime": 2,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_RobinHood_BowSnipe",
+    "name": "Focus Shot",
+    "description": "Robinquill's exclusive skill. Takes aim while drawing its bow before releasing a powerful shot at an enemy.",
+    "type": "Grass",
+    "power": 120,
+    "coolTime": 8,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Anubis_Tackle",
+    "name": "Forceful Charge",
+    "description": "Anubis' exclusive skill. Rapidly pursues its foes while releasing energy and unleashing a powerful punch.",
+    "type": "Ground",
+    "power": 400,
+    "coolTime": 20,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "IceWall",
+    "name": "Freeze Wall",
+    "description": "Creates a wall of ice that rises from the ground. The ice wall remains standing for a while, and breaks after taking enough damage.",
+    "type": "Ice",
+    "power": 200,
+    "coolTime": 12,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_IceDeer_IceHorn",
+    "name": "Freezing Charge",
+    "description": "IceDeer's exclusive skill. Charges at an enemy with antlers adorned in ice.",
+    "type": "Ice",
+    "power": 120,
+    "coolTime": 8,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Yakushima_MouthTossin",
+    "name": "Frenzied Charge",
+    "description": "YakushimaBoss001's exclusive skill. Repeatedly charges at the enemy at high speed.",
+    "type": "Dark",
+    "power": 300,
+    "coolTime": 15,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_VolcanicMonster_Ice_IceAttack",
+    "name": "Frost Burst",
+    "description": "VolcanicMonster_Ice's exclusive skill. Raises its front legs and slams them into the ground, causing a frozen blast under its enemies. It simultaneously bombards them with snow balls from above.",
+    "type": "Ice",
+    "power": 400,
+    "coolTime": 20,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_SnowTigerBeastman_TrampleSlash",
+    "name": "Frost Talon",
+    "description": "SnowTigerBeastman's exclusive skill. Stomps the ground, creating a fissure of ice ahead. Then, rapidly closes the distance and slashes with the right hand.",
+    "type": "Ice",
+    "power": 300,
+    "coolTime": 16,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_ThunderDog_Ice_KoriShorai",
+    "name": "Frostcall",
+    "description": "ThunderDog_Ice's exclusive skill. Generates ice pillars ahead and charges forward at high speed through the gaps between them.",
+    "type": "Ice",
+    "power": 300,
+    "coolTime": 16,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_KingAlpaca_Ice_IcePress",
+    "name": "Frozen Press",
+    "description": "Kingpaca Cryst's exclusive skill. Leaps high into the air before smashing into an enemy with ice and its chubby, massive body.",
+    "type": "Ice",
+    "power": 400,
+    "coolTime": 20,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_CuteMole_DiggingAttack",
+    "name": "Fuddler Tunneler",
+    "description": "CuteMole's exclusive skill. Burrows underground and bursts out from beneath enemies.",
+    "type": "Ground",
+    "power": 60,
+    "coolTime": 4,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Funnel_DreamDemon",
+    "name": "Funnel_DreamDemon",
+    "description": "",
+    "type": "Dark",
+    "power": 20,
+    "coolTime": 5,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Funnel_RaijinDaughter",
+    "name": "Funnel_RaijinDaughter",
+    "description": "",
+    "type": "Electric",
+    "power": 30,
+    "coolTime": 8,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Funnel_RaijinDaughter_Water",
+    "name": "Funnel_RaijinDaughter_Water",
+    "description": "",
+    "type": "Dark",
+    "power": 30,
+    "coolTime": 8,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Eagle_GlidingNail",
+    "name": "Gale Claw",
+    "description": "Eagle's exclusive skill. With talons outstretched, it glides forward in a ferocious charge.",
+    "type": "Neutral",
+    "power": 80,
+    "coolTime": 4,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "SeaGush",
+    "name": "Geyser Gush",
+    "description": "Erupts massive pillars of water beneath and around the enemy.",
+    "type": "Water",
+    "power": 600,
+    "coolTime": 30,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Mothman_GiantSpore",
+    "name": "Giant Spore",
+    "description": "Mothman's exclusive skill. Fires a massive tracking spore that pursues enemies. It explodes on impact, releasing a wide-area blast.",
+    "type": "Grass",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_HerculesBeetle_BeetleTackle",
+    "name": "Giga Horn",
+    "description": "HerculesBeetle's exclusive skill. Skewers enemies with its four sturdy horns.",
+    "type": "Ground",
+    "power": 250,
+    "coolTime": 12,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_SnowTigerBeastman_SnowImpact",
+    "name": "Glacial Impact",
+    "description": "SnowTigerBeastman's exclusive skill. Let out a mighty roar and leap into the air. Then, embed both arms into the ground to create a massive ice crack. Continue to channel power into the ground, ultimately causing a large explosion of ice energy",
+    "type": "Ice",
+    "power": 650,
+    "coolTime": 30,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_ThunderBird_Ice_SnowStrom",
+    "name": "Glacial Plunge",
+    "description": "ThunderBird_Ice's exclusive skill Ice first erupts from the ground at the target's location. Then glides forward in a rushing charge, causing ice to burst from the ground on both sides along its path.",
+    "type": "Ice",
+    "power": 600,
+    "coolTime": 30,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_KingWhale_Breaching",
+    "name": "Grand Breach",
+    "description": "KingWhale's exclusive skill. Dives underwater and leaps out after a short delay. The momentum of the leap creates ripples that damage the surrounding area.",
+    "type": "Water",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "GrassTornado",
+    "name": "Grass Tornado",
+    "description": "Generates two tornadoes on either side before launching them at an enemy.",
+    "type": "Grass",
+    "power": 200,
+    "coolTime": 12,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "GrassGolem_Dark_PartnerSkill",
+    "name": "GrassGolem_Dark_PartnerSkill",
+    "description": "",
+    "type": "Dark",
+    "power": 1,
+    "coolTime": 0,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "GrassGolem_PartnerSkill",
+    "name": "GrassGolem_PartnerSkill",
+    "description": "",
+    "type": "Grass",
+    "power": 1,
+    "coolTime": 0,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_WingGolem_RoundCutter",
+    "name": "Ground Cutter",
+    "description": "Knocklem's exclusive skill. Takes a big swing and throws the ring from its back. The ring flies in a circular trajectory.",
+    "type": "Ground",
+    "power": 450,
+    "coolTime": 20,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Gorilla_GroundPunch",
+    "name": "Ground Pound",
+    "description": "Gorilla's exclusive skill. Pounds the ground twice before leaping into the air and delivers a powerful punch.",
+    "type": "Neutral",
+    "power": 120,
+    "coolTime": 8,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Anubis_GroundPunch",
+    "name": "Ground Smash",
+    "description": "Anubis' exclusive skill. Leaps high into the air and strikes a punch to the ground, causing a shockwave that deals damge over a wide area.",
+    "type": "Ground",
+    "power": 500,
+    "coolTime": 24,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_GrimGirl_BrutalMachete",
+    "name": "Grudge Barrage",
+    "description": "GrimGirl's exclusive skill. Teleports instantly and launches a slash. It then teleports above the enemy, drives its weapon into them, and unleashes a wave of dark energy.",
+    "type": "Dark",
+    "power": 500,
+    "coolTime": 24,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_ElecPanda_GatlingAttack",
+    "name": "Heavy Thunder Tank",
+    "description": "Grizzbolt's exclusive skill. Pulls out a minigun out of nowhere and starts blasting. Finishes with a single, charged power shot.",
+    "type": "Electric",
+    "power": 550,
+    "coolTime": 24,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Baphomet_SwallowKite",
+    "name": "Hellfire Claw",
+    "description": "Baphomet's exclusive skill. Draws near enemies using its left claw to slash them into the air before cutting them down with its right claw.",
+    "type": "Fire",
+    "power": 200,
+    "coolTime": 12,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_IceNarwhal_JumpingHorn",
+    "name": "High Breach",
+    "description": "IceNarwhal's exclusive skill. Charges straight ahead and briefly submerges, then bursts high into the air to launch an attack. An ice-element explosion occurs upon emerging.",
+    "type": "Ice",
+    "power": 600,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "HolyBlast",
+    "name": "Holy Burst",
+    "description": "Creates a wide explosion of light at the enemy's location and around it.",
+    "type": "Neutral",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_WhiteDeer_HolyPillar",
+    "name": "Holy Nova",
+    "description": "WhiteDeer's exclusive skill. After igniting a burst of holy light across a vast area ahead, it strides forward, radiating holy light around itself.",
+    "type": "Neutral",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_CubeTurtle_Neutral_HolyPress",
+    "name": "Holy Press",
+    "description": "CubeTurtle_Neutral's exclusive skill. Leaps into the air and crushes enemies with its massive weight. Upon landing, light spreads outward, forming pillars of light that burst forth and strike nearby enemies.",
+    "type": "Neutral",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_RockBeast_RockHorn",
+    "name": "Horn Burst",
+    "description": "RockBeast's exclusive skill. Rakes the ground with its horn, then hurls a rock projectile at enemies.",
+    "type": "Ground",
+    "power": 600,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Human_Rolling",
+    "name": "Human_Rolling",
+    "description": "",
+    "type": "Neutral",
+    "power": 0,
+    "coolTime": 1,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_BlueSkyDragon_Tossin",
+    "name": "Hydra Charge",
+    "description": "BlueSkyDragon's exclusive skill. Cloaks the body in water and charges straight forward.",
+    "type": "Water",
+    "power": 500,
+    "coolTime": 24,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "AquaJet",
+    "name": "Hydro Jet",
+    "description": "Hurls a high speed ball of water at an enemy.",
+    "type": "Water",
+    "power": 40,
+    "coolTime": 2,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "HydroPump",
+    "name": "Hydro Laser",
+    "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.",
+    "type": "Water",
+    "power": 450,
+    "coolTime": 20,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "HydroSlicer",
+    "name": "Hydro Slicer",
+    "description": "Mows down the frontal area with a blast of compressed water. The area struck by the blast erupts with water after a short delay.",
+    "type": "Water",
+    "power": 350,
+    "coolTime": 16,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_TentacleTurtle_HydroSpin",
+    "name": "Hydro Spin",
+    "description": "TentacleTurtle's exclusive skill. Uses jet-powered propulsion to spin rapidly and launch itself at the enemy.",
+    "type": "Water",
+    "power": 160,
+    "coolTime": 8,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Ronin_Iai",
+    "name": "Iaigiri",
+    "description": "Ronin's exclusive skill. Taking hold of the sword, it appears in front of an enemy in an instant and unleashes an ultra-fast sword draw attack.",
+    "type": "Fire",
+    "power": 160,
+    "coolTime": 8,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Ronin_Iai_PartnerSkill",
+    "name": "Iaigiri",
+    "description": "Ronin's exclusive skill. Taking hold of the sword, it appears in front of an enemy in an instant and unleashes an ultra-fast sword draw attack.",
+    "type": "Fire",
+    "power": 160,
+    "coolTime": 12,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_RockBeast_Ice_IceHorn",
+    "name": "Ice Burst",
+    "description": "RockBeast_Ice's exclusive skill. Rakes the ground with its horn, then hurls a snow chunk at enemies.",
+    "type": "Ice",
+    "power": 600,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Kirin_Ice_IceTackle",
+    "name": "Ice Gale Strike",
+    "description": "Kirin_Ice's exclusive skill. Generates ice pillars around itself while charging toward enemies.",
+    "type": "Ice",
+    "power": 600,
+    "coolTime": 30,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_VolcanoDragon_Ice_IceLaser",
+    "name": "Ice Laser",
+    "description": "VolcanoDragon_Ice's exclusive skill. Fires a freezing beam from the mouth that coats the ground in ice. Frozen ground forms frost pools that freeze and damage enemies on contact.",
+    "type": "Ice",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "IceMissile",
+    "name": "Ice Missile",
+    "description": "Creates ice lances in the air that fly towards enemies.",
+    "type": "Ice",
+    "power": 40,
+    "coolTime": 2,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_VolcanoDragon_Ice_IcicleSpit",
+    "name": "Ice Spit",
+    "description": "VolcanoDragon_Ice's exclusive skill. Spits a chunk of ice from its mouth. The impact creates frost pools that freeze and damage enemies on contact.",
+    "type": "Ice",
+    "power": 600,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "BlizzardLance",
+    "name": "Iceberg",
+    "description": "Summons a sharp ice lance under an enemy.",
+    "type": "Ice",
+    "power": 120,
+    "coolTime": 8,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "IciclePierce",
+    "name": "Icicle Bullet",
+    "description": "Generates multiple sharp ice blocks in the sky and fires them at the enemy.",
+    "type": "Ice",
+    "power": 250,
+    "coolTime": 12,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "IceBlade",
+    "name": "Icicle Cutter",
+    "description": "Creates a crescent blade of ice and hurls it forward.",
+    "type": "Ice",
+    "power": 80,
+    "coolTime": 4,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "IcicleLine",
+    "name": "Icicle Line",
+    "description": "Generates pillars of ice that move in a straight line in three directions.",
+    "type": "Ice",
+    "power": 300,
+    "coolTime": 16,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "FireBlast",
+    "name": "Ignis Blast",
+    "description": "Hurls a ball of fire straight at an enemy.",
+    "type": "Fire",
+    "power": 40,
+    "coolTime": 2,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Flamethrower",
+    "name": "Ignis Breath",
+    "description": "Shoots flames at an enemy, dealing continuous damage.",
+    "type": "Fire",
+    "power": 160,
+    "coolTime": 8,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_FireKirin_Tackle",
+    "name": "Ignis Charge",
+    "description": "FireKirin's exclusive skill. Charges forward while engulfed in a veil of flames. Flames continue to burn in its path.",
+    "type": "Fire",
+    "power": 300,
+    "coolTime": 16,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Inferno",
+    "name": "Ignis Rage",
+    "description": "Infuses the surrounding ground with energy, causing it to explode after a set amount of time.",
+    "type": "Fire",
+    "power": 500,
+    "coolTime": 24,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "SelfDestruct",
+    "name": "Implode",
+    "description": "Risks its life to cause a violent explosion. Becomes incapacitated afterwards.",
+    "type": "Neutral",
+    "power": 300,
+    "coolTime": 16,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Werewolf_Scratch",
+    "name": "Jumping Claw",
+    "description": "WereWolf's exclusive skill. Leaps forward and attacks twice with vicious claws imbued with dark energy.",
+    "type": "Dark",
+    "power": 80,
+    "coolTime": 4,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_DarkScorpion_Pierce",
+    "name": "Jumping Stinger",
+    "description": "Menasting's exclusive skill. Jumps high and forcefully stabs its prey with its tail. The poison from the tail is deadly.",
+    "type": "Ground",
+    "power": 350,
+    "coolTime": 16,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_ThunderDragonMan_ThunderSwordAttack",
+    "name": "Kerauno",
+    "description": "ThunderDragonMan's exclusive skill. Summons a spear of lightning while leaping into the air before throwing it at an enemy.",
+    "type": "Electric",
+    "power": 250,
+    "coolTime": 12,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_KingAlpaca_BodyPress",
+    "name": "Kingly Slam",
+    "description": "Kingpaca's exclusive skill. Leaps high into the air before smashing into an enemy with its chubby, massive body.",
+    "type": "Neutral",
+    "power": 200,
+    "coolTime": 12,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_LeafMomonga_SomerSault",
+    "name": "Konoha Flip",
+    "description": "LeafMomonga's exclusive skill. After a brief moment of preparation, charges at the enemy at high speed, finishing with a flip.",
+    "type": "Grass",
+    "power": 250,
+    "coolTime": 12,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_LanternButler_LanternFlame",
+    "name": "Lantern Flame",
+    "description": "LanternButler's exclusive skill. Raises a lantern and summons multiple spirits that relentlessly pursue enemies.",
+    "type": "Dark",
+    "power": 650,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_GhostAnglerfish_SweepBait",
+    "name": "Lantern Sweep",
+    "description": "GhostAnglerfish's exclusive skill. Lashes forward with the lantern atop its head, sweeping broadly ahead.",
+    "type": "Water",
+    "power": 450,
+    "coolTime": 20,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Yeti_Grass_GrassBall",
+    "name": "Lawn Bowling",
+    "description": "Yeti_Grass's exclusive skill. Rolls a ball made of grass as it moves forward, and when it grows large enough, it throws it to cause an explosion.",
+    "type": "Grass",
+    "power": 400,
+    "coolTime": 20,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_GrassRabbitMan_GrassRoundKick",
+    "name": "Leaping Roundhouse",
+    "description": "GrassRabbitMan's exclusive skill. While jumping forward, it sweeps the surroundings with a high-speed spinning kick.",
+    "type": "Grass",
+    "power": 250,
+    "coolTime": 12,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "ShokeiLaser",
+    "name": "Lethal Laser",
+    "description": "After aiming at the enemy, fires multiple ultra-fast lightning lasers.",
+    "type": "Electric",
+    "power": 600,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_NightBlueHorse_DeathStep",
+    "name": "Lethal Step",
+    "description": "NightBlueHorse's exclusive skill. Confuses enemies with flickering steps and launches slashing attack with its sharp horn.",
+    "type": "Dark",
+    "power": 550,
+    "coolTime": 24,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Thunderbolt",
+    "name": "Lightning Bolt",
+    "description": "Charges electric energy before blasting enemies with a powerful shock.",
+    "type": "Electric",
+    "power": 450,
+    "coolTime": 20,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_ElecPanda_ElecScratch",
+    "name": "Lightning Claw",
+    "description": "ElecPanda's exclusive skill. After leaping at an enemy and tearing at it twice with its electrically charged claws, it attacks the ground, sending an electric shock throughout the area.",
+    "type": "Electric",
+    "power": 150,
+    "coolTime": 8,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_ThunderBird_ThunderStorm",
+    "name": "Lightning Dive",
+    "description": "ThunderBird's exclusive skill. First, it strikes the enemy's location with lightning. Then, while gliding forward, it drops lightning to the left and right.",
+    "type": "Electric",
+    "power": 180,
+    "coolTime": 8,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Kirin_LightningTackle",
+    "name": "Lightning Gale",
+    "description": "Kirin's exclusive skill. Generates bolts of lightning all around while charging at its target.",
+    "type": "Electric",
+    "power": 120,
+    "coolTime": 8,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_FlowerDinosaur_Electric_ThunderWhip",
+    "name": "Lightning Smash",
+    "description": "Dinossom Lux's exclusive skill. Uses its large tail to strike the ground in front of it, delivering a bolt of lightning in a straight line.",
+    "type": "Electric",
+    "power": 300,
+    "coolTime": 16,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "LineThunder",
+    "name": "Lightning Streak",
+    "description": "Generates a lightning bolt that moves forward in a line.",
+    "type": "Electric",
+    "power": 160,
+    "coolTime": 8,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "LightningStrike",
+    "name": "Lightning Strike",
+    "description": "Acts as a lightning rod, calling down thunderbolts that electrocute the surrounding area.",
+    "type": "Electric",
+    "power": 300,
+    "coolTime": 16,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "LockonLaser",
+    "name": "Lock-on Laser",
+    "description": "Takes aim at an enemy before firing a super high speed laser.",
+    "type": "Electric",
+    "power": 140,
+    "coolTime": 8,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Yakushima_EyeTossin",
+    "name": "Lock-On Lunge",
+    "description": "YakushimaBoss001's exclusive skill. Repeatedly charges at the enemy.",
+    "type": "Dark",
+    "power": 300,
+    "coolTime": 15,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_LotusDragon_LotusBloom",
+    "name": "Lotus Bloom",
+    "description": "LotusDragon's exclusive skill. Burrows into the ground and vanishes. It then emerges at the surface as a flower bud, blooms, and unleashes a wide-area attack.",
+    "type": "Grass",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_KingWhale_Maelstrom",
+    "name": "Maelstrom",
+    "description": "KingWhale's exclusive skill. Creates a vortex around the enemy. The vortex pulls targets toward its center while shrinking, ending in a high-pressure water pillar explosion.",
+    "type": "Water",
+    "power": 500,
+    "coolTime": 24,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_VolcanoDragon_VolcanicLaser",
+    "name": "Magma Laser",
+    "description": "VolcanoDragon's exclusive skill. Emits a thermal beam from its mouth that scorches the ground. Heated ground forms magma pools that damage enemies on contact.",
+    "type": "Fire",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Umihebi_Fire_FireWindingTackle",
+    "name": "Magma Serpent",
+    "description": "Umihebi_Fire's exclusive skill. Letting out a roar, it charges toward the enemy, twisting its fire-covered body as it advances.",
+    "type": "Fire",
+    "power": 400,
+    "coolTime": 20,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_VolcanoDragon_MagmaSpit",
+    "name": "Magma Spit",
+    "description": "VolcanoDragon's exclusive skill. Spits a mass of magma from its mouth. The impact creates magma pools that damage enemies on contact.",
+    "type": "Fire",
+    "power": 600,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_KingBahamut_AirCrash",
+    "name": "Magna Crush",
+    "description": "Blazamut Ryu's exclusive skill. After a big jump, moves at high speed in the air, gathering strength to unleash a powerful punch.",
+    "type": "Dragon",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "SelfExplosion",
+    "name": "Megaton Implode",
+    "description": "Risks life to cause a massive explosion. Those who perish for their duty become glistening stars in the night sky.",
+    "type": "Neutral",
+    "power": 1200,
+    "coolTime": 60,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "CommetRain",
+    "name": "Meteorain",
+    "description": "Drops countless meteorites, generating an array of shock waves.",
+    "type": "Dragon",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_DomeArmorDragon_ExplosiveMissile",
+    "name": "Missile Burst",
+    "description": "DomeArmorDragon's exclusive skill. Launches countless explosive missiles from its wings.",
+    "type": "Ground",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_MoonQueen_MoonBeam",
+    "name": "Moonlight Beam",
+    "description": "Selyne's exclusive skill. Stores energy in the moon on its back, then fires a crescent-shaped beam forward.",
+    "type": "Neutral",
+    "power": 600,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Deer_Ground_DirtyHorn",
+    "name": "Mud Horn",
+    "description": "Eikthyrdeer Terra's exclusive skill. Charges at foes and uses its antlers to whip mud at them. When used while riding, the direction of the charge can be controlled.",
+    "type": "Ground",
+    "power": 120,
+    "coolTime": 8,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "SpecialCutter",
+    "name": "Multicutter",
+    "description": "The user fires three high-speed blades of wind in quick succession that fly straight at enemies.",
+    "type": "Grass",
+    "power": 160,
+    "coolTime": 8,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_MummyPal_MummyAttack",
+    "name": "Mummy Rush",
+    "description": "MummyPal's exclusive skill. Extends bandages from its hands to deliver a series of attacks.",
+    "type": "Dark",
+    "power": 500,
+    "coolTime": 24,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_SakuraSaurus_SideTackle",
+    "name": "Muscle Slam",
+    "description": "Broncherry's exclusive skill. Turns sideways before tackling enemies in front of it, sending them flying into the air.",
+    "type": "Grass",
+    "power": 120,
+    "coolTime": 8,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_FairyDragon_FairyTornado",
+    "name": "Mystic Whirlwind",
+    "description": "Elphidran's exclusive skill. Generates twin whirlwinds imbued with a mysterious power that pursues enemies.",
+    "type": "Dragon",
+    "power": 150,
+    "coolTime": 8,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_SoldierBee_NeedleLance",
+    "name": "Needle Spear",
+    "description": "SoldierBee's exclusive skill. Charges at the enemy at high speed, delivering a final thrust with a spear.",
+    "type": "Grass",
+    "power": 120,
+    "coolTime": 8,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "ShadowBall",
+    "name": "Nightmare Ball",
+    "description": "Creates a giant ball of darkness and hurls it at an enemy.",
+    "type": "Dark",
+    "power": 300,
+    "coolTime": 16,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_NightLady_WarpBeam",
+    "name": "Nightmare Bloom",
+    "description": "NightLady_Dark's exclusive skill. Disappears suddenly, then reappears while firing a barrage of beams. The beams spread like a beautiful flower in bloom.",
+    "type": "Dark",
+    "power": 600,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Baphomet_Dark_DarkKite",
+    "name": "Nightmare Claw",
+    "description": "Incineram Noct's exclusive skill. Draws near enemies using its left dark claw to slash them into the air before cutting them down with its right dark claw.",
+    "type": "Dark",
+    "power": 400,
+    "coolTime": 20,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_NightLady_WarpBeam_Straight",
+    "name": "Nightmare Ray",
+    "description": "NightLady's exclusive skill. Disappears suddenly, then reappears while firing a barrage of beams.",
+    "type": "Dark",
+    "power": 600,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_YakushimaBoss001_Small_DemonEyeCharge",
+    "name": "Ocular Rush",
+    "description": "YakushimaBoss001_Small's exclusive skill. Charges at the enemy, bouncing off the ground or walls on impact.",
+    "type": "Dark",
+    "power": 60,
+    "coolTime": 1,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_DarkMechaDragon_FunnelLaser",
+    "name": "Omega Laser",
+    "description": "DarkMechaDragon's exclusive skill. Summons the light of destruction from subspace and continuously fires it in all directions, burning everything in its sight to ashes.",
+    "type": "Dragon",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "HyperBeam",
+    "name": "Pal Blast",
+    "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.",
+    "type": "Neutral",
+    "power": 450,
+    "coolTime": 20,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_SamuraiDog_DashSlash",
+    "name": "Persistent Slash",
+    "description": "SamuraiDog's exclusive skill. Charges at full speed, delivering two consecutive slashes with the wooden stick held in its mouth.",
+    "type": "Ground",
+    "power": 90,
+    "coolTime": 4,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_DarkCrow_TelePoke",
+    "name": "Phantom Peck",
+    "description": "DarkCrow's exclusive skill. Teleports next to an enemy before attacking with its beak.",
+    "type": "Dark",
+    "power": 70,
+    "coolTime": 4,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Horus_FlareBird",
+    "name": "Phoenix Flare",
+    "description": "Horus' exclusive skill. After creating scorching tornadoes, it cloaks itself in hellfire and charges forward.",
+    "type": "Fire",
+    "power": 320,
+    "coolTime": 16,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Horus_Water_AquaStorm",
+    "name": "Phoenix Tide",
+    "description": "Horus_Water's exclusive skill. After summoning a massive tornado, it envelops its body in water and charges forward.",
+    "type": "Water",
+    "power": 320,
+    "coolTime": 16,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "ThunderFunnel",
+    "name": "Plasma Funnel",
+    "description": "Creates two balls of electric energy that fire numerous lightning orbs at enemies.",
+    "type": "Electric",
+    "power": 120,
+    "coolTime": 8,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "PoisonShot",
+    "name": "Poison Blast",
+    "description": "Hurls poison sludge at an enemy.",
+    "type": "Dark",
+    "power": 30,
+    "coolTime": 2,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "PoisonFog",
+    "name": "Poison Fog",
+    "description": "Generates a fog of poison in front, causing the opponent to become poisoned.",
+    "type": "Dark",
+    "power": 0,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_FlowerPrince_PoisonGasTackle",
+    "name": "Poison Promenade",
+    "description": "FlowerPrince's exclusive skill. Charges forward while sliding along the ground, spraying corrosive mist. The mist remains in the area for a limited time.",
+    "type": "Dark",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_SnakeGirl_SnakeShot",
+    "name": "Poison Scatter",
+    "description": "SnakeGirl's exclusive skill. The snakes on her head spit toxic globs in a wide arc. The poisonous pool left at the impact point inflicts Poison on anyone who touches it.",
+    "type": "Dark",
+    "power": 600,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "BubbleShower",
+    "name": "Poison Shower",
+    "description": "Focuses energy into the body and scatters poison orbs in all directions.",
+    "type": "Dark",
+    "power": 160,
+    "coolTime": 8,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_ThunderDragonMan_NumerousSwordAttack",
+    "name": "Polykeraunos",
+    "description": "Orserk's exclusive skill. Summons numerous thunder spears and hurls them at the enemy. The first spear is imbued with the power of lightning and explodes after a few seconds.",
+    "type": "Electric",
+    "power": 600,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "PoseidonOrca_PartnerSkill",
+    "name": "PoseidonOrca_PartnerSkill",
+    "description": "",
+    "type": "Water",
+    "power": 60,
+    "coolTime": 55,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "PoseidonOrca_PartnerSkill_SpearBullet",
+    "name": "PoseidonOrca_PartnerSkill_SpearBullet",
+    "description": "",
+    "type": "Water",
+    "power": 50,
+    "coolTime": 55,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "PowerBall",
+    "name": "Power Bomb",
+    "description": "Charges a massive amount of energy before firing a large destructive ball.",
+    "type": "Neutral",
+    "power": 120,
+    "coolTime": 8,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "PowerShot",
+    "name": "Power Shot",
+    "description": "Charges energy into a focused blast.",
+    "type": "Neutral",
+    "power": 80,
+    "coolTime": 4,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "PredatorBeam",
+    "name": "Predator Blast",
+    "description": "",
+    "type": "Neutral",
+    "power": 600,
+    "coolTime": 20,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "PredatorLockon",
+    "name": "Predator Mark",
+    "description": "",
+    "type": "Neutral",
+    "power": 400,
+    "coolTime": 20,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "PredatorWave",
+    "name": "Predator Surge",
+    "description": "",
+    "type": "Neutral",
+    "power": 200,
+    "coolTime": 20,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Psychokinesis",
+    "name": "Psycho Gravity",
+    "description": "Utilizes gravity to deprive enemies of their freedom, then slams them into the ground from high above.",
+    "type": "Dark",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Human_Punch",
+    "name": "Punch",
+    "description": "Punch with conviction; believe in the power of the fist.",
+    "type": "Neutral",
+    "power": 12,
+    "coolTime": 1,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_PinkCat_CatPunch",
+    "name": "Punch Flurry",
+    "description": "PinkCat's exclusive skill. Chases after enemies, swinging both arms and delivering a flurry of punches.",
+    "type": "Neutral",
+    "power": 40,
+    "coolTime": 2,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_LegendDeer_RadiantPurge_Otomo",
+    "name": "Purifying Light",
+    "description": "LegendDeer' exclusive skill. Leaps high into the air, condensing immense energy into a descending sphere of light. When it strikes the ground, it purifies all on the ground below.",
+    "type": "Neutral",
+    "power": 1250,
+    "coolTime": 100,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "RadiantBarrage",
+    "name": "Radiant Barrage",
+    "description": "Unleashes a sphere of light that slowly tracks down an enemy. As it nears its target, it splits into countless light bullets that strike all at once.",
+    "type": "Neutral",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_GrassMinotaur_BullRush",
+    "name": "Raging Bull Rush",
+    "description": "GrassMinotaur's exclusive skill. Enters a violent frenzy and unleashes four consecutive rage-fueled Grass-element charge attacks.",
+    "type": "Grass",
+    "power": 650,
+    "coolTime": 30,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Horus_PerfectStorm",
+    "name": "Raging Flame Wave",
+    "description": "Faleris' exclusive skill. Generates multiple scorching tornadoes and charges forward while gliding. The tornadoes converge in the center and eventually merge into a single massive tornado.",
+    "type": "Fire",
+    "power": 650,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_GrassMinotaur_Ice_BullRush",
+    "name": "Raging Snow Rush",
+    "description": "GrassMinotaur_Ice's exclusive skill. Enters a violent frenzy and unleashes four consecutive rage-fueled Ice-element charge attacks.",
+    "type": "Ice",
+    "power": 650,
+    "coolTime": 30,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "RaidCutter",
+    "name": "Raid Cutter",
+    "description": "Shoots countless wind swords that fly straight towards the enemy.",
+    "type": "Grass",
+    "power": 400,
+    "coolTime": 20,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_PandaGirl_RapidKick",
+    "name": "Rapid Kick",
+    "description": "PandaGirl's exclusive skill. Rapidly delivers a series of consecutive roundhouse kicks, finishing with an engery blast.",
+    "type": "Grass",
+    "power": 250,
+    "coolTime": 12,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Boar_Tackle",
+    "name": "Reckless Charge",
+    "description": "Boar's exclusive skill. Takes aim at a foe and rushes at them with a fierce charge.",
+    "type": "Ground",
+    "power": 60,
+    "coolTime": 4,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "ReflectiveShuriken",
+    "name": "Reflect Leaf",
+    "description": "Launches a blade of wind that rebounds off enemies or trees, striking repeatedly. Can ricochet up to four times.",
+    "type": "Grass",
+    "power": 400,
+    "coolTime": 20,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "RockLance",
+    "name": "Rock Lance",
+    "description": "Generates a sharp rock spear under an enemy.",
+    "type": "Ground",
+    "power": 400,
+    "coolTime": 20,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Tremor",
+    "name": "Rockburst",
+    "description": "Causes the ground to shake before hurling a massive stone mass at its surroundings.",
+    "type": "Ground",
+    "power": 300,
+    "coolTime": 16,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_GrassGolem_RocketPunch",
+    "name": "Rocket Arm",
+    "description": "GrassGolems exclusive skill. Detaches its left arm to sweep enemies, then launches its right arm.",
+    "type": "Ground",
+    "power": 600,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_WeaselDragon_FlyingTackle",
+    "name": "Rocket Slam",
+    "description": "Chillet's exclusive skill. Gathers a bit of strength and leaps forward. Always shuts its eyes tight in fear when landing.",
+    "type": "Dragon",
+    "power": 80,
+    "coolTime": 4,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "RockBeat",
+    "name": "Rocky Impact",
+    "description": "Shakes the ground and lifts a massive boulder into the air.",
+    "type": "Ground",
+    "power": 600,
+    "coolTime": 30,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Sekhmet_RollingScratch",
+    "name": "Rolling Scratch",
+    "description": "Sekhmets exclusive skill. Spins forward to quickly close the distance and scratch the enemy.",
+    "type": "Ground",
+    "power": 400,
+    "coolTime": 20,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_SheepBall_Roll",
+    "name": "Roly Poly",
+    "description": "SheepBall's exclusive skill. Curls into a ball, rolling after any enemies in its way. Becomes dizzy and unable to move after the attack ends.",
+    "type": "Neutral",
+    "power": 40,
+    "coolTime": 2,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_GrassGolem_ArmCannon",
+    "name": "Root Cannon",
+    "description": "GrassGolems exclusive skill. Fires a Grass-elemental energy projectile from its arm. Upon impact, the blast transforms into persistent roots that track and pierce the enemy from below.",
+    "type": "Grass",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_NightBlueHorse_Neutral_AirStep",
+    "name": "Royal Step",
+    "description": "NightBlueHorse_Neutral's exclusive skill. Confuses enemies with an elegant stride and launches slashing attack with its sharp horn.",
+    "type": "Neutral",
+    "power": 800,
+    "coolTime": 30,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Gorilla_Ground_EarthPunch",
+    "name": "Rumble Combo",
+    "description": "Gorilla_Ground's exclusive skill. Pounds the ground twice before leaping into the air and delivers a powerful punch infused with the Power of Gaia.",
+    "type": "Ground",
+    "power": 300,
+    "coolTime": 16,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_RedArmorBird_TriplePeck",
+    "name": "Rush Beak",
+    "description": "RedArmorBird's exclusive skill. While flapping forward, it strikes with its beak to ignite fires in front, right, and left, causing a small explosion.",
+    "type": "Fire",
+    "power": 200,
+    "coolTime": 12,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_LegendDeer_WarpPillarBurst",
+    "name": "Sacred Rain",
+    "description": "LegendDeer' exclusive skill. Fades from sight, then calls down a massive barrage of light pillars centered on its position.",
+    "type": "Neutral",
+    "power": 800,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "SandTornado",
+    "name": "Sand Tornado",
+    "description": "Generates two sand tornadoes on either side before launching them at an enemy.",
+    "type": "Ground",
+    "power": 200,
+    "coolTime": 12,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "SandTwister",
+    "name": "Sand Twister",
+    "description": "Creates multiple sand tornadoes. The tornadoes continuously spin in circles.",
+    "type": "Ground",
+    "power": 500,
+    "coolTime": 24,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_DarkMechaDragon_SetFunnel",
+    "name": "Satellite Bit",
+    "description": "DarkMechaDragon's exclusive skill. Generates four satellite-like wings with auto-attack functionality. These wings will automatically track and attack the enemy when the next attack is launched.",
+    "type": "Dragon",
+    "power": 400,
+    "coolTime": 20,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_GhostAnglerfish_Fire_SweepBait_Fire",
+    "name": "Scorching Lantern Sweep",
+    "description": "GhostAnglerfish_Fire's exclusive skill. Lashes forward with the flaming lantern atop its head, sweeping broadly ahead.",
+    "type": "Fire",
+    "power": 450,
+    "coolTime": 20,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "SeedMachinegun",
+    "name": "Seed Machine Gun",
+    "description": "Fires a volley of hard seeds at enemies in front of it.",
+    "type": "Grass",
+    "power": 80,
+    "coolTime": 4,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "SeedMine",
+    "name": "Seed Mine",
+    "description": "Launches a deadly seed. If it hits an enemy, the seed explodes.",
+    "type": "Grass",
+    "power": 120,
+    "coolTime": 8,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_MoonQueen_MoonBlade",
+    "name": "Seigetsu Blade",
+    "description": "Selyne's exclusive skill. Fires two consecutive high-speed blades imbued with the power of moonlight.",
+    "type": "Neutral",
+    "power": 350,
+    "coolTime": 16,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_MoonQueen_IceMoonBlade",
+    "name": "Seigetsu Flash",
+    "description": "Selyne's exclusive skill. Fires three consecutive high-speed slashes imbued with the power of moonlight.",
+    "type": "Neutral",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Yakushima_SummonServant",
+    "name": "Servant Call",
+    "description": "YakushimaBoss001's exclusive skill. Summons four Servants that charge at enemies to deal damage. Servants disappear after taking damage or after a short time.",
+    "type": "Dark",
+    "power": 300,
+    "coolTime": 10,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "DarkWave",
+    "name": "Shadow Burst",
+    "description": "Quickly discharges dark energy, damaging those around it.",
+    "type": "Dark",
+    "power": 80,
+    "coolTime": 4,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_ElecSnail_ShellCharge",
+    "name": "Shell Charge",
+    "description": "ElecSnail's exclusive skill. Withdraws into its shell to reduce damage taken while building electric charge. Once fully charged, it discharges, damaging nearby enemies. After discharging, the Attack of this Pal's Electric skills is increased for a limited time.",
+    "type": "Electric",
+    "power": 500,
+    "coolTime": 24,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_DrillGame_ShellAttack",
+    "name": "Shell Spin",
+    "description": "DrillGame's exclusive skill. Moves while spinning its whole body at high speed. Drills through enemies, dealing continuous damage.",
+    "type": "Ground",
+    "power": 120,
+    "coolTime": 8,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "ElecWave",
+    "name": "Shockwave",
+    "description": "Quickly discharges electricity, shocking those around it.",
+    "type": "Electric",
+    "power": 80,
+    "coolTime": 4,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_NightBlueHorse_Neutral_Tossin",
+    "name": "Silver Steed",
+    "description": "NightBlueHorse_Neutral's exclusive skill. Cloaks the body in radiant flames and charges toward the enemy.",
+    "type": "Neutral",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_YakushimaMonster001_SlimePress_Dark",
+    "name": "Slime Press (Dark)",
+    "description": "YakushimaMonster001_Purple's exclusive skill. Leaps toward the enemy and delivers an attack.",
+    "type": "Dark",
+    "power": 50,
+    "coolTime": 1,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_YakushimaMonster001_SlimePress_Fire",
+    "name": "Slime Press (Fire)",
+    "description": "YakushimaMonster001_Red's exclusive skill. Leaps toward the enemy and delivers an attack.",
+    "type": "Fire",
+    "power": 50,
+    "coolTime": 1,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_YakushimaMonster001_SlimePress_Leaf",
+    "name": "Slime Press (Grass)",
+    "description": "YakushimaMonster001's exclusive skill. Leaps toward the enemy and delivers an attack.",
+    "type": "Grass",
+    "power": 50,
+    "coolTime": 1,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_YakushimaMonster001_SlimePress_Normal",
+    "name": "Slime Press (Neutral)",
+    "description": "YakushimaMonster001_Pink's exclusive skill. Leaps toward the enemy and delivers an attack.",
+    "type": "Neutral",
+    "power": 50,
+    "coolTime": 1,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_YakushimaMonster001_SlimePress_Rainbow",
+    "name": "Slime Press (Rainbow)",
+    "description": "YakushimaMonster001_Rainbow's exclusive skill. Leaps toward the enemy and delivers an attack.",
+    "type": "Neutral",
+    "power": 100,
+    "coolTime": 1,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_YakushimaMonster001_SlimePress_Water",
+    "name": "Slime Press (Water)",
+    "description": "YakushimaMonster001_Blue's exclusive skill. Leaps toward the enemy and delivers an attack.",
+    "type": "Water",
+    "power": 50,
+    "coolTime": 1,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Umihebi_WindingTackle",
+    "name": "Slither Slam",
+    "description": "Umihebi's exclusive skill. Letting out a roar, it charges toward the enemy, twisting its water-covered body as it advances.",
+    "type": "Water",
+    "power": 400,
+    "coolTime": 20,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_OctopursGirl_InkJet",
+    "name": "Smoke Jet",
+    "description": "OctopusGirl's exclusive skill. Releases smoke to conceal itself, then launches a surprise headbutt from the shadows.",
+    "type": "Water",
+    "power": 120,
+    "coolTime": 8,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Yeti_SnowBall",
+    "name": "Snow Bowling",
+    "description": "Yeti's exclusive skill. Rolls a snowball as it moves forward, and when it grows large enough, it throws it to cause an explosion.",
+    "type": "Ice",
+    "power": 400,
+    "coolTime": 20,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Werewolf_Ice_SnowScratch",
+    "name": "Snow Claw",
+    "description": "WereWolf_Ice's exclusive skill. Leaps forward and attacks twice with vicious claws imbued with ice element.",
+    "type": "Ice",
+    "power": 160,
+    "coolTime": 8,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_GrassMinotaur_Ice_BullRush_Lower",
+    "name": "Snow Rush",
+    "description": "GrassMinotaur_Ice's exclusive skill. Enters a wild frenzy and unleashes two consecutive Ice-element charge attacks.",
+    "type": "Ice",
+    "power": 250,
+    "coolTime": 12,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "SolarBeam",
+    "name": "Solar Blast",
+    "description": "Charges solar energy before blasting enemies with a powerful beam.",
+    "type": "Grass",
+    "power": 450,
+    "coolTime": 20,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Sekhmet_SomersaultScratch",
+    "name": "Somersault Scratch",
+    "description": "Sekhmets exclusive skill. Scratches the enemy while performing a backward somersault to create distance.",
+    "type": "Ground",
+    "power": 300,
+    "coolTime": 16,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_MysteryMask_LifeSteal",
+    "name": "Soul Drain",
+    "description": "MysteryMasks exclusive skill. Suddenly appears near the enemy, firmly restraining them with its arms, and absorbs the HP of the restrained enemy.",
+    "type": "Dark",
+    "power": 400,
+    "coolTime": 20,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "SpreadPulse",
+    "name": "Spark Blast",
+    "description": "Releases lightning orbs in a fan shape, spreading as they travel.",
+    "type": "Electric",
+    "power": 50,
+    "coolTime": 2,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_SaintCentaur_OneSpearRushes",
+    "name": "Spear Thrust",
+    "description": "SaintCentaur' exclusive skill. Charges forward while enveloped in holy power with its spear thrust ahead. The shield in its other hand blocks all attacks during the charge.",
+    "type": "Neutral",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_NightBlueHorse_Tossin",
+    "name": "Spectral Steed",
+    "description": "NightBlueHorse's exclusive skill. Cloaks the body in flickering flames and charges toward the enemy.",
+    "type": "Dark",
+    "power": 450,
+    "coolTime": 20,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "RootAttack",
+    "name": "Spine Vine",
+    "description": "Generates spiny thorns that chase an enemy along the ground, piercing them from below.",
+    "type": "Grass",
+    "power": 250,
+    "coolTime": 12,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Anubis_LowRoundKick",
+    "name": "Spinning Roundhouse",
+    "description": "Anubis' exclusive skill. Performs a spin kick with its strong legs, sweeping enemies over a wide area.",
+    "type": "Ground",
+    "power": 300,
+    "coolTime": 16,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_QueenBee_SpinLance",
+    "name": "Spinning Staff",
+    "description": "QueenBee's exclusive skill. Channels power into its staff, and unleashes it in a whirl.",
+    "type": "Grass",
+    "power": 160,
+    "coolTime": 8,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_GhostBeast_Tossin",
+    "name": "Spirit Dash",
+    "description": "GhostBeast's exclusive skill. While running slowly, it continuously launches flickering fireballs toward the enemy.",
+    "type": "Dark",
+    "power": 300,
+    "coolTime": 16,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "FireSeed",
+    "name": "Spirit Fire",
+    "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.",
+    "type": "Fire",
+    "power": 80,
+    "coolTime": 4,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "GhostFlame",
+    "name": "Spirit Flame",
+    "description": "Fires three balls of malice that relentlessly pursue an enemy.",
+    "type": "Dark",
+    "power": 200,
+    "coolTime": 12,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "LineGeyser",
+    "name": "Splash",
+    "description": "Generates a column of water that travels in a straight line.",
+    "type": "Water",
+    "power": 160,
+    "coolTime": 8,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_SakuraSaurus_Water_SplashTackle",
+    "name": "Splash Tackle",
+    "description": "Broncherry Aqua's exclusive skill. Turns sideways before tackling enemies in front of it, sending them flying with a burst of water.",
+    "type": "Water",
+    "power": 250,
+    "coolTime": 12,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Mothman_SporeScatter",
+    "name": "Spore Burst",
+    "description": "Mothman's exclusive skill. Scatters explosive spores over a wide area, then triggers a mass explosion after a set period of time.",
+    "type": "Grass",
+    "power": 800,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "StarMine",
+    "name": "Star Mine",
+    "description": "Generates stars around the enemy that explode on contact. Stars also explode after some time.",
+    "type": "Neutral",
+    "power": 400,
+    "coolTime": 20,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "StoneShotgun",
+    "name": "Stone Blast",
+    "description": "Fires a barrage of stones forward.",
+    "type": "Ground",
+    "power": 80,
+    "coolTime": 4,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "ThrowRock",
+    "name": "Stone Cannon",
+    "description": "Digs up a boulder and hurls it at an enemy.",
+    "type": "Ground",
+    "power": 120,
+    "coolTime": 8,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_WhiteTiger_Ground_IronScratch",
+    "name": "Stone Claw",
+    "description": "WhiteTiger_Ground's exclusive skill. First, it strikes with its claws, followed by a second slash, and culminates with a powerful slash using its entire body. When swinging the claws, rocks are launched forward in a fan shape.",
+    "type": "Ground",
+    "power": 300,
+    "coolTime": 16,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_SumoDog_SumoStomp",
+    "name": "Sumo Stomp",
+    "description": "SumoDog's exclusive skill. Raises its right hind leg high and stomps the ground, creating a shockwave that strikes enemies in a fan-shaped area ahead.",
+    "type": "Ground",
+    "power": 550,
+    "coolTime": 24,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_BluePlatypus_Toboggan",
+    "name": "Surfing Slam",
+    "description": "",
+    "type": "Water",
+    "power": 100,
+    "coolTime": 120,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_YakushimaMonster002_SwordCharge",
+    "name": "Sword Charge",
+    "description": "YakushimaMonster002's exclusive skill. Lunges forward to deliver a sharp thrust.",
+    "type": "Neutral",
+    "power": 80,
+    "coolTime": 1,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_GhostDragon_TailSlash",
+    "name": "Tail Slash",
+    "description": "GhostDragon's exclusive skill. Closes in on the enemy at high speed to deliver a cleaving swipe with its tail.",
+    "type": "Dragon",
+    "power": 550,
+    "coolTime": 24,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_BirdDragon_Ice_IceBreath",
+    "name": "Tempest Blizzard",
+    "description": "BirdDragon_Ice's exclusive skill. Advances while exhaling cold air from its mouth.",
+    "type": "Ice",
+    "power": 200,
+    "coolTime": 12,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_PoseidonOrca_TorrentLaser",
+    "name": "Thalassonic Laser",
+    "description": "PoseidonOrca's exclusive skill. Rising slightly, it gathers water at its mouth, then sweeps a high-pressure stream vertically and horizontally three times. Fissures form at the swept locations, erupting with water.",
+    "type": "Water",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Railbolt",
+    "name": "Thunder Rail",
+    "description": "Charge the power of lightning to the limit and fires multiple simultaneous electric shocks at the enemy.",
+    "type": "Electric",
+    "power": 600,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "ThunderRain",
+    "name": "Thunder Rain",
+    "description": "Calls lightning that strikes an enemy after a set amount of time has passed.",
+    "type": "Electric",
+    "power": 400,
+    "coolTime": 20,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "ThunderSpear",
+    "name": "Thunder Spear",
+    "description": "Fires a high-speed lightning spear straight ahead towards the enemy.",
+    "type": "Electric",
+    "power": 40,
+    "coolTime": 2,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_FengyunDeeper_Electric_ThunderTempest",
+    "name": "Thunder Tempest",
+    "description": "Charges forward while manipulating the atmosphere and enveloping itself in thunderclouds.",
+    "type": "Electric",
+    "power": 300,
+    "coolTime": 16,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_ScorpionMan_Erectric_UpperThunder",
+    "name": "Thunder Uppercut",
+    "description": "ScorpionMan_Erectric's exclusive skill. Uses superconductivity to closes the distance to the enemy at high speed, then swings its pincers upward with full force.",
+    "type": "Electric",
+    "power": 600,
+    "coolTime": 30,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_CaptainPenguin_Black_BodySlide_Electric",
+    "name": "Thunderslide",
+    "description": "CaptainPenguin_Black's exclusive skill. Lies on its belly while generating electric charge all around it before sliding at enemies at high speed.",
+    "type": "Electric",
+    "power": 400,
+    "coolTime": 20,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "ThunderStorm",
+    "name": "Thunderstorm",
+    "description": "Generates a huge tornado of lightning that moves slowly towards the enemy.",
+    "type": "Electric",
+    "power": 600,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_KingWhale_WaveTackle",
+    "name": "Tidal Charge",
+    "description": "KingWhale's exclusive skill. Slams the body into the enemy, generating a massive wave on impact.",
+    "type": "Water",
+    "power": 400,
+    "coolTime": 20,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_HawkBird_Storm",
+    "name": "Tornado Attack",
+    "description": "HawkBird's exclusive skill. Generates a tornado ahead before soaring towards its target.",
+    "type": "Neutral",
+    "power": 80,
+    "coolTime": 4,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "DiversionLaser",
+    "name": "Torrential Blast",
+    "description": "Fires a high-pressure stream of water forward. After a short delay, the stream branches off to the left and right.",
+    "type": "Water",
+    "power": 250,
+    "coolTime": 12,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_FlowerPrince_PoisonGasDance",
+    "name": "Toxic Dance",
+    "description": "FlowerPrince's exclusive skill. Performs a dance while releasing corrosive mist. The mist remains in the area for a limited time.",
+    "type": "Dark",
+    "power": 800,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "ThreeThunder",
+    "name": "Tri-Lightning",
+    "description": "Generates lightning that strikes an enemy three times from above.",
+    "type": "Electric",
+    "power": 200,
+    "coolTime": 12,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_ClownRabbit_TrickShow",
+    "name": "Trickster Show",
+    "description": "ClownRabbit's exclusive skill. Creates two illusions to distract enemies, then launches fire birds from its top hat.",
+    "type": "Fire",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_StuffedShark_HiddenWeapon",
+    "name": "Trigger Happy",
+    "description": "StuffedShark's exclusive skill. Draws twin water blasters from its mouth, firing six shots alternately left and right, then finishes by combining both blasters to unleash one powerful shot.",
+    "type": "Water",
+    "power": 300,
+    "coolTime": 16,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "TriSpark",
+    "name": "TriSpark",
+    "description": "A high-speed lightning ball that flies in a straight line. Simultaneously fires slow lightning balls that track the enemy.",
+    "type": "Electric",
+    "power": 250,
+    "coolTime": 12,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_BlackCentaur_TwoSpearRushes",
+    "name": "Twin Spears",
+    "description": "BlackCentaur' exclusive skill. Clads its twin spears with vicious whirlwinds and charges forward, thrusting them one after the other.",
+    "type": "Dark",
+    "power": 700,
+    "coolTime": 30,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "DarkPulse",
+    "name": "Umbral Surge",
+    "description": "Fires high-speed dark orbs in a fan shape, spreading as they travel.",
+    "type": "Dark",
+    "power": 60,
+    "coolTime": 4,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_BlueSkyDragon_GYM_Act",
+    "name": "Unique_BlueSkyDragon_GYM_Act",
+    "description": "",
+    "type": "Water",
+    "power": 700,
+    "coolTime": 0,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_KingWhale_SuperTidalBore",
+    "name": "Unique_KingWhale_SuperTidalBore",
+    "description": "",
+    "type": "Water",
+    "power": 1000,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_KingWhale_TidalBore",
+    "name": "Unique_KingWhale_TidalBore",
+    "description": "",
+    "type": "Water",
+    "power": 1000,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_LegendDeer_BarrierRelease_Grass",
+    "name": "Unique_LegendDeer_BarrierRelease_Grass",
+    "description": "",
+    "type": "Grass",
+    "power": 220,
+    "coolTime": 1,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_LegendDeer_BarrierRelease_Normal",
+    "name": "Unique_LegendDeer_BarrierRelease_Normal",
+    "description": "",
+    "type": "Neutral",
+    "power": 300,
+    "coolTime": 1,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_LegendDeer_BarrierRelease_Water",
+    "name": "Unique_LegendDeer_BarrierRelease_Water",
+    "description": "",
+    "type": "Water",
+    "power": 220,
+    "coolTime": 1,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_LegendDeer_RadiantPurge",
+    "name": "Unique_LegendDeer_RadiantPurge",
+    "description": "",
+    "type": "Neutral",
+    "power": 1250,
+    "coolTime": 1,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_LilyQueen_GYM_Act",
+    "name": "Unique_LilyQueen_GYM_Act",
+    "description": "",
+    "type": "Grass",
+    "power": 1,
+    "coolTime": 60,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_LilyQueen_LilyHealing_Boss",
+    "name": "Unique_LilyQueen_LilyHealing_Boss",
+    "description": "",
+    "type": "Grass",
+    "power": 0,
+    "coolTime": 300,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_MoonQueen_GYM_Act",
+    "name": "Unique_MoonQueen_GYM_Act",
+    "description": "",
+    "type": "Neutral",
+    "power": 1,
+    "coolTime": 300,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_MoonQueen_GYM_Hard_Act",
+    "name": "Unique_MoonQueen_GYM_Hard_Act",
+    "description": "",
+    "type": "Neutral",
+    "power": 1,
+    "coolTime": 300,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_ThunderDragonMan_GYM_Act",
+    "name": "Unique_ThunderDragonMan_GYM_Act",
+    "description": "",
+    "type": "Electric",
+    "power": 1,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_WorldTreeDragon_BigBang",
+    "name": "Unique_WorldTreeDragon_BigBang",
+    "description": "",
+    "type": "None",
+    "power": 900,
+    "coolTime": 60,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_WorldTreeDragon_HaloBeam",
+    "name": "Unique_WorldTreeDragon_HaloBeam",
+    "description": "",
+    "type": "None",
+    "power": 750,
+    "coolTime": 20,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_WorldTreeDragon_HaloCutter",
+    "name": "Unique_WorldTreeDragon_HaloCutter",
+    "description": "",
+    "type": "None",
+    "power": 600,
+    "coolTime": 10,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_WorldTreeDragon_LaserGliding",
+    "name": "Unique_WorldTreeDragon_LaserGliding",
+    "description": "",
+    "type": "None",
+    "power": 550,
+    "coolTime": 5,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_WorldTreeDragon_PaldiumCannon",
+    "name": "Unique_WorldTreeDragon_PaldiumCannon",
+    "description": "",
+    "type": "None",
+    "power": 700,
+    "coolTime": 20,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_WorldTreeDragon_PaldiumExplosion",
+    "name": "Unique_WorldTreeDragon_PaldiumExplosion",
+    "description": "",
+    "type": "None",
+    "power": 800,
+    "coolTime": 60,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_WorldTreeDragon_PaldiumRain",
+    "name": "Unique_WorldTreeDragon_PaldiumRain",
+    "description": "",
+    "type": "None",
+    "power": 500,
+    "coolTime": 5,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_WorldTreeDragon_PaldiumShot",
+    "name": "Unique_WorldTreeDragon_PaldiumShot",
+    "description": "",
+    "type": "None",
+    "power": 400,
+    "coolTime": 5,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_WorldTreeDragon_Supernova",
+    "name": "Unique_WorldTreeDragon_Supernova",
+    "description": "",
+    "type": "None",
+    "power": 1000,
+    "coolTime": 99,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_YakushimaBoss001_Green_2_PhantasmalBolt",
+    "name": "Unique_YakushimaBoss001_Green_2_PhantasmalBolt",
+    "description": "",
+    "type": "None",
+    "power": 40,
+    "coolTime": 45,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_YakushimaBoss001_Green_2_PhantasmalDeathray",
+    "name": "Unique_YakushimaBoss001_Green_2_PhantasmalDeathray",
+    "description": "",
+    "type": "None",
+    "power": 200,
+    "coolTime": 45,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_YakushimaBoss001_Green_2_PhantasmalEye",
+    "name": "Unique_YakushimaBoss001_Green_2_PhantasmalEye",
+    "description": "",
+    "type": "None",
+    "power": 10,
+    "coolTime": 45,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_YakushimaBoss001_Green_2_PhantasmalSphere",
+    "name": "Unique_YakushimaBoss001_Green_2_PhantasmalSphere",
+    "description": "",
+    "type": "None",
+    "power": 90,
+    "coolTime": 45,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_YakushimaBoss001_Green_PhantasmalBolt",
+    "name": "Unique_YakushimaBoss001_Green_PhantasmalBolt",
+    "description": "",
+    "type": "None",
+    "power": 40,
+    "coolTime": 45,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_YakushimaBoss001_Green_PhantasmalDeathray",
+    "name": "Unique_YakushimaBoss001_Green_PhantasmalDeathray",
+    "description": "",
+    "type": "None",
+    "power": 200,
+    "coolTime": 45,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_YakushimaBoss001_Green_PhantasmalEye",
+    "name": "Unique_YakushimaBoss001_Green_PhantasmalEye",
+    "description": "",
+    "type": "None",
+    "power": 10,
+    "coolTime": 45,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_YakushimaBoss001_Green_PhantasmalSphere",
+    "name": "Unique_YakushimaBoss001_Green_PhantasmalSphere",
+    "description": "",
+    "type": "None",
+    "power": 90,
+    "coolTime": 45,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_YakushimaBoss002_2_PhantasmalBolt",
+    "name": "Unique_YakushimaBoss002_2_PhantasmalBolt",
+    "description": "",
+    "type": "None",
+    "power": 80,
+    "coolTime": 45,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_YakushimaBoss002_2_PhantasmalDeathray",
+    "name": "Unique_YakushimaBoss002_2_PhantasmalDeathray",
+    "description": "",
+    "type": "None",
+    "power": 450,
+    "coolTime": 45,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_YakushimaBoss002_2_PhantasmalEye",
+    "name": "Unique_YakushimaBoss002_2_PhantasmalEye",
+    "description": "",
+    "type": "None",
+    "power": 25,
+    "coolTime": 45,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_YakushimaBoss002_2_PhantasmalSphere",
+    "name": "Unique_YakushimaBoss002_2_PhantasmalSphere",
+    "description": "",
+    "type": "None",
+    "power": 180,
+    "coolTime": 45,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_YakushimaBoss002_PhantasmalBolt",
+    "name": "Unique_YakushimaBoss002_PhantasmalBolt",
+    "description": "",
+    "type": "None",
+    "power": 80,
+    "coolTime": 45,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_YakushimaBoss002_PhantasmalDeathray",
+    "name": "Unique_YakushimaBoss002_PhantasmalDeathray",
+    "description": "",
+    "type": "None",
+    "power": 450,
+    "coolTime": 45,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_YakushimaBoss002_PhantasmalEye",
+    "name": "Unique_YakushimaBoss002_PhantasmalEye",
+    "description": "",
+    "type": "None",
+    "power": 25,
+    "coolTime": 45,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_YakushimaBoss002_PhantasmalSphere",
+    "name": "Unique_YakushimaBoss002_PhantasmalSphere",
+    "description": "",
+    "type": "None",
+    "power": 180,
+    "coolTime": 45,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_ScorpionMan_Uppercut",
+    "name": "Upper Smash",
+    "description": "Prixter's exclusive skill. Closes the distance to the enemy at high speed, then swings its pincers upward with full force.",
+    "type": "Dark",
+    "power": 350,
+    "coolTime": 16,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Weapon_Use",
+    "name": "Use Weapon",
+    "description": "Attack with held weapon.",
+    "type": "Neutral",
+    "power": 50,
+    "coolTime": 5,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_VolcanicMonster_MagmaAttack",
+    "name": "Volcanic Burst",
+    "description": "VolcanicMonster's exclusive skill. Raises its front legs and slams them into the ground, causing a volcanic eruptions under its enemies. It simultaneously bombards them with volcanic bombs from above.",
+    "type": "Fire",
+    "power": 300,
+    "coolTime": 16,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_Manticore_InfernoStrike",
+    "name": "Volcanic Fang",
+    "description": "Manticore's exclusive skill. With momentum, it pounces mercilessly on the enemy and causes an explosion of fire at the point of impact.",
+    "type": "Fire",
+    "power": 400,
+    "coolTime": 20,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Eruption",
+    "name": "Volcanic Rain",
+    "description": "Fires countless volcanic bombs into the sky. After a while, the bombs rain down around their originator.",
+    "type": "Fire",
+    "power": 450,
+    "coolTime": 20,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_PurpleSpider_SpiderRaid",
+    "name": "Webstrike Impact",
+    "description": "PurpleSpider's exclusive skill. Spits out a ball of thread, entangling the target it hits. Then, rushes at full speed to the trapped target and delivers three slashing strikes to finish it off.",
+    "type": "Dark",
+    "power": 250,
+    "coolTime": 12,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_SifuDog_Counter",
+    "name": "Wholehearted Stance",
+    "description": "Dogen's exclusive skill. Adopts an aiki stance. While in this stance, nulify any incoming attack, instantly close in on the enemy, and counter with a full-forced palm strike.",
+    "type": "Neutral",
+    "power": 450,
+    "coolTime": 20,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "Unique_LilyQueen_WindBarrier",
+    "name": "Wind Barrier",
+    "description": "A skill exclusive to the Lilikin species. Surround yourself with a wind barrier, Returns the blade of wind to the attacking opponent.",
+    "type": "Grass",
+    "power": 60,
+    "coolTime": 4,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "WindBurst",
+    "name": "Wind Burst",
+    "description": "Summons a massive wind vortex around itself and unleashes a powerful attack.",
+    "type": "Grass",
+    "power": 600,
+    "coolTime": 30,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "WindCutter",
+    "name": "Wind Cutter",
+    "description": "Fires a high speed blade of wind that flies straight at an enemy.",
+    "type": "Grass",
+    "power": 40,
+    "coolTime": 2,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "WindEdge",
+    "name": "Wind Edge",
+    "description": "Launches sharp blades of air that fan out.",
+    "type": "Grass",
+    "power": 200,
+    "coolTime": 12,
+    "category": "Shot",
+    "disabled": false
+  },
+  {
+    "id": "Unique_YakushimaMonster003_BatCharge",
+    "name": "Winged Assault",
+    "description": "YakushimaMonster003's exclusive skill. Using its whole body, it lunges at the enemy, bouncing off the ground or walls on impact.",
+    "type": "Neutral",
+    "power": 70,
+    "coolTime": 1,
+    "category": "Melee",
+    "disabled": false
+  },
+  {
+    "id": "WorkAttack",
+    "name": "WorkAttack",
+    "description": "",
+    "type": "Neutral",
+    "power": 100,
+    "coolTime": 1,
+    "category": "Melee",
+    "disabled": false
+  }
+]

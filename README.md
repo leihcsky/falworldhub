@@ -1,36 +1,114 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Palworld Hub
 
-## Getting Started
+SEO-focused Palworld Breeding Calculator + Pal Database MVP.
 
-First, run the development server:
+Built with Next.js 15 (App Router), TypeScript, Tailwind CSS, and shadcn/ui.
+All content is statically generated from local JSON files — no database in MVP.
+
+## Features
+
+- Breeding Calculator (`/breeding-calculator`)
+  - Parents → Child lookup
+  - Target Pal reverse lookup
+  - Searchable Pal dropdown
+- Pal Database (`/pals`, `/pals/[slug]`)
+- Breeding SEO pages (`/breeding/[slug]`)
+- Dynamic metadata, sitemap, robots.txt, and JSON-LD structured data
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+npm run start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project structure
 
-## Learn More
+```text
+data/                     # JSON data sources (MVP)
+src/
+  app/                    # App Router pages (SSG)
+  components/
+    breeding/             # Calculator UI
+    layout/               # Header / footer
+    pals/                 # Pal cards / search / stats
+    seo/                  # JSON-LD helpers
+    ui/                   # shadcn/ui primitives
+  lib/                    # SEO + breeding helpers
+  repositories/           # Data access layer (JSON now, MySQL later)
+  types/                  # Shared TypeScript models
+public/images/pals/       # Pal image assets
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Data layer
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+MVP repositories read from:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `data/pals.json` — dex pals (stats, elements, work, combiRank, images)
+- `data/breeding.json` — unique recipe overrides + formula metadata
+- `data/types.json` — element types
+- `data/work-suitability.json` — work suitability enum map
+- `data/skills.json` — active skills
+- `data/meta.json` — current game version + data updated date (shown site-wide)
 
-## Deploy on Vercel
+Pages and UI only talk to `src/repositories/*`, so a later MySQL migration can
+replace repository implementations without rewriting routes/components.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Import from FModel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+After exporting game data with FModel:
+
+```bash
+npm run data:import -- --source "E:\1111\FModel\Output\Exports"
+```
+
+This regenerates `data/*.json` and copies pal icons into `public/images/pals/`.
+
+Important: English copy must come from `L10N/en/.../Text/`.  
+Base `Pal/DataTable/Text/*` is usually Japanese. If EN L10N is missing, descriptions/skill names stay empty unless you pass `--allow-jp-text`.
+
+Breeding uses:
+1. unique overrides from `DT_PalCombiUnique`
+2. otherwise the CombiRank formula `floor((A + B + 1) / 2)` + nearest breedable pal
+
+## Internationalization (i18n)
+
+The app uses `next-intl` with a `[locale]` App Router segment.
+
+- MVP locale: `en` only (default, no URL prefix)
+- English URLs stay clean: `/breeding-calculator`, `/pals/anubis`
+- UI copy lives in `messages/en.json`
+- Routing config: `src/i18n/routing.ts`
+- Locale-aware links: `@/i18n/navigation`
+
+To add a language later (e.g. Japanese):
+
+1. Add `"ja"` to `locales` in `src/i18n/routing.ts`
+2. Add `localeNames.ja`
+3. Create `messages/ja.json`
+4. Rebuild — SSG, sitemap, and hreflang update automatically
+
+## Environment
+
+Copy `.env.example` to `.env.local`:
+
+```bash
+NEXT_PUBLIC_SITE_URL=https://palworldhub.best
+NEXT_PUBLIC_CONTACT_EMAIL=contact@palworldhub.best
+```
+
+## Deploy
+
+Designed for Cloudflare Pages / static-friendly hosting:
+
+1. Push to GitHub
+2. Connect the repository to Cloudflare Pages
+3. Build command: `npm run build`
+4. Output: Next.js build output (use Cloudflare Next adapter if required by your setup)

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="Palworld Hub">
+  <!-- Soft sphere -->
+  <circle cx="32" cy="32" r="30" fill="#2F8F82"/>
+  <circle cx="32" cy="32" r="30" fill="url(#ph-sphere)" fill-opacity="0.35"/>
+  <!-- Inner plate -->
+  <circle cx="32" cy="33" r="20" fill="#F4FAF9"/>
+  <!-- Abstract pal: round head + twin ears (generic companion, not a game asset) -->
+  <path
+    fill="#1E3F3C"
+    d="M22.5 24.5c0-3.4 2.2-6.2 5-6.2.9 0 1.7.3 2.4.8.7-.5 1.5-.8 2.4-.8 2.8 0 5 2.8 5 6.2 0 1.1-.3 2.1-.7 3H23.2c-.4-.9-.7-1.9-.7-3Z"
+  />
+  <circle cx="32" cy="34.5" r="9.5" fill="#1E3F3C"/>
+  <!-- Friendly eyes -->
+  <circle cx="28.6" cy="33.8" r="1.7" fill="#F4FAF9"/>
+  <circle cx="35.4" cy="33.8" r="1.7" fill="#F4FAF9"/>
+  <!-- Breeding hub: two parent dots + child spark -->
+  <circle cx="26" cy="46.5" r="2.2" fill="#5EC4B6"/>
+  <circle cx="38" cy="46.5" r="2.2" fill="#5EC4B6"/>
+  <circle cx="32" cy="42.2" r="2.6" fill="#2F8F82"/>
+  <defs>
+    <radialGradient id="ph-sphere" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(22 18) rotate(55) scale(42)">
+      <stop stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

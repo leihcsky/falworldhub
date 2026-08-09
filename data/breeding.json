@@ -1,0 +1,1805 @@
+{
+  "version": 1,
+  "formula": "floor((parentA.combiRank + parentB.combiRank + 1) / 2)",
+  "unique": [
+    {
+      "parent1": "LazyDragon",
+      "parent2": "ElecCat",
+      "child": "LazyDragon_Electric",
+      "parent1Tribe": "LazyDragon",
+      "parent2Tribe": "ElecCat"
+    },
+    {
+      "parent1": "Baphomet",
+      "parent2": "GhostBeast",
+      "child": "Baphomet_Dark",
+      "parent1Tribe": "Baphomet",
+      "parent2Tribe": "GhostBeast"
+    },
+    {
+      "parent1": "Bastet",
+      "parent2": "Penguin",
+      "child": "Bastet_Ice",
+      "parent1Tribe": "Bastet",
+      "parent2Tribe": "Penguin"
+    },
+    {
+      "parent1": "BirdDragon",
+      "parent2": "IceFox",
+      "child": "BirdDragon_Ice",
+      "parent1Tribe": "BirdDragon",
+      "parent2Tribe": "IceFox"
+    },
+    {
+      "parent1": "Deer",
+      "parent2": "WindChimes",
+      "child": "Deer_Ground",
+      "parent1Tribe": "Deer",
+      "parent2Tribe": "WindChimes"
+    },
+    {
+      "parent1": "FairyDragon",
+      "parent2": "Serpent",
+      "child": "FairyDragon_Water",
+      "parent1Tribe": "FairyDragon",
+      "parent2Tribe": "Serpent"
+    },
+    {
+      "parent1": "FireKirin",
+      "parent2": "CatMage",
+      "child": "FireKirin_Dark",
+      "parent1Tribe": "FireKirin",
+      "parent2Tribe": "CatMage"
+    },
+    {
+      "parent1": "GrassMammoth",
+      "parent2": "Yeti",
+      "child": "GrassMammoth_Ice",
+      "parent1Tribe": "GrassMammoth",
+      "parent2Tribe": "Yeti"
+    },
+    {
+      "parent1": "GrassPanda",
+      "parent2": "ElecPanda",
+      "child": "GrassPanda_Electric",
+      "parent1Tribe": "GrassPanda",
+      "parent2Tribe": "ElecPanda"
+    },
+    {
+      "parent1": "FlowerDinosaur",
+      "parent2": "ThunderDog",
+      "child": "FlowerDinosaur_Electric",
+      "parent1Tribe": "FlowerDinosaur",
+      "parent2Tribe": "ThunderDog"
+    },
+    {
+      "parent1": "Hedgehog",
+      "parent2": "Penguin",
+      "child": "Hedgehog_Ice",
+      "parent1Tribe": "Hedgehog",
+      "parent2Tribe": "Penguin"
+    },
+    {
+      "parent1": "IceHorse",
+      "parent2": "HadesBird",
+      "child": "IceHorse_Dark",
+      "parent1Tribe": "IceHorse",
+      "parent2Tribe": "HadesBird"
+    },
+    {
+      "parent1": "KingAlpaca",
+      "parent2": "IceDeer",
+      "child": "KingAlpaca_Ice",
+      "parent1Tribe": "KingAlpaca",
+      "parent2Tribe": "IceDeer"
+    },
+    {
+      "parent1": "LilyQueen",
+      "parent2": "DarkScorpion",
+      "child": "LilyQueen_Dark",
+      "parent1Tribe": "LilyQueen",
+      "parent2Tribe": "DarkScorpion"
+    },
+    {
+      "parent1": "LizardMan",
+      "parent2": "LavaGirl",
+      "child": "LizardMan_Fire",
+      "parent1Tribe": "LizardMan",
+      "parent2Tribe": "LavaGirl"
+    },
+    {
+      "parent1": "Manticore",
+      "parent2": "CatVampire",
+      "child": "Manticore_Dark",
+      "parent1Tribe": "Manticore",
+      "parent2Tribe": "CatVampire"
+    },
+    {
+      "parent1": "RobinHood",
+      "parent2": "CuteMole",
+      "child": "RobinHood_Ground",
+      "parent1Tribe": "RobinHood",
+      "parent2Tribe": "CuteMole"
+    },
+    {
+      "parent1": "SakuraSaurus",
+      "parent2": "BluePlatypus",
+      "child": "SakuraSaurus_Water",
+      "parent1Tribe": "SakuraSaurus",
+      "parent2Tribe": "Blueplatypus"
+    },
+    {
+      "parent1": "Serpent",
+      "parent2": "LazyCatfish",
+      "child": "Serpent_Ground",
+      "parent1Tribe": "Serpent",
+      "parent2Tribe": "LazyCatfish"
+    },
+    {
+      "parent1": "SharkKid",
+      "parent2": "FlameBambi",
+      "child": "SharkKid_Fire",
+      "parent1Tribe": "SharkKid",
+      "parent2Tribe": "FlameBambi"
+    },
+    {
+      "parent1": "Suzaku",
+      "parent2": "Umihebi",
+      "child": "Suzaku_Water",
+      "parent1Tribe": "Suzaku",
+      "parent2Tribe": "Umihebi"
+    },
+    {
+      "parent1": "VolcanicMonster",
+      "parent2": "IceFox",
+      "child": "VolcanicMonster_Ice",
+      "parent1Tribe": "VolcanicMonster",
+      "parent2Tribe": "IceFox"
+    },
+    {
+      "parent1": "WindChimes",
+      "parent2": "MopBaby",
+      "child": "WindChimes_Ice",
+      "parent1Tribe": "WindChimes",
+      "parent2Tribe": "MopBaby"
+    },
+    {
+      "parent1": "IceHorse",
+      "parent2": "IceHorse",
+      "child": "IceHorse",
+      "parent1Tribe": "IceHorse",
+      "parent2Tribe": "IceHorse"
+    },
+    {
+      "parent1": "JetDragon",
+      "parent2": "JetDragon",
+      "child": "JetDragon",
+      "parent1Tribe": "JetDragon",
+      "parent2Tribe": "JetDragon"
+    },
+    {
+      "parent1": "SaintCentaur",
+      "parent2": "SaintCentaur",
+      "child": "SaintCentaur",
+      "parent1Tribe": "SaintCentaur",
+      "parent2Tribe": "SaintCentaur"
+    },
+    {
+      "parent1": "BlackCentaur",
+      "parent2": "BlackCentaur",
+      "child": "BlackCentaur",
+      "parent1Tribe": "BlackCentaur",
+      "parent2Tribe": "BlackCentaur"
+    },
+    {
+      "parent1": "LilyQueen",
+      "parent2": "LilyQueen",
+      "child": "LilyQueen",
+      "parent1Tribe": "LilyQueen",
+      "parent2Tribe": "LilyQueen"
+    },
+    {
+      "parent1": "Horus",
+      "parent2": "Horus",
+      "child": "Horus",
+      "parent1Tribe": "Horus",
+      "parent2Tribe": "Horus"
+    },
+    {
+      "parent1": "ElecPanda",
+      "parent2": "ElecPanda",
+      "child": "ElecPanda",
+      "parent1Tribe": "ElecPanda",
+      "parent2Tribe": "ElecPanda"
+    },
+    {
+      "parent1": "ThunderDragonMan",
+      "parent2": "ThunderDragonMan",
+      "child": "ThunderDragonMan",
+      "parent1Tribe": "ThunderDragonMan",
+      "parent2Tribe": "ThunderDragonMan"
+    },
+    {
+      "parent1": "BlackGriffon",
+      "parent2": "BlackGriffon",
+      "child": "BlackGriffon",
+      "parent1Tribe": "BlackGriffon",
+      "parent2Tribe": "BlackGriffon"
+    },
+    {
+      "parent1": "Umihebi_Fire",
+      "parent2": "Umihebi_Fire",
+      "child": "Umihebi_Fire",
+      "parent1Tribe": "Umihebi_Fire",
+      "parent2Tribe": "Umihebi_Fire"
+    },
+    {
+      "parent1": "LazyDragon_Electric",
+      "parent2": "LazyDragon_Electric",
+      "child": "LazyDragon_Electric",
+      "parent1Tribe": "LazyDragon_Electric",
+      "parent2Tribe": "LazyDragon_Electric"
+    },
+    {
+      "parent1": "Baphomet_Dark",
+      "parent2": "Baphomet_Dark",
+      "child": "Baphomet_Dark",
+      "parent1Tribe": "Baphomet_Dark",
+      "parent2Tribe": "Baphomet_Dark"
+    },
+    {
+      "parent1": "Bastet_Ice",
+      "parent2": "Bastet_Ice",
+      "child": "Bastet_Ice",
+      "parent1Tribe": "Bastet_Ice",
+      "parent2Tribe": "Bastet_Ice"
+    },
+    {
+      "parent1": "BirdDragon_Ice",
+      "parent2": "BirdDragon_Ice",
+      "child": "BirdDragon_Ice",
+      "parent1Tribe": "BirdDragon_Ice",
+      "parent2Tribe": "BirdDragon_Ice"
+    },
+    {
+      "parent1": "Deer_Ground",
+      "parent2": "Deer_Ground",
+      "child": "Deer_Ground",
+      "parent1Tribe": "Deer_Ground",
+      "parent2Tribe": "Deer_Ground"
+    },
+    {
+      "parent1": "FairyDragon_Water",
+      "parent2": "FairyDragon_Water",
+      "child": "FairyDragon_Water",
+      "parent1Tribe": "FairyDragon_Water",
+      "parent2Tribe": "FairyDragon_Water"
+    },
+    {
+      "parent1": "FireKirin_Dark",
+      "parent2": "FireKirin_Dark",
+      "child": "FireKirin_Dark",
+      "parent1Tribe": "FireKirin_Dark",
+      "parent2Tribe": "FireKirin_Dark"
+    },
+    {
+      "parent1": "GrassMammoth_Ice",
+      "parent2": "GrassMammoth_Ice",
+      "child": "GrassMammoth_Ice",
+      "parent1Tribe": "GrassMammoth_Ice",
+      "parent2Tribe": "GrassMammoth_Ice"
+    },
+    {
+      "parent1": "GrassPanda_Electric",
+      "parent2": "GrassPanda_Electric",
+      "child": "GrassPanda_Electric",
+      "parent1Tribe": "GrassPanda_Electric",
+      "parent2Tribe": "GrassPanda_Electric"
+    },
+    {
+      "parent1": "FlowerDinosaur_Electric",
+      "parent2": "FlowerDinosaur_Electric",
+      "child": "FlowerDinosaur_Electric",
+      "parent1Tribe": "FlowerDinosaur_Electric",
+      "parent2Tribe": "FlowerDinosaur_Electric"
+    },
+    {
+      "parent1": "Hedgehog_Ice",
+      "parent2": "Hedgehog_Ice",
+      "child": "Hedgehog_Ice",
+      "parent1Tribe": "Hedgehog_Ice",
+      "parent2Tribe": "Hedgehog_Ice"
+    },
+    {
+      "parent1": "IceHorse_Dark",
+      "parent2": "IceHorse_Dark",
+      "child": "IceHorse_Dark",
+      "parent1Tribe": "IceHorse_Dark",
+      "parent2Tribe": "IceHorse_Dark"
+    },
+    {
+      "parent1": "KingAlpaca_Ice",
+      "parent2": "KingAlpaca_Ice",
+      "child": "KingAlpaca_Ice",
+      "parent1Tribe": "KingAlpaca_Ice",
+      "parent2Tribe": "KingAlpaca_Ice"
+    },
+    {
+      "parent1": "LilyQueen_Dark",
+      "parent2": "LilyQueen_Dark",
+      "child": "LilyQueen_Dark",
+      "parent1Tribe": "LilyQueen_Dark",
+      "parent2Tribe": "LilyQueen_Dark"
+    },
+    {
+      "parent1": "LizardMan_Fire",
+      "parent2": "LizardMan_Fire",
+      "child": "LizardMan_Fire",
+      "parent1Tribe": "LizardMan_Fire",
+      "parent2Tribe": "LizardMan_Fire"
+    },
+    {
+      "parent1": "Manticore_Dark",
+      "parent2": "Manticore_Dark",
+      "child": "Manticore_Dark",
+      "parent1Tribe": "Manticore_Dark",
+      "parent2Tribe": "Manticore_Dark"
+    },
+    {
+      "parent1": "RobinHood_Ground",
+      "parent2": "RobinHood_Ground",
+      "child": "RobinHood_Ground",
+      "parent1Tribe": "RobinHood_Ground",
+      "parent2Tribe": "RobinHood_Ground"
+    },
+    {
+      "parent1": "SakuraSaurus_Water",
+      "parent2": "SakuraSaurus_Water",
+      "child": "SakuraSaurus_Water",
+      "parent1Tribe": "SakuraSaurus_Water",
+      "parent2Tribe": "SakuraSaurus_Water"
+    },
+    {
+      "parent1": "Serpent_Ground",
+      "parent2": "Serpent_Ground",
+      "child": "Serpent_Ground",
+      "parent1Tribe": "Serpent_Ground",
+      "parent2Tribe": "Serpent_Ground"
+    },
+    {
+      "parent1": "SharkKid_Fire",
+      "parent2": "SharkKid_Fire",
+      "child": "SharkKid_Fire",
+      "parent1Tribe": "SharkKid_Fire",
+      "parent2Tribe": "SharkKid_Fire"
+    },
+    {
+      "parent1": "Suzaku_Water",
+      "parent2": "Suzaku_Water",
+      "child": "Suzaku_Water",
+      "parent1Tribe": "Suzaku_Water",
+      "parent2Tribe": "Suzaku_Water"
+    },
+    {
+      "parent1": "VolcanicMonster_Ice",
+      "parent2": "VolcanicMonster_Ice",
+      "child": "VolcanicMonster_Ice",
+      "parent1Tribe": "VolcanicMonster_Ice",
+      "parent2Tribe": "VolcanicMonster_Ice"
+    },
+    {
+      "parent1": "WindChimes_Ice",
+      "parent2": "WindChimes_Ice",
+      "child": "WindChimes_Ice",
+      "parent1Tribe": "WindChimes_Ice",
+      "parent2Tribe": "WindChimes_Ice"
+    },
+    {
+      "parent1": "PinkKangaroo",
+      "parent2": "PinkKangaroo",
+      "child": "PinkKangaroo",
+      "parent1Tribe": "PinkKangaroo",
+      "parent2Tribe": "PinkKangaroo"
+    },
+    {
+      "parent1": "BeardedDragon",
+      "parent2": "BeardedDragon",
+      "child": "BeardedDragon",
+      "parent1Tribe": "BeardedDragon",
+      "parent2Tribe": "BeardedDragon"
+    },
+    {
+      "parent1": "BlackFurDragon",
+      "parent2": "BlackFurDragon",
+      "child": "BlackFurDragon",
+      "parent1Tribe": "BlackFurDragon",
+      "parent2Tribe": "BlackFurDragon"
+    },
+    {
+      "parent1": "WaterLizard",
+      "parent2": "WaterLizard",
+      "child": "WaterLizard",
+      "parent1Tribe": "WaterLizard",
+      "parent2Tribe": "WaterLizard"
+    },
+    {
+      "parent1": "ElecLion",
+      "parent2": "ElecLion",
+      "child": "ElecLion",
+      "parent1Tribe": "ElecLion",
+      "parent2Tribe": "ElecLion"
+    },
+    {
+      "parent1": "GrassDragon",
+      "parent2": "GrassDragon",
+      "child": "GrassDragon",
+      "parent1Tribe": "GrassDragon",
+      "parent2Tribe": "GrassDragon"
+    },
+    {
+      "parent1": "DarkMutant",
+      "parent2": "DarkMutant",
+      "child": "DarkMutant",
+      "parent1Tribe": "DarkMutant",
+      "parent2Tribe": "DarkMutant"
+    },
+    {
+      "parent1": "Umihebi",
+      "parent2": "Manticore",
+      "child": "Umihebi_Fire",
+      "parent1Tribe": "Umihebi",
+      "parent2Tribe": "Manticore"
+    },
+    {
+      "parent1": "NightLady",
+      "parent2": "NightLady",
+      "child": "NightLady",
+      "parent1Tribe": "NightLady",
+      "parent2Tribe": "NightLady"
+    },
+    {
+      "parent1": "NightLady_Dark",
+      "parent2": "NightLady_Dark",
+      "child": "NightLady_Dark",
+      "parent1Tribe": "NightLady_Dark",
+      "parent2Tribe": "NightLady_Dark"
+    },
+    {
+      "parent1": "NightLady",
+      "parent2": "NightLady_Dark",
+      "child": "NightLady",
+      "parent1Tribe": "NightLady",
+      "parent2Tribe": "NightLady_Dark"
+    },
+    {
+      "parent1": "Gorilla_Ground",
+      "parent2": "Gorilla_Ground",
+      "child": "Gorilla_Ground",
+      "parent1Tribe": "Gorilla_Ground",
+      "parent2Tribe": "Gorilla_Ground"
+    },
+    {
+      "parent1": "KingBahamut_Dragon",
+      "parent2": "KingBahamut_Dragon",
+      "child": "KingBahamut_Dragon",
+      "parent1Tribe": "KingBahamut_Dragon",
+      "parent2Tribe": "KingBahamut_Dragon"
+    },
+    {
+      "parent1": "FoxMage_Dark",
+      "parent2": "FoxMage_Dark",
+      "child": "FoxMage_Dark",
+      "parent1Tribe": "FoxMage_Dark",
+      "parent2Tribe": "FoxMage_Dark"
+    },
+    {
+      "parent1": "CatMage_Fire",
+      "parent2": "CatMage_Fire",
+      "child": "CatMage_Fire",
+      "parent1Tribe": "CatMage_Fire",
+      "parent2Tribe": "CatMage_Fire"
+    },
+    {
+      "parent1": "HerculesBeetle_Ground",
+      "parent2": "HerculesBeetle_Ground",
+      "child": "HerculesBeetle_Ground",
+      "parent1Tribe": "HerculesBeetle_Ground",
+      "parent2Tribe": "HerculesBeetle_Ground"
+    },
+    {
+      "parent1": "WeaselDragon_Fire",
+      "parent2": "WeaselDragon_Fire",
+      "child": "WeaselDragon_Fire",
+      "parent1Tribe": "WeaselDragon_Fire",
+      "parent2Tribe": "WeaselDragon_Fire"
+    },
+    {
+      "parent1": "SkyDragon_Grass",
+      "parent2": "SkyDragon_Grass",
+      "child": "SkyDragon_Grass",
+      "parent1Tribe": "SkyDragon_Grass",
+      "parent2Tribe": "SkyDragon_Grass"
+    },
+    {
+      "parent1": "HadesBird_Electric",
+      "parent2": "HadesBird_Electric",
+      "child": "HadesBird_Electric",
+      "parent1Tribe": "HadesBird_Electric",
+      "parent2Tribe": "HadesBird_Electric"
+    },
+    {
+      "parent1": "Ronin_Dark",
+      "parent2": "Ronin_Dark",
+      "child": "Ronin_Dark",
+      "parent1Tribe": "Ronin_Dark",
+      "parent2Tribe": "Ronin_Dark"
+    },
+    {
+      "parent1": "DarkScorpion_Ground",
+      "parent2": "DarkScorpion_Ground",
+      "child": "DarkScorpion_Ground",
+      "parent1Tribe": "DarkScorpion_Ground",
+      "parent2Tribe": "DarkScorpion_Ground"
+    },
+    {
+      "parent1": "MimicDog",
+      "parent2": "MimicDog",
+      "child": "MimicDog",
+      "parent1Tribe": "MimicDog",
+      "parent2Tribe": "MimicDog"
+    },
+    {
+      "parent1": "CatMage",
+      "parent2": "FoxMage",
+      "child": "FoxMage_Dark",
+      "parent1Tribe": "CatMage",
+      "parent2Tribe": "FoxMage"
+    },
+    {
+      "parent1": "CatMage",
+      "parent2": "FoxMage",
+      "child": "CatMage_Fire",
+      "parent1Tribe": "CatMage",
+      "parent2Tribe": "FoxMage"
+    },
+    {
+      "parent1": "Gorilla",
+      "parent2": "SmallArmadillo",
+      "child": "Gorilla_Ground",
+      "parent1Tribe": "Gorilla",
+      "parent2Tribe": "SmallArmadillo"
+    },
+    {
+      "parent1": "WeaselDragon",
+      "parent2": "FlameBuffalo",
+      "child": "WeaselDragon_Fire",
+      "parent1Tribe": "WeaselDragon",
+      "parent2Tribe": "FlameBuffalo"
+    },
+    {
+      "parent1": "SkyDragon",
+      "parent2": "LeafPrincess",
+      "child": "SkyDragon_Grass",
+      "parent1Tribe": "SkyDragon",
+      "parent2Tribe": "LeafPrincess"
+    },
+    {
+      "parent1": "HadesBird",
+      "parent2": "ThunderBird",
+      "child": "HadesBird_Electric",
+      "parent1Tribe": "HadesBird",
+      "parent2Tribe": "ThunderBird"
+    },
+    {
+      "parent1": "Ronin",
+      "parent2": "CandleGhost",
+      "child": "Ronin_Dark",
+      "parent1Tribe": "Ronin",
+      "parent2Tribe": "CandleGhost"
+    },
+    {
+      "parent1": "DarkScorpion",
+      "parent2": "WingGolem",
+      "child": "DarkScorpion_Ground",
+      "parent1Tribe": "DarkScorpion",
+      "parent2Tribe": "WingGolem"
+    },
+    {
+      "parent1": "MoonQueen",
+      "parent2": "MoonQueen",
+      "child": "MoonQueen",
+      "parent1Tribe": "MoonQueen",
+      "parent2Tribe": "MoonQueen"
+    },
+    {
+      "parent1": "DarkAlien",
+      "parent2": "DarkAlien",
+      "child": "DarkAlien",
+      "parent1Tribe": "DarkAlien",
+      "parent2Tribe": "DarkAlien"
+    },
+    {
+      "parent1": "WhiteAlienDragon",
+      "parent2": "WhiteAlienDragon",
+      "child": "WhiteAlienDragon",
+      "parent1Tribe": "WhiteAlienDragon",
+      "parent2Tribe": "WhiteAlienDragon"
+    },
+    {
+      "parent1": "DarkMechaDragon",
+      "parent2": "DarkMechaDragon",
+      "child": "DarkMechaDragon",
+      "parent1Tribe": "DarkMechaDragon",
+      "parent2Tribe": "DarkMechaDragon"
+    },
+    {
+      "parent1": "SnowTigerBeastman",
+      "parent2": "SnowTigerBeastman",
+      "child": "SnowTigerBeastman",
+      "parent1Tribe": "SnowTigerBeastman",
+      "parent2Tribe": "SnowTigerBeastman"
+    },
+    {
+      "parent1": "Kitsunebi",
+      "parent2": "IceFox",
+      "child": "Kitsunebi_Ice",
+      "parent1Tribe": "Kitsunebi",
+      "parent2Tribe": "IceFox"
+    },
+    {
+      "parent1": "RaijinDaughter",
+      "parent2": "MysteryMask",
+      "child": "RaijinDaughter_Water",
+      "parent1Tribe": "RaijinDaughter",
+      "parent2Tribe": "MysteryMask"
+    },
+    {
+      "parent1": "WhiteTiger",
+      "parent2": "FeatherOstrich",
+      "child": "WhiteTiger_Ground",
+      "parent1Tribe": "WhiteTiger",
+      "parent2Tribe": "FeatherOstrich"
+    },
+    {
+      "parent1": "FengyunDeeper",
+      "parent2": "BlueThunderHorse",
+      "child": "FengyunDeeper_Electric",
+      "parent1Tribe": "FengyunDeeper",
+      "parent2Tribe": "BlueThunderHorse"
+    },
+    {
+      "parent1": "BerryGoat",
+      "parent2": "PurpleSpider",
+      "child": "BerryGoat_Dark",
+      "parent1Tribe": "BerryGoat",
+      "parent2Tribe": "PurpleSpider"
+    },
+    {
+      "parent1": "Werewolf",
+      "parent2": "MopKing",
+      "child": "Werewolf_Ice",
+      "parent1Tribe": "Werewolf",
+      "parent2Tribe": "MopKing"
+    },
+    {
+      "parent1": "Horus",
+      "parent2": "Umihebi",
+      "child": "Horus_Water",
+      "parent1Tribe": "Horus",
+      "parent2Tribe": "Umihebi"
+    },
+    {
+      "parent1": "PinkRabbit",
+      "parent2": "LittleBriarRose",
+      "child": "PinkRabbit_Grass",
+      "parent1Tribe": "PinkRabbit",
+      "parent2Tribe": "LittleBriarRose"
+    },
+    {
+      "parent1": "HerculesBeetle",
+      "parent2": "DrillGame",
+      "child": "HerculesBeetle_Ground",
+      "parent1Tribe": "HerculesBeetle",
+      "parent2Tribe": "DrillGame"
+    },
+    {
+      "parent1": "AmaterasuWolf",
+      "parent2": "BadCatgirl",
+      "child": "AmaterasuWolf_Dark",
+      "parent1Tribe": "AmaterasuWolf",
+      "parent2Tribe": "BadCatgirl"
+    },
+    {
+      "parent1": "Kitsunebi_Ice",
+      "parent2": "Kitsunebi_Ice",
+      "child": "Kitsunebi_Ice",
+      "parent1Tribe": "Kitsunebi_Ice",
+      "parent2Tribe": "Kitsunebi_Ice"
+    },
+    {
+      "parent1": "RaijinDaughter_Water",
+      "parent2": "RaijinDaughter_Water",
+      "child": "RaijinDaughter_Water",
+      "parent1Tribe": "RaijinDaughter_Water",
+      "parent2Tribe": "RaijinDaughter_Water"
+    },
+    {
+      "parent1": "WhiteTiger_Ground",
+      "parent2": "WhiteTiger_Ground",
+      "child": "WhiteTiger_Ground",
+      "parent1Tribe": "WhiteTiger_Ground",
+      "parent2Tribe": "WhiteTiger_Ground"
+    },
+    {
+      "parent1": "FengyunDeeper_Electric",
+      "parent2": "FengyunDeeper_Electric",
+      "child": "FengyunDeeper_Electric",
+      "parent1Tribe": "FengyunDeeper_Electric",
+      "parent2Tribe": "FengyunDeeper_Electric"
+    },
+    {
+      "parent1": "BerryGoat_Dark",
+      "parent2": "BerryGoat_Dark",
+      "child": "BerryGoat_Dark",
+      "parent1Tribe": "BerryGoat_Dark",
+      "parent2Tribe": "BerryGoat_Dark"
+    },
+    {
+      "parent1": "Werewolf_Ice",
+      "parent2": "Werewolf_Ice",
+      "child": "Werewolf_Ice",
+      "parent1Tribe": "Werewolf_Ice",
+      "parent2Tribe": "Werewolf_Ice"
+    },
+    {
+      "parent1": "Horus_Water",
+      "parent2": "Horus_Water",
+      "child": "Horus_Water",
+      "parent1Tribe": "Horus_Water",
+      "parent2Tribe": "Horus_Water"
+    },
+    {
+      "parent1": "PinkRabbit_Grass",
+      "parent2": "PinkRabbit_Grass",
+      "child": "PinkRabbit_Grass",
+      "parent1Tribe": "PinkRabbit_Grass",
+      "parent2Tribe": "PinkRabbit_Grass"
+    },
+    {
+      "parent1": "AmaterasuWolf_Dark",
+      "parent2": "AmaterasuWolf_Dark",
+      "child": "AmaterasuWolf_Dark",
+      "parent1Tribe": "AmaterasuWolf_Dark",
+      "parent2Tribe": "AmaterasuWolf_Dark"
+    },
+    {
+      "parent1": "GoldenHorse",
+      "parent2": "Deer_Ground",
+      "child": "WhiteDeer",
+      "parent1Tribe": "GoldenHorse",
+      "parent2Tribe": "Deer_Ground"
+    },
+    {
+      "parent1": "WhiteDeer",
+      "parent2": "WhiteDeer",
+      "child": "WhiteDeer",
+      "parent1Tribe": "WhiteDeer",
+      "parent2Tribe": "WhiteDeer"
+    },
+    {
+      "parent1": "YakushimaMonster001",
+      "parent2": "YakushimaMonster001",
+      "child": "YakushimaMonster001",
+      "parent1Tribe": "YakushimaMonster001",
+      "parent2Tribe": "YakushimaMonster001"
+    },
+    {
+      "parent1": "YakushimaMonster001",
+      "parent2": "YakushimaMonster001_Blue",
+      "child": "YakushimaMonster001_Blue",
+      "parent1Tribe": "YakushimaMonster001",
+      "parent2Tribe": "YakushimaMonster001_Blue"
+    },
+    {
+      "parent1": "YakushimaMonster001",
+      "parent2": "YakushimaMonster001_Red",
+      "child": "YakushimaMonster001_Red",
+      "parent1Tribe": "YakushimaMonster001",
+      "parent2Tribe": "YakushimaMonster001_Red"
+    },
+    {
+      "parent1": "YakushimaMonster001",
+      "parent2": "YakushimaMonster001_Purple",
+      "child": "YakushimaMonster001_Purple",
+      "parent1Tribe": "YakushimaMonster001",
+      "parent2Tribe": "YakushimaMonster001_Purple"
+    },
+    {
+      "parent1": "YakushimaMonster001",
+      "parent2": "YakushimaMonster001_Pink",
+      "child": "YakushimaMonster001_Pink",
+      "parent1Tribe": "YakushimaMonster001",
+      "parent2Tribe": "YakushimaMonster001_Pink"
+    },
+    {
+      "parent1": "YakushimaMonster001",
+      "parent2": "YakushimaMonster001_Rainbow",
+      "child": "YakushimaMonster001_Rainbow",
+      "parent1Tribe": "YakushimaMonster001",
+      "parent2Tribe": "YakushimaMonster001_Rainbow"
+    },
+    {
+      "parent1": "YakushimaMonster001",
+      "parent2": "YakushimaMonster002",
+      "child": "YakushimaMonster002",
+      "parent1Tribe": "YakushimaMonster001",
+      "parent2Tribe": "YakushimaMonster002"
+    },
+    {
+      "parent1": "YakushimaMonster001",
+      "parent2": "YakushimaMonster003",
+      "child": "YakushimaMonster001_Rainbow",
+      "parent1Tribe": "YakushimaMonster001",
+      "parent2Tribe": "YakushimaMonster003"
+    },
+    {
+      "parent1": "YakushimaMonster001",
+      "parent2": "YakushimaMonster003_Purple",
+      "child": "YakushimaMonster001_Rainbow",
+      "parent1Tribe": "YakushimaMonster001",
+      "parent2Tribe": "YakushimaMonster003_Purple"
+    },
+    {
+      "parent1": "YakushimaMonster001",
+      "parent2": "YakushimaBoss001",
+      "child": "YakushimaBoss001",
+      "parent1Tribe": "YakushimaMonster001",
+      "parent2Tribe": "YakushimaBoss001"
+    },
+    {
+      "parent1": "YakushimaMonster001",
+      "parent2": "YakushimaBoss001_Small",
+      "child": "YakushimaBoss001_Small",
+      "parent1Tribe": "YakushimaMonster001",
+      "parent2Tribe": "YakushimaBoss001_Small"
+    },
+    {
+      "parent1": "YakushimaMonster001_Blue",
+      "parent2": "YakushimaMonster001_Blue",
+      "child": "YakushimaMonster001_Blue",
+      "parent1Tribe": "YakushimaMonster001_Blue",
+      "parent2Tribe": "YakushimaMonster001_Blue"
+    },
+    {
+      "parent1": "YakushimaMonster001_Blue",
+      "parent2": "YakushimaMonster001_Red",
+      "child": "YakushimaMonster001_Purple",
+      "parent1Tribe": "YakushimaMonster001_Blue",
+      "parent2Tribe": "YakushimaMonster001_Red"
+    },
+    {
+      "parent1": "YakushimaMonster001_Blue",
+      "parent2": "YakushimaMonster001_Purple",
+      "child": "YakushimaMonster001_Purple",
+      "parent1Tribe": "YakushimaMonster001_Blue",
+      "parent2Tribe": "YakushimaMonster001_Purple"
+    },
+    {
+      "parent1": "YakushimaMonster001_Blue",
+      "parent2": "YakushimaMonster001_Pink",
+      "child": "YakushimaMonster001_Pink",
+      "parent1Tribe": "YakushimaMonster001_Blue",
+      "parent2Tribe": "YakushimaMonster001_Pink"
+    },
+    {
+      "parent1": "YakushimaMonster001_Blue",
+      "parent2": "YakushimaMonster001_Rainbow",
+      "child": "YakushimaMonster001_Rainbow",
+      "parent1Tribe": "YakushimaMonster001_Blue",
+      "parent2Tribe": "YakushimaMonster001_Rainbow"
+    },
+    {
+      "parent1": "YakushimaMonster001_Blue",
+      "parent2": "YakushimaMonster002",
+      "child": "YakushimaMonster002",
+      "parent1Tribe": "YakushimaMonster001_Blue",
+      "parent2Tribe": "YakushimaMonster002"
+    },
+    {
+      "parent1": "YakushimaMonster001_Blue",
+      "parent2": "YakushimaMonster003",
+      "child": "YakushimaMonster001_Rainbow",
+      "parent1Tribe": "YakushimaMonster001_Blue",
+      "parent2Tribe": "YakushimaMonster003"
+    },
+    {
+      "parent1": "YakushimaMonster001_Blue",
+      "parent2": "YakushimaMonster003_Purple",
+      "child": "YakushimaMonster001_Rainbow",
+      "parent1Tribe": "YakushimaMonster001_Blue",
+      "parent2Tribe": "YakushimaMonster003_Purple"
+    },
+    {
+      "parent1": "YakushimaMonster001_Blue",
+      "parent2": "YakushimaBoss001",
+      "child": "YakushimaBoss001",
+      "parent1Tribe": "YakushimaMonster001_Blue",
+      "parent2Tribe": "YakushimaBoss001"
+    },
+    {
+      "parent1": "YakushimaMonster001_Blue",
+      "parent2": "YakushimaBoss001_Small",
+      "child": "YakushimaBoss001_Small",
+      "parent1Tribe": "YakushimaMonster001_Blue",
+      "parent2Tribe": "YakushimaBoss001_Small"
+    },
+    {
+      "parent1": "YakushimaMonster001_Red",
+      "parent2": "YakushimaMonster001_Red",
+      "child": "YakushimaMonster001_Red",
+      "parent1Tribe": "YakushimaMonster001_Red",
+      "parent2Tribe": "YakushimaMonster001_Red"
+    },
+    {
+      "parent1": "YakushimaMonster001_Red",
+      "parent2": "YakushimaMonster001_Purple",
+      "child": "YakushimaMonster001_Purple",
+      "parent1Tribe": "YakushimaMonster001_Red",
+      "parent2Tribe": "YakushimaMonster001_Purple"
+    },
+    {
+      "parent1": "YakushimaMonster001_Red",
+      "parent2": "YakushimaMonster001_Pink",
+      "child": "YakushimaMonster001_Pink",
+      "parent1Tribe": "YakushimaMonster001_Red",
+      "parent2Tribe": "YakushimaMonster001_Pink"
+    },
+    {
+      "parent1": "YakushimaMonster001_Red",
+      "parent2": "YakushimaMonster001_Rainbow",
+      "child": "YakushimaMonster001_Rainbow",
+      "parent1Tribe": "YakushimaMonster001_Red",
+      "parent2Tribe": "YakushimaMonster001_Rainbow"
+    },
+    {
+      "parent1": "YakushimaMonster001_Red",
+      "parent2": "YakushimaMonster002",
+      "child": "YakushimaMonster002",
+      "parent1Tribe": "YakushimaMonster001_Red",
+      "parent2Tribe": "YakushimaMonster002"
+    },
+    {
+      "parent1": "YakushimaMonster001_Red",
+      "parent2": "YakushimaMonster003",
+      "child": "YakushimaMonster001_Rainbow",
+      "parent1Tribe": "YakushimaMonster001_Red",
+      "parent2Tribe": "YakushimaMonster003"
+    },
+    {
+      "parent1": "YakushimaMonster001_Red",
+      "parent2": "YakushimaMonster003_Purple",
+      "child": "YakushimaMonster001_Rainbow",
+      "parent1Tribe": "YakushimaMonster001_Red",
+      "parent2Tribe": "YakushimaMonster003_Purple"
+    },
+    {
+      "parent1": "YakushimaMonster001_Red",
+      "parent2": "YakushimaBoss001",
+      "child": "YakushimaBoss001",
+      "parent1Tribe": "YakushimaMonster001_Red",
+      "parent2Tribe": "YakushimaBoss001"
+    },
+    {
+      "parent1": "YakushimaMonster001_Red",
+      "parent2": "YakushimaBoss001_Small",
+      "child": "YakushimaBoss001_Small",
+      "parent1Tribe": "YakushimaMonster001_Red",
+      "parent2Tribe": "YakushimaBoss001_Small"
+    },
+    {
+      "parent1": "YakushimaMonster001_Purple",
+      "parent2": "YakushimaMonster001_Purple",
+      "child": "YakushimaMonster001_Purple",
+      "parent1Tribe": "YakushimaMonster001_Purple",
+      "parent2Tribe": "YakushimaMonster001_Purple"
+    },
+    {
+      "parent1": "YakushimaMonster001_Purple",
+      "parent2": "YakushimaMonster001_Pink",
+      "child": "YakushimaMonster001_Pink",
+      "parent1Tribe": "YakushimaMonster001_Purple",
+      "parent2Tribe": "YakushimaMonster001_Pink"
+    },
+    {
+      "parent1": "YakushimaMonster001_Purple",
+      "parent2": "YakushimaMonster001_Rainbow",
+      "child": "YakushimaMonster001_Rainbow",
+      "parent1Tribe": "YakushimaMonster001_Purple",
+      "parent2Tribe": "YakushimaMonster001_Rainbow"
+    },
+    {
+      "parent1": "YakushimaMonster001_Purple",
+      "parent2": "YakushimaMonster002",
+      "child": "YakushimaMonster002",
+      "parent1Tribe": "YakushimaMonster001_Purple",
+      "parent2Tribe": "YakushimaMonster002"
+    },
+    {
+      "parent1": "YakushimaMonster001_Purple",
+      "parent2": "YakushimaMonster003",
+      "child": "YakushimaMonster003_Purple",
+      "parent1Tribe": "YakushimaMonster001_Purple",
+      "parent2Tribe": "YakushimaMonster003"
+    },
+    {
+      "parent1": "YakushimaMonster001_Purple",
+      "parent2": "YakushimaMonster003_Purple",
+      "child": "YakushimaMonster003_Purple",
+      "parent1Tribe": "YakushimaMonster001_Purple",
+      "parent2Tribe": "YakushimaMonster003_Purple"
+    },
+    {
+      "parent1": "YakushimaMonster001_Purple",
+      "parent2": "YakushimaBoss001",
+      "child": "YakushimaBoss001",
+      "parent1Tribe": "YakushimaMonster001_Purple",
+      "parent2Tribe": "YakushimaBoss001"
+    },
+    {
+      "parent1": "YakushimaMonster001_Purple",
+      "parent2": "YakushimaBoss001_Small",
+      "child": "YakushimaBoss001_Small",
+      "parent1Tribe": "YakushimaMonster001_Purple",
+      "parent2Tribe": "YakushimaBoss001_Small"
+    },
+    {
+      "parent1": "YakushimaMonster001_Pink",
+      "parent2": "YakushimaMonster001_Pink",
+      "child": "YakushimaMonster001_Pink",
+      "parent1Tribe": "YakushimaMonster001_Pink",
+      "parent2Tribe": "YakushimaMonster001_Pink"
+    },
+    {
+      "parent1": "YakushimaMonster001_Pink",
+      "parent2": "YakushimaMonster001_Rainbow",
+      "child": "YakushimaMonster001_Rainbow",
+      "parent1Tribe": "YakushimaMonster001_Pink",
+      "parent2Tribe": "YakushimaMonster001_Rainbow"
+    },
+    {
+      "parent1": "YakushimaMonster001_Pink",
+      "parent2": "YakushimaMonster002",
+      "child": "YakushimaMonster002",
+      "parent1Tribe": "YakushimaMonster001_Pink",
+      "parent2Tribe": "YakushimaMonster002"
+    },
+    {
+      "parent1": "YakushimaMonster001_Pink",
+      "parent2": "YakushimaMonster003",
+      "child": "YakushimaMonster001_Rainbow",
+      "parent1Tribe": "YakushimaMonster001_Pink",
+      "parent2Tribe": "YakushimaMonster003"
+    },
+    {
+      "parent1": "YakushimaMonster001_Pink",
+      "parent2": "YakushimaMonster003_Purple",
+      "child": "YakushimaMonster001_Rainbow",
+      "parent1Tribe": "YakushimaMonster001_Pink",
+      "parent2Tribe": "YakushimaMonster003_Purple"
+    },
+    {
+      "parent1": "YakushimaMonster001_Pink",
+      "parent2": "YakushimaBoss001",
+      "child": "YakushimaBoss001",
+      "parent1Tribe": "YakushimaMonster001_Pink",
+      "parent2Tribe": "YakushimaBoss001"
+    },
+    {
+      "parent1": "YakushimaMonster001_Pink",
+      "parent2": "YakushimaBoss001_Small",
+      "child": "YakushimaBoss001_Small",
+      "parent1Tribe": "YakushimaMonster001_Pink",
+      "parent2Tribe": "YakushimaBoss001_Small"
+    },
+    {
+      "parent1": "YakushimaMonster001_Rainbow",
+      "parent2": "YakushimaMonster001_Rainbow",
+      "child": "YakushimaMonster001_Rainbow",
+      "parent1Tribe": "YakushimaMonster001_Rainbow",
+      "parent2Tribe": "YakushimaMonster001_Rainbow"
+    },
+    {
+      "parent1": "YakushimaMonster001_Rainbow",
+      "parent2": "YakushimaMonster002",
+      "child": "YakushimaMonster001_Rainbow",
+      "parent1Tribe": "YakushimaMonster001_Rainbow",
+      "parent2Tribe": "YakushimaMonster002"
+    },
+    {
+      "parent1": "YakushimaMonster001_Rainbow",
+      "parent2": "YakushimaMonster003",
+      "child": "YakushimaMonster001_Rainbow",
+      "parent1Tribe": "YakushimaMonster001_Rainbow",
+      "parent2Tribe": "YakushimaMonster003"
+    },
+    {
+      "parent1": "YakushimaMonster001_Rainbow",
+      "parent2": "YakushimaMonster003_Purple",
+      "child": "YakushimaMonster001_Rainbow",
+      "parent1Tribe": "YakushimaMonster001_Rainbow",
+      "parent2Tribe": "YakushimaMonster003_Purple"
+    },
+    {
+      "parent1": "YakushimaMonster001_Rainbow",
+      "parent2": "YakushimaBoss001",
+      "child": "YakushimaBoss001",
+      "parent1Tribe": "YakushimaMonster001_Rainbow",
+      "parent2Tribe": "YakushimaBoss001"
+    },
+    {
+      "parent1": "YakushimaMonster001_Rainbow",
+      "parent2": "YakushimaBoss001_Small",
+      "child": "YakushimaBoss001_Small",
+      "parent1Tribe": "YakushimaMonster001_Rainbow",
+      "parent2Tribe": "YakushimaBoss001_Small"
+    },
+    {
+      "parent1": "YakushimaMonster002",
+      "parent2": "YakushimaMonster002",
+      "child": "YakushimaMonster002",
+      "parent1Tribe": "YakushimaMonster002",
+      "parent2Tribe": "YakushimaMonster002"
+    },
+    {
+      "parent1": "YakushimaMonster002",
+      "parent2": "YakushimaMonster003",
+      "child": "YakushimaMonster002",
+      "parent1Tribe": "YakushimaMonster002",
+      "parent2Tribe": "YakushimaMonster003"
+    },
+    {
+      "parent1": "YakushimaMonster002",
+      "parent2": "YakushimaMonster003_Purple",
+      "child": "YakushimaMonster002",
+      "parent1Tribe": "YakushimaMonster002",
+      "parent2Tribe": "YakushimaMonster003_Purple"
+    },
+    {
+      "parent1": "YakushimaMonster002",
+      "parent2": "YakushimaBoss001",
+      "child": "YakushimaBoss001",
+      "parent1Tribe": "YakushimaMonster002",
+      "parent2Tribe": "YakushimaBoss001"
+    },
+    {
+      "parent1": "YakushimaMonster002",
+      "parent2": "YakushimaBoss001_Small",
+      "child": "YakushimaBoss001_Small",
+      "parent1Tribe": "YakushimaMonster002",
+      "parent2Tribe": "YakushimaBoss001_Small"
+    },
+    {
+      "parent1": "YakushimaMonster003",
+      "parent2": "YakushimaMonster003",
+      "child": "YakushimaMonster003",
+      "parent1Tribe": "YakushimaMonster003",
+      "parent2Tribe": "YakushimaMonster003"
+    },
+    {
+      "parent1": "YakushimaMonster003",
+      "parent2": "YakushimaMonster003_Purple",
+      "child": "YakushimaMonster003_Purple",
+      "parent1Tribe": "YakushimaMonster003",
+      "parent2Tribe": "YakushimaMonster003_Purple"
+    },
+    {
+      "parent1": "YakushimaMonster003",
+      "parent2": "YakushimaBoss001",
+      "child": "YakushimaBoss001",
+      "parent1Tribe": "YakushimaMonster003",
+      "parent2Tribe": "YakushimaBoss001"
+    },
+    {
+      "parent1": "YakushimaMonster003",
+      "parent2": "YakushimaBoss001_Small",
+      "child": "YakushimaBoss001_Small",
+      "parent1Tribe": "YakushimaMonster003",
+      "parent2Tribe": "YakushimaBoss001_Small"
+    },
+    {
+      "parent1": "YakushimaMonster003_Purple",
+      "parent2": "YakushimaMonster003_Purple",
+      "child": "YakushimaMonster003_Purple",
+      "parent1Tribe": "YakushimaMonster003_Purple",
+      "parent2Tribe": "YakushimaMonster003_Purple"
+    },
+    {
+      "parent1": "YakushimaMonster003_Purple",
+      "parent2": "YakushimaBoss001",
+      "child": "YakushimaBoss001",
+      "parent1Tribe": "YakushimaMonster003_Purple",
+      "parent2Tribe": "YakushimaBoss001"
+    },
+    {
+      "parent1": "YakushimaMonster003_Purple",
+      "parent2": "YakushimaBoss001_Small",
+      "child": "YakushimaBoss001_Small",
+      "parent1Tribe": "YakushimaMonster003_Purple",
+      "parent2Tribe": "YakushimaBoss001_Small"
+    },
+    {
+      "parent1": "YakushimaBoss001",
+      "parent2": "YakushimaBoss001",
+      "child": "YakushimaBoss001",
+      "parent1Tribe": "YakushimaBoss001",
+      "parent2Tribe": "YakushimaBoss001"
+    },
+    {
+      "parent1": "YakushimaBoss001",
+      "parent2": "YakushimaBoss001_Small",
+      "child": "YakushimaBoss001",
+      "parent1Tribe": "YakushimaBoss001",
+      "parent2Tribe": "YakushimaBoss001_Small"
+    },
+    {
+      "parent1": "YakushimaBoss001_Small",
+      "parent2": "YakushimaBoss001_Small",
+      "child": "YakushimaBoss001_Small",
+      "parent1Tribe": "YakushimaBoss001_Small",
+      "parent2Tribe": "YakushimaBoss001_Small"
+    },
+    {
+      "parent1": "NegativeOctopus_Neutral",
+      "parent2": "NegativeOctopus_Neutral",
+      "child": "NegativeOctopus_Neutral",
+      "parent1Tribe": "NegativeOctopus_Neutral",
+      "parent2Tribe": "NegativeOctopus_Neutral"
+    },
+    {
+      "parent1": "Penguin_Electric",
+      "parent2": "Penguin_Electric",
+      "child": "Penguin_Electric",
+      "parent1Tribe": "Penguin_Electric",
+      "parent2Tribe": "Penguin_Electric"
+    },
+    {
+      "parent1": "CaptainPenguin_Black",
+      "parent2": "CaptainPenguin_Black",
+      "child": "CaptainPenguin_Black",
+      "parent1Tribe": "CaptainPenguin_Black",
+      "parent2Tribe": "CaptainPenguin_Black"
+    },
+    {
+      "parent1": "FlyingManta_Thunder",
+      "parent2": "FlyingManta_Thunder",
+      "child": "FlyingManta_Thunder",
+      "parent1Tribe": "FlyingManta_Thunder",
+      "parent2Tribe": "FlyingManta_Thunder"
+    },
+    {
+      "parent1": "BluePlatypus_Fire",
+      "parent2": "BluePlatypus_Fire",
+      "child": "BluePlatypus_Fire",
+      "parent1Tribe": "BluePlatypus_Fire",
+      "parent2Tribe": "BluePlatypus_Fire"
+    },
+    {
+      "parent1": "LazyCatfish_Gold",
+      "parent2": "LazyCatfish_Gold",
+      "child": "LazyCatfish_Gold",
+      "parent1Tribe": "LazyCatfish_Gold",
+      "parent2Tribe": "LazyCatfish_Gold"
+    },
+    {
+      "parent1": "TentacleTurtle_Ground",
+      "parent2": "TentacleTurtle_Ground",
+      "child": "TentacleTurtle_Ground",
+      "parent1Tribe": "TentacleTurtle_Ground",
+      "parent2Tribe": "TentacleTurtle_Ground"
+    },
+    {
+      "parent1": "KendoFrog_Dark",
+      "parent2": "KendoFrog_Dark",
+      "child": "KendoFrog_Dark",
+      "parent1Tribe": "KendoFrog_Dark",
+      "parent2Tribe": "KendoFrog_Dark"
+    },
+    {
+      "parent1": "BlueDragon_Ice",
+      "parent2": "BlueDragon_Ice",
+      "child": "BlueDragon_Ice",
+      "parent1Tribe": "BlueDragon_Ice",
+      "parent2Tribe": "BlueDragon_Ice"
+    },
+    {
+      "parent1": "IceNarwhal_Fire",
+      "parent2": "IceNarwhal_Fire",
+      "child": "IceNarwhal_Fire",
+      "parent1Tribe": "IceNarwhal_Fire",
+      "parent2Tribe": "IceNarwhal_Fire"
+    },
+    {
+      "parent1": "GhostAnglerfish_Fire",
+      "parent2": "GhostAnglerfish_Fire",
+      "child": "GhostAnglerfish_Fire",
+      "parent1Tribe": "GhostAnglerfish_Fire",
+      "parent2Tribe": "GhostAnglerfish_Fire"
+    },
+    {
+      "parent1": "StuffedShark_Fire",
+      "parent2": "StuffedShark_Fire",
+      "child": "StuffedShark_Fire",
+      "parent1Tribe": "StuffedShark_Fire",
+      "parent2Tribe": "StuffedShark_Fire"
+    },
+    {
+      "parent1": "PoseidonOrca",
+      "parent2": "PoseidonOrca",
+      "child": "PoseidonOrca",
+      "parent1Tribe": "PoseidonOrca",
+      "parent2Tribe": "PoseidonOrca"
+    },
+    {
+      "parent1": "NegativeOctopus",
+      "parent2": "PinkRabbit",
+      "child": "NegativeOctopus_Neutral",
+      "parent1Tribe": "NegativeOctopus",
+      "parent2Tribe": "PinkRabbit"
+    },
+    {
+      "parent1": "Penguin",
+      "parent2": "ElecCat",
+      "child": "Penguin_Electric",
+      "parent1Tribe": "Penguin",
+      "parent2Tribe": "ElecCat"
+    },
+    {
+      "parent1": "CaptainPenguin",
+      "parent2": "ThunderDog",
+      "child": "CaptainPenguin_Black",
+      "parent1Tribe": "CaptainPenguin",
+      "parent2Tribe": "ThunderDog"
+    },
+    {
+      "parent1": "FlyingManta",
+      "parent2": "Kirin",
+      "child": "FlyingManta_Thunder",
+      "parent1Tribe": "FlyingManta",
+      "parent2Tribe": "Kirin"
+    },
+    {
+      "parent1": "BluePlatypus",
+      "parent2": "LavaGirl",
+      "child": "BluePlatypus_Fire",
+      "parent1Tribe": "Blueplatypus",
+      "parent2Tribe": "LavaGirl"
+    },
+    {
+      "parent1": "LazyCatfish",
+      "parent2": "Deer_Ground",
+      "child": "LazyCatfish_Gold",
+      "parent1Tribe": "LazyCatfish",
+      "parent2Tribe": "Deer_Ground"
+    },
+    {
+      "parent1": "TentacleTurtle",
+      "parent2": "DrillGame",
+      "child": "TentacleTurtle_Ground",
+      "parent1Tribe": "TentacleTurtle",
+      "parent2Tribe": "DrillGame"
+    },
+    {
+      "parent1": "KendoFrog",
+      "parent2": "Ronin_Dark",
+      "child": "KendoFrog_Dark",
+      "parent1Tribe": "KendoFrog",
+      "parent2Tribe": "Ronin_Dark"
+    },
+    {
+      "parent1": "BlueDragon",
+      "parent2": "SnowPeafowl",
+      "child": "BlueDragon_Ice",
+      "parent1Tribe": "BlueDragon",
+      "parent2Tribe": "SnowPeafowl"
+    },
+    {
+      "parent1": "IceNarwhal",
+      "parent2": "WeaselDragon_Fire",
+      "child": "IceNarwhal_Fire",
+      "parent1Tribe": "IceNarwhal",
+      "parent2Tribe": "WeaselDragon_Fire"
+    },
+    {
+      "parent1": "GhostAnglerfish",
+      "parent2": "CandleGhost",
+      "child": "GhostAnglerfish_Fire",
+      "parent1Tribe": "GhostAnglerfish",
+      "parent2Tribe": "CandleGhost"
+    },
+    {
+      "parent1": "StuffedShark",
+      "parent2": "SharkKid_Fire",
+      "child": "StuffedShark_Fire",
+      "parent1Tribe": "StuffedShark",
+      "parent2Tribe": "SharkKid_Fire"
+    },
+    {
+      "parent1": "LegendDeer",
+      "parent2": "LegendDeer",
+      "child": "LegendDeer",
+      "parent1Tribe": "LegendDeer",
+      "parent2Tribe": "LegendDeer"
+    },
+    {
+      "parent1": "Monkey_Fire",
+      "parent2": "Monkey_Fire",
+      "child": "Monkey_Fire",
+      "parent1Tribe": "Monkey_Fire",
+      "parent2Tribe": "Monkey_Fire"
+    },
+    {
+      "parent1": "Kirin_Ice",
+      "parent2": "Kirin_Ice",
+      "child": "Kirin_Ice",
+      "parent1Tribe": "Kirin_Ice",
+      "parent2Tribe": "Kirin_Ice"
+    },
+    {
+      "parent1": "ThunderDog_Ice",
+      "parent2": "ThunderDog_Ice",
+      "child": "ThunderDog_Ice",
+      "parent1Tribe": "ThunderDog_Ice",
+      "parent2Tribe": "ThunderDog_Ice"
+    },
+    {
+      "parent1": "ThunderBird_Ice",
+      "parent2": "ThunderBird_Ice",
+      "child": "ThunderBird_Ice",
+      "parent1Tribe": "ThunderBird_Ice",
+      "parent2Tribe": "ThunderBird_Ice"
+    },
+    {
+      "parent1": "SweetsSheep_Ground",
+      "parent2": "SweetsSheep_Ground",
+      "child": "SweetsSheep_Ground",
+      "parent1Tribe": "SweetsSheep_Ground",
+      "parent2Tribe": "SweetsSheep_Ground"
+    },
+    {
+      "parent1": "ScorpionMan_Electric",
+      "parent2": "ScorpionMan_Electric",
+      "child": "ScorpionMan_Electric",
+      "parent1Tribe": "ScorpionMan_Electric",
+      "parent2Tribe": "ScorpionMan_Electric"
+    },
+    {
+      "parent1": "BlackPuppy_Ice",
+      "parent2": "BlackPuppy_Ice",
+      "child": "BlackPuppy_Ice",
+      "parent1Tribe": "BlackPuppy_Ice",
+      "parent2Tribe": "BlackPuppy_Ice"
+    },
+    {
+      "parent1": "GhostRabbit_Grass",
+      "parent2": "GhostRabbit_Grass",
+      "child": "GhostRabbit_Grass",
+      "parent1Tribe": "GhostRabbit_Grass",
+      "parent2Tribe": "GhostRabbit_Grass"
+    },
+    {
+      "parent1": "NightBlueHorse_Neutral",
+      "parent2": "NightBlueHorse_Neutral",
+      "child": "NightBlueHorse_Neutral",
+      "parent1Tribe": "NightBlueHorse_Neutral",
+      "parent2Tribe": "NightBlueHorse_Neutral"
+    },
+    {
+      "parent1": "OctopusGirl_Neutral",
+      "parent2": "OctopusGirl_Neutral",
+      "child": "OctopusGirl_Neutral",
+      "parent1Tribe": "OctopusGirl_Neutral",
+      "parent2Tribe": "OctopusGirl_Neutral"
+    },
+    {
+      "parent1": "WhiteMoth_Neutral",
+      "parent2": "WhiteMoth_Neutral",
+      "child": "WhiteMoth_Neutral",
+      "parent1Tribe": "WhiteMoth_Neutral",
+      "parent2Tribe": "WhiteMoth_Neutral"
+    },
+    {
+      "parent1": "WingGolem_Fire",
+      "parent2": "WingGolem_Fire",
+      "child": "WingGolem_Fire",
+      "parent1Tribe": "WingGolem_Fire",
+      "parent2Tribe": "WingGolem_Fire"
+    },
+    {
+      "parent1": "FlowerDoll_Fire",
+      "parent2": "FlowerDoll_Fire",
+      "child": "FlowerDoll_Fire",
+      "parent1Tribe": "FlowerDoll_Fire",
+      "parent2Tribe": "FlowerDoll_Fire"
+    },
+    {
+      "parent1": "WhiteDeer_Dark",
+      "parent2": "WhiteDeer_Dark",
+      "child": "WhiteDeer_Dark",
+      "parent1Tribe": "WhiteDeer_Dark",
+      "parent2Tribe": "WhiteDeer_Dark"
+    },
+    {
+      "parent1": "IceSeal_Ground",
+      "parent2": "IceSeal_Ground",
+      "child": "IceSeal_Ground",
+      "parent1Tribe": "IceSeal_Ground",
+      "parent2Tribe": "IceSeal_Ground"
+    },
+    {
+      "parent1": "KingSunfish_Thunder",
+      "parent2": "KingSunfish_Thunder",
+      "child": "KingSunfish_Thunder",
+      "parent1Tribe": "KingSunfish_Thunder",
+      "parent2Tribe": "KingSunfish_Thunder"
+    },
+    {
+      "parent1": "GrassGolem_Dark",
+      "parent2": "GrassGolem_Dark",
+      "child": "GrassGolem_Dark",
+      "parent1Tribe": "GrassGolem_Dark",
+      "parent2Tribe": "GrassGolem_Dark"
+    },
+    {
+      "parent1": "CubeTurtle_Neutral",
+      "parent2": "CubeTurtle_Neutral",
+      "child": "CubeTurtle_Neutral",
+      "parent1Tribe": "CubeTurtle_Neutral",
+      "parent2Tribe": "CubeTurtle_Neutral"
+    },
+    {
+      "parent1": "GhostDragon_Fire",
+      "parent2": "GhostDragon_Fire",
+      "child": "GhostDragon_Fire",
+      "parent1Tribe": "GhostDragon_Fire",
+      "parent2Tribe": "GhostDragon_Fire"
+    },
+    {
+      "parent1": "VolcanoDragon_Ice",
+      "parent2": "VolcanoDragon_Ice",
+      "child": "VolcanoDragon_Ice",
+      "parent1Tribe": "VolcanoDragon_Ice",
+      "parent2Tribe": "VolcanoDragon_Ice"
+    },
+    {
+      "parent1": "RockBeast_Ice",
+      "parent2": "RockBeast_Ice",
+      "child": "RockBeast_Ice",
+      "parent1Tribe": "RockBeast_Ice",
+      "parent2Tribe": "RockBeast_Ice"
+    },
+    {
+      "parent1": "SwordCutlassfish_Fire",
+      "parent2": "SwordCutlassfish_Fire",
+      "child": "SwordCutlassfish_Fire",
+      "parent1Tribe": "SwordCutlassfish_Fire",
+      "parent2Tribe": "SwordCutlassfish_Fire"
+    },
+    {
+      "parent1": "ElecSnail_Ground",
+      "parent2": "ElecSnail_Ground",
+      "child": "ElecSnail_Ground",
+      "parent1Tribe": "ElecSnail_Ground",
+      "parent2Tribe": "ElecSnail_Ground"
+    },
+    {
+      "parent1": "CactusDoll_Dark",
+      "parent2": "CactusDoll_Dark",
+      "child": "CactusDoll_Dark",
+      "parent1Tribe": "CactusDoll_Dark",
+      "parent2Tribe": "CactusDoll_Dark"
+    },
+    {
+      "parent1": "GrassMinotaur_Ice",
+      "parent2": "GrassMinotaur_Ice",
+      "child": "GrassMinotaur_Ice",
+      "parent1Tribe": "GrassMinotaur_Ice",
+      "parent2Tribe": "GrassMinotaur_Ice"
+    },
+    {
+      "parent1": "Monkey",
+      "parent2": "LavaGirl",
+      "child": "Monkey_Fire",
+      "parent1Tribe": "Monkey",
+      "parent2Tribe": "LavaGirl"
+    },
+    {
+      "parent1": "Kirin",
+      "parent2": "SnowPeafowl",
+      "child": "Kirin_Ice",
+      "parent1Tribe": "Kirin",
+      "parent2Tribe": "SnowPeafowl"
+    },
+    {
+      "parent1": "ThunderDog",
+      "parent2": "IceFox",
+      "child": "ThunderDog_Ice",
+      "parent1Tribe": "ThunderDog",
+      "parent2Tribe": "IceFox"
+    },
+    {
+      "parent1": "ThunderBird",
+      "parent2": "SnowPeafowl",
+      "child": "ThunderBird_Ice",
+      "parent1Tribe": "ThunderBird",
+      "parent2Tribe": "SnowPeafowl"
+    },
+    {
+      "parent1": "SweetsSheep",
+      "parent2": "SmallArmadillo",
+      "child": "SweetsSheep_Ground",
+      "parent1Tribe": "SweetsSheep",
+      "parent2Tribe": "SmallArmadillo"
+    },
+    {
+      "parent1": "ScorpionMan",
+      "parent2": "HadesBird_Electric",
+      "child": "ScorpionMan_Electric",
+      "parent1Tribe": "ScorpionMan",
+      "parent2Tribe": "HadesBird_Electric"
+    },
+    {
+      "parent1": "BlackPuppy",
+      "parent2": "IceCrocodile",
+      "child": "BlackPuppy_Ice",
+      "parent1Tribe": "BlackPuppy",
+      "parent2Tribe": "IceCrocodile"
+    },
+    {
+      "parent1": "GhostRabbit",
+      "parent2": "FlowerDoll",
+      "child": "GhostRabbit_Grass",
+      "parent1Tribe": "GhostRabbit",
+      "parent2Tribe": "FlowerDoll"
+    },
+    {
+      "parent1": "NightBlueHorse",
+      "parent2": "WhiteDeer",
+      "child": "NightBlueHorse_Neutral",
+      "parent1Tribe": "NightBlueHorse",
+      "parent2Tribe": "WhiteDeer"
+    },
+    {
+      "parent1": "OctopusGirl",
+      "parent2": "LongCat",
+      "child": "OctopusGirl_Neutral",
+      "parent1Tribe": "OctopusGirl",
+      "parent2Tribe": "LongCat"
+    },
+    {
+      "parent1": "WhiteMoth",
+      "parent2": "SleeveRabbit",
+      "child": "WhiteMoth_Neutral",
+      "parent1Tribe": "WhiteMoth",
+      "parent2Tribe": "SleeveRabbit"
+    },
+    {
+      "parent1": "WingGolem",
+      "parent2": "RedArmorBird",
+      "child": "WingGolem_Fire",
+      "parent1Tribe": "WingGolem",
+      "parent2Tribe": "RedArmorBird"
+    },
+    {
+      "parent1": "FlowerDoll",
+      "parent2": "Ronin",
+      "child": "FlowerDoll_Fire",
+      "parent1Tribe": "FlowerDoll",
+      "parent2Tribe": "Ronin"
+    },
+    {
+      "parent1": "WhiteDeer",
+      "parent2": "AmaterasuWolf_Dark",
+      "child": "WhiteDeer_Dark",
+      "parent1Tribe": "WhiteDeer",
+      "parent2Tribe": "AmaterasuWolf_Dark"
+    },
+    {
+      "parent1": "IceSeal",
+      "parent2": "Serpent_Ground",
+      "child": "IceSeal_Ground",
+      "parent1Tribe": "IceSeal",
+      "parent2Tribe": "Serpent_Ground"
+    },
+    {
+      "parent1": "KingSunfish",
+      "parent2": "ElecLizard",
+      "child": "KingSunfish_Thunder",
+      "parent1Tribe": "KingSunfish",
+      "parent2Tribe": "ElecLizard"
+    },
+    {
+      "parent1": "GrassGolem",
+      "parent2": "CandleGhost",
+      "child": "GrassGolem_Dark",
+      "parent1Tribe": "GrassGolem",
+      "parent2Tribe": "CandleGhost"
+    },
+    {
+      "parent1": "CubeTurtle",
+      "parent2": "WhiteDeer",
+      "child": "CubeTurtle_Neutral",
+      "parent1Tribe": "CubeTurtle",
+      "parent2Tribe": "WhiteDeer"
+    },
+    {
+      "parent1": "GhostDragon",
+      "parent2": "Suzaku",
+      "child": "GhostDragon_Fire",
+      "parent1Tribe": "GhostDragon",
+      "parent2Tribe": "Suzaku"
+    },
+    {
+      "parent1": "VolcanoDragon",
+      "parent2": "VolcanicMonster_Ice",
+      "child": "VolcanoDragon_Ice",
+      "parent1Tribe": "VolcanoDragon",
+      "parent2Tribe": "VolcanicMonster_Ice"
+    },
+    {
+      "parent1": "RockBeast",
+      "parent2": "Yeti",
+      "child": "RockBeast_Ice",
+      "parent1Tribe": "RockBeast",
+      "parent2Tribe": "Yeti"
+    },
+    {
+      "parent1": "SwordCutlassfish",
+      "parent2": "SharkKid_Fire",
+      "child": "SwordCutlassfish_Fire",
+      "parent1Tribe": "SwordCutlassfish",
+      "parent2Tribe": "SharkKid_Fire"
+    },
+    {
+      "parent1": "ElecSnail",
+      "parent2": "TentacleTurtle_Ground",
+      "child": "ElecSnail_Ground",
+      "parent1Tribe": "ElecSnail",
+      "parent2Tribe": "TentacleTurtle_Ground"
+    },
+    {
+      "parent1": "CactusDoll",
+      "parent2": "BlueberryFairy",
+      "child": "CactusDoll_Dark",
+      "parent1Tribe": "CactusDoll",
+      "parent2Tribe": "BlueberryFairy"
+    },
+    {
+      "parent1": "GrassMinotaur",
+      "parent2": "RockBeast_Ice",
+      "child": "GrassMinotaur_Ice",
+      "parent1Tribe": "GrassMinotaur",
+      "parent2Tribe": "RockBeast_Ice"
+    },
+    {
+      "parent1": "BlueSkyDragon",
+      "parent2": "BlueSkyDragon",
+      "child": "BlueSkyDragon",
+      "parent1Tribe": "BlueSkyDragon",
+      "parent2Tribe": "BlueSkyDragon"
+    },
+    {
+      "parent1": "FlowerPrince",
+      "parent2": "FlowerPrince",
+      "child": "FlowerPrince",
+      "parent1Tribe": "FlowerPrince",
+      "parent2Tribe": "FlowerPrince"
+    },
+    {
+      "parent1": "Mothman",
+      "parent2": "Mothman",
+      "child": "Mothman",
+      "parent1Tribe": "Mothman",
+      "parent2Tribe": "Mothman"
+    }
+  ]
+}

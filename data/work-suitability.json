@@ -1,0 +1,67 @@
+[
+  {
+    "id": "EmitFlame",
+    "name": "Kindling",
+    "icon": "/images/work/EmitFlame.png"
+  },
+  {
+    "id": "Watering",
+    "name": "Watering",
+    "icon": "/images/work/Watering.png"
+  },
+  {
+    "id": "Seeding",
+    "name": "Planting",
+    "icon": "/images/work/Seeding.png"
+  },
+  {
+    "id": "GenerateElectricity",
+    "name": "Generating Electricity",
+    "icon": "/images/work/GenerateElectricity.png"
+  },
+  {
+    "id": "Handcraft",
+    "name": "Handiwork",
+    "icon": "/images/work/Handcraft.png"
+  },
+  {
+    "id": "Collection",
+    "name": "Gathering",
+    "icon": "/images/work/Collection.png"
+  },
+  {
+    "id": "Deforest",
+    "name": "Lumbering",
+    "icon": "/images/work/Deforest.png"
+  },
+  {
+    "id": "Mining",
+    "name": "Mining",
+    "icon": "/images/work/Mining.png"
+  },
+  {
+    "id": "ProductMedicine",
+    "name": "Medicine Production",
+    "icon": "/images/work/ProductMedicine.png"
+  },
+  {
+    "id": "OilExtraction",
+    "name": "Oil Extraction",
+    "icon": "/images/work/OilExtraction.png"
+  },
+  {
+    "id": "Cool",
+    "name": "Cooling",
+    "icon": "/images/work/Cool.png"
+  },
+  {
+    "id": "Transport",
+    "name": "Transporting",
+    "icon": "/images/work/Transport.png"
+  },
+  {
+    "id": "MonsterFarm",
+    "name": "Farming",
+    "icon": "/images/work/MonsterFarm.png"
+  }
+]

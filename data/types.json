@@ -1,0 +1,65 @@
+[
+  {
+    "id": "neutral",
+    "gameId": "Normal",
+    "name": "Neutral",
+    "color": "#A8A77A",
+    "icon": "/images/elements/neutral.png"
+  },
+  {
+    "id": "fire",
+    "gameId": "Fire",
+    "name": "Fire",
+    "color": "#EE8130",
+    "icon": "/images/elements/fire.png"
+  },
+  {
+    "id": "water",
+    "gameId": "Water",
+    "name": "Water",
+    "color": "#6390F0",
+    "icon": "/images/elements/water.png"
+  },
+  {
+    "id": "electric",
+    "gameId": "Electricity",
+    "name": "Electric",
+    "color": "#F7D02C",
+    "icon": "/images/elements/electric.png"
+  },
+  {
+    "id": "grass",
+    "gameId": "Leaf",
+    "name": "Grass",
+    "color": "#7AC74C",
+    "icon": "/images/elements/grass.png"
+  },
+  {
+    "id": "dark",
+    "gameId": "Dark",
+    "name": "Dark",
+    "color": "#705898",
+    "icon": "/images/elements/dark.png"
+  },
+  {
+    "id": "dragon",
+    "gameId": "Dragon",
+    "name": "Dragon",
+    "color": "#6F35FC",
+    "icon": "/images/elements/dragon.png"
+  },
+  {
+    "id": "ground",
+    "gameId": "Earth",
+    "name": "Ground",
+    "color": "#E2BF65",
+    "icon": "/images/elements/ground.png"
+  },
+  {
+    "id": "ice",
+    "gameId": "Ice",
+    "name": "Ice",
+    "color": "#96D9D6",
+    "icon": "/images/elements/ice.png"
+  }
+]
