@@ -7,10 +7,18 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "data:import": "node scripts/import-fmodel.mjs"
+    "data:import": "node scripts/import-fmodel.mjs",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "cf-build": "opennextjs-cloudflare build",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
+  },
+  "engines": {
+    "node": ">=22"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",
+    "@opennextjs/cloudflare": "^1.20.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
@@ -32,6 +40,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.5.21",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.120.0"
   }
 }

@@ -104,11 +104,32 @@ NEXT_PUBLIC_SITE_URL=https://palworldhub.best
 NEXT_PUBLIC_CONTACT_EMAIL=contact@palworldhub.best
 ```
 
-## Deploy
+## Deploy (Cloudflare Workers via OpenNext)
 
-Designed for Cloudflare Pages / static-friendly hosting:
+This app uses `@opennextjs/cloudflare` (not a static `out/` export). Classic Pages
+settings that look for an `out` directory will fail.
 
-1. Push to GitHub
-2. Connect the repository to Cloudflare Pages
-3. Build command: `npm run build`
-4. Output: Next.js build output (use Cloudflare Next adapter if required by your setup)
+### Cloudflare dashboard (Git integration)
+
+1. Create / use a **Workers** project connected to this repo (not a static Pages `out` site).
+2. Set **Node.js version** to `22` (repo includes `.node-version`).
+3. Build command:
+   ```bash
+   npx opennextjs-cloudflare build
+   ```
+4. Deploy command:
+   ```bash
+   npx opennextjs-cloudflare deploy
+   ```
+5. Leave **build output directory** empty / unset (do **not** use `out`).
+6. Environment variables:
+   ```bash
+   NEXT_PUBLIC_SITE_URL=https://palworldhub.best
+   NEXT_PUBLIC_CONTACT_EMAIL=contact@palworldhub.best
+   ```
+
+### Local deploy
+
+```bash
+npm run deploy
+```
