@@ -1,5 +1,6 @@
 export type {
   Pal,
+  PalActiveSkillRef,
   PalDrop,
   PalElement,
   PalStats,
