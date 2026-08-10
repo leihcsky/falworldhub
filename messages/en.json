@@ -373,7 +373,7 @@
     "s2Title": "Information we collect",
     "s2Body": "We do not require an account to use the site. Like most websites, our hosting provider may automatically process technical data such as IP address, browser type, device information, referring pages, and timestamps in server logs to operate, secure, and troubleshoot the service.",
     "s3Title": "Cookies and analytics",
-    "s3Body": "We may use essential cookies or similar technologies required for the site to function. If we use privacy-friendly analytics or advertising-related technologies in the future, we will update this policy and, where required, provide notice or consent options.",
+    "s3Body": "We may use essential cookies or similar technologies required for the site to function. We also use Google Analytics (GA4) to understand aggregate traffic and how pages are used. Google may process data such as truncated IP address, device/browser information, and page views under its own terms. You can learn more in Google’s privacy documentation or use browser controls / Google’s opt-out tools where available. If we add advertising-related technologies later, we will update this policy and, where required, provide notice or consent options.",
     "s4Title": "How we use information",
     "s4Body": "Technical and contact information is used only to run and improve {siteName}, respond to messages you send us, protect against abuse, and meet legal obligations. We do not sell your personal information.",
     "s5Title": "Sharing of information",

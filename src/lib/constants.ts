@@ -9,8 +9,12 @@ export const SITE_DESCRIPTION =
 export const CONTACT_EMAIL =
   process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "contact@palworldhub.best";
 
+/** Google Analytics 4 measurement ID (public). Empty string disables the tag. */
+export const GA_MEASUREMENT_ID =
+  process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "G-4YE29P286V";
+
 /** Display date for Terms / Privacy “last updated” lines. */
-export const LEGAL_UPDATED_AT = "August 9, 2026";
+export const LEGAL_UPDATED_AT = "August 10, 2026";
 
 /** Path-only nav config; labels come from i18n messages. */
 export const NAV_ITEMS = [
