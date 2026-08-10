@@ -1,7 +1,8 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "main": ".open-next/worker.js",
-  "name": "palworldhub",
+  // Must match the Cloudflare Workers project name (CI currently: falworldhub).
+  "name": "falworldhub",
   "compatibility_date": "2024-12-30",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "assets": {
@@ -11,7 +12,7 @@
   "services": [
     {
       "binding": "WORKER_SELF_REFERENCE",
-      "service": "palworldhub"
+      "service": "falworldhub"
     }
   ]
 }
