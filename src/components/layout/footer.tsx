@@ -11,7 +11,7 @@ import {
 export function Footer() {
   const t = useTranslations();
   const year = new Date().getFullYear();
-  const exploreItems = NAV_ITEMS.filter((item) => item.href !== "/about");
+  const exploreItems = NAV_ITEMS;
 
   return (
     <footer className="border-t bg-muted/40">

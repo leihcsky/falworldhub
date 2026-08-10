@@ -18,7 +18,6 @@ export const NAV_ITEMS = [
   { href: "/pals", labelKey: "pals" },
   { href: "/breeding", labelKey: "breeding" },
   { href: "/breeding-calculator", labelKey: "calculator" },
-  { href: "/about", labelKey: "about" },
 ] as const;
 
 /** Footer legal / support links (kept out of the primary nav). */
