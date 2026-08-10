@@ -2,6 +2,7 @@ import type {
   BreedingCombination,
   BreedingDataFile,
   BreedingResult,
+  GenderedBreedingOption,
   PalSummary,
   ParentBreedingResult,
   ReverseBreedingResult,
@@ -9,6 +10,27 @@ import type {
 
 function normalizePair(a: string, b: string): [string, string] {
   return a < b ? [a, b] : [b, a];
+}
+
+/**
+ * Only gender-dependent unique pair in current game data:
+ * Female Katress + Male Wixen → Katress Ignis
+ * Female Wixen + Male Katress → Wixen Noct
+ *
+ * Kept as an explicit override so normal unordered unique matching stays unchanged.
+ */
+const GENDERED_UNIQUE_BY_PAIR: Record<
+  string,
+  Array<{ femaleId: string; maleId: string; childId: string }>
+> = {
+  "CatMage|FoxMage": [
+    { femaleId: "CatMage", maleId: "FoxMage", childId: "CatMage_Fire" },
+    { femaleId: "FoxMage", maleId: "CatMage", childId: "FoxMage_Dark" },
+  ],
+};
+
+function genderedKey(a: string, b: string): string {
+  return normalizePair(a, b).join("|");
 }
 
 function toMap(pals: PalSummary[]): Map<string, PalSummary> {
@@ -31,12 +53,15 @@ function asSummary(map: Map<string, PalSummary>, id: string): PalSummary {
   );
 }
 
-function findUniqueChild(
+function findUniqueChildIds(
   unique: BreedingCombination[],
   parent1: PalSummary,
   parent2: PalSummary
-): string | null {
+): string[] {
   const tribes = new Set([parent1.tribe, parent2.tribe]);
+  const pairKey = normalizePair(parent1.id, parent2.id).join("|");
+  const children: string[] = [];
+  const seen = new Set<string>();
 
   for (const combo of unique) {
     const comboTribes = new Set([
@@ -44,19 +69,19 @@ function findUniqueChild(
       combo.parent2Tribe ?? "",
     ]);
     const byTribe =
-      combo.parent1Tribe &&
-      combo.parent2Tribe &&
+      Boolean(combo.parent1Tribe && combo.parent2Tribe) &&
       tribes.size === comboTribes.size &&
       [...tribes].every((tribe) => comboTribes.has(tribe));
 
     const byId =
-      normalizePair(combo.parent1, combo.parent2).join("|") ===
-      normalizePair(parent1.id, parent2.id).join("|");
+      normalizePair(combo.parent1, combo.parent2).join("|") === pairKey;
 
-    if (byTribe || byId) return combo.child;
+    if (!(byTribe || byId) || seen.has(combo.child)) continue;
+    seen.add(combo.child);
+    children.push(combo.child);
   }
 
-  return null;
+  return children;
 }
 
 /**
@@ -172,7 +197,8 @@ export function findChildClient(
   breeding: BreedingDataFile | BreedingCombination[],
   pals: PalSummary[],
   parent1Id: string,
-  parent2Id: string
+  parent2Id: string,
+  options?: { femaleParentId?: string }
 ): BreedingResult {
   const unique = Array.isArray(breeding) ? breeding : breeding.unique;
   const map = toMap(pals);
@@ -180,11 +206,51 @@ export function findChildClient(
   const parent2 = asSummary(map, parent2Id);
   const parents: [PalSummary, PalSummary] = [parent1, parent2];
 
-  const uniqueChildId = findUniqueChild(unique, parent1, parent2);
-  if (uniqueChildId) {
+  const uniqueChildIds = findUniqueChildIds(unique, parent1, parent2);
+
+  if (uniqueChildIds.length === 1) {
     return {
       parents,
-      child: asSummary(map, uniqueChildId),
+      child: asSummary(map, uniqueChildIds[0]),
+      source: "unique",
+    };
+  }
+
+  if (uniqueChildIds.length > 1) {
+    const rules = GENDERED_UNIQUE_BY_PAIR[genderedKey(parent1Id, parent2Id)];
+    if (rules) {
+      const genderOptions: GenderedBreedingOption[] = rules.map((rule) => ({
+        femaleParentId: rule.femaleId,
+        maleParentId: rule.maleId,
+        child: asSummary(map, rule.childId),
+      }));
+
+      if (options?.femaleParentId) {
+        const matched = genderOptions.find(
+          (option) => option.femaleParentId === options.femaleParentId
+        );
+        if (matched) {
+          return {
+            parents,
+            child: matched.child,
+            source: "unique",
+            genderOptions,
+          };
+        }
+      }
+
+      return {
+        parents,
+        child: null,
+        source: "unique",
+        genderOptions,
+      };
+    }
+
+    // Unexpected multi-match without a gender table: keep first (legacy-safe).
+    return {
+      parents,
+      child: asSummary(map, uniqueChildIds[0]),
       source: "unique",
     };
   }
@@ -215,12 +281,26 @@ export function findParentsClient(
   for (const combo of unique) {
     if (combo.child !== childId) continue;
     const key = normalizePair(combo.parent1, combo.parent2).join("|");
-    if (seen.has(key)) continue;
-    seen.add(key);
+    const genderRule = GENDERED_UNIQUE_BY_PAIR[key]?.find(
+      (rule) => rule.childId === childId
+    );
+    const seenKey = genderRule
+      ? `${key}|f:${genderRule.femaleId}`
+      : key;
+    if (seen.has(seenKey)) continue;
+    seen.add(seenKey);
+    const female = genderRule
+      ? asSummary(map, genderRule.femaleId)
+      : null;
+    const male = genderRule ? asSummary(map, genderRule.maleId) : null;
+    // Prefer female-first ordering for the directional Katress × Wixen recipes.
+    const parent1 = female ?? asSummary(map, combo.parent1);
+    const parent2 = male ?? asSummary(map, combo.parent2);
     combinations.push({
-      parent1: asSummary(map, combo.parent1),
-      parent2: asSummary(map, combo.parent2),
+      parent1,
+      parent2,
       source: "unique",
+      genderHint: female && male ? `Female ${female.name} + Male ${male.name}` : undefined,
     });
   }
 
@@ -279,6 +359,22 @@ export function findChildrenAsParentClient(
 
   for (const partner of breedable) {
     const result = findChildClient(breeding, pals, parentId, partner.id);
+    if (result.genderOptions?.length) {
+      for (const option of result.genderOptions) {
+        const key = `${partner.id}|${option.child.id}|${option.femaleParentId}`;
+        if (seen.has(key)) continue;
+        seen.add(key);
+        const female = asSummary(map, option.femaleParentId);
+        const male = asSummary(map, option.maleParentId);
+        combinations.push({
+          partner: asSummary(map, partner.id),
+          child: option.child,
+          source: "unique",
+          genderHint: `Female ${female.name} + Male ${male.name}`,
+        });
+      }
+      continue;
+    }
     if (!result.child) continue;
     if (seen.has(partner.id)) continue;
     seen.add(partner.id);

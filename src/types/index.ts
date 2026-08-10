@@ -12,6 +12,7 @@ export type {
   BreedingCombination,
   BreedingDataFile,
   BreedingResult,
+  GenderedBreedingOption,
   ParentBreedingResult,
   ReverseBreedingResult,
   PalSummary,

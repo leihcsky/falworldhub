@@ -53,6 +53,7 @@ export function BreedingCalculator({
   );
   const [parent1, setParent1] = useState<string>();
   const [parent2, setParent2] = useState<string>();
+  const [femaleParentId, setFemaleParentId] = useState<string>();
   const [target, setTarget] = useState<string | undefined>(initialTarget);
 
   useEffect(() => {
@@ -60,6 +61,10 @@ export function BreedingCalculator({
     setTarget(targetFromQuery);
     setMode("reverse");
   }, [targetFromQuery]);
+
+  useEffect(() => {
+    setFemaleParentId(undefined);
+  }, [parent1, parent2]);
 
   const summaries = useMemo(() => pals.map(toSummary), [pals]);
   const palById = useMemo(
@@ -74,13 +79,21 @@ export function BreedingCalculator({
 
   const forwardResult = useMemo(() => {
     if (!parent1 || !parent2) return null;
-    return findChildClient(breeding, summaries, parent1, parent2);
-  }, [breeding, summaries, parent1, parent2]);
+    return findChildClient(breeding, summaries, parent1, parent2, {
+      femaleParentId,
+    });
+  }, [breeding, summaries, parent1, parent2, femaleParentId]);
 
   const reverseResult = useMemo(() => {
     if (!target) return null;
     return findParentsClient(breeding, summaries, target, { formulaLimit: 48 });
   }, [breeding, summaries, target]);
+
+  const needsGender = Boolean(
+    forwardResult?.genderOptions &&
+      forwardResult.genderOptions.length > 0 &&
+      !forwardResult.child
+  );
 
   const childPal = forwardResult?.child
     ? (palById.get(forwardResult.child.id) ?? null)
@@ -144,21 +157,88 @@ export function BreedingCalculator({
             <ChildResultSlot
               child={forwardResult?.child ?? null}
               detail={childPal}
-              waiting={!parent1 || !parent2}
-              noResult={Boolean(parent1 && parent2 && !forwardResult?.child)}
+              waiting={!parent1 || !parent2 || needsGender}
+              noResult={Boolean(
+                parent1 &&
+                  parent2 &&
+                  !needsGender &&
+                  !forwardResult?.child
+              )}
               labels={{
                 child: t("childPal"),
-                waiting: t("childWaiting"),
+                waiting: needsGender ? t("genderNeeded") : t("childWaiting"),
                 empty: t("noResult"),
               }}
             />
           </div>
         </div>
 
+        {needsGender && forwardResult?.genderOptions ? (
+          <div className={cn(surfaceClass(), "space-y-4 px-4 py-5 md:px-6")}>
+            <div className="space-y-1">
+              <h2 className="text-lg font-semibold tracking-tight">
+                {t("genderTitle")}
+              </h2>
+              <p className="max-w-2xl text-sm text-muted-foreground">
+                {t("genderBody")}
+              </p>
+            </div>
+            <fieldset className="space-y-2">
+              <legend className="text-sm font-medium">
+                {t("genderFemaleLabel")}
+              </legend>
+              <div className="flex flex-wrap gap-2">
+                {forwardResult.genderOptions.map((option) => {
+                  const female = palById.get(option.femaleParentId);
+                  if (!female) return null;
+                  const selected = femaleParentId === option.femaleParentId;
+                  return (
+                    <button
+                      key={option.femaleParentId}
+                      type="button"
+                      onClick={() => setFemaleParentId(option.femaleParentId)}
+                      className={cn(
+                        "inline-flex items-center gap-2 rounded-lg border px-3 py-2 text-sm font-medium transition-colors",
+                        selected
+                          ? "border-primary bg-primary/10 text-primary"
+                          : "border-border/80 bg-background hover:border-primary/40 hover:bg-primary/5"
+                      )}
+                    >
+                      <PalImage
+                        src={female.image}
+                        alt=""
+                        size={28}
+                        className="rounded"
+                      />
+                      {t("genderOption", { name: female.name })}
+                    </button>
+                  );
+                })}
+              </div>
+            </fieldset>
+          </div>
+        ) : null}
+
         {childPal && forwardResult?.child ? (
           <ChildResultPanel
             pal={childPal}
             source={forwardResult.source}
+            genderHint={
+              forwardResult.genderOptions && femaleParentId
+                ? (() => {
+                    const option = forwardResult.genderOptions.find(
+                      (item) => item.femaleParentId === femaleParentId
+                    );
+                    if (!option) return undefined;
+                    const female = palById.get(option.femaleParentId);
+                    const male = palById.get(option.maleParentId);
+                    if (!female || !male) return undefined;
+                    return t("genderResultHint", {
+                      hint: `Female ${female.name} + Male ${male.name}`,
+                    });
+                  })()
+                : undefined
+            }
             labels={{
               title: t("childResultTitle"),
               sourceUnique: t("sourceUnique"),
@@ -217,11 +297,20 @@ export function BreedingCalculator({
             ) : (
               <div className="grid gap-2.5 sm:grid-cols-2 xl:grid-cols-3">
                 {reverseResult.combinations.map((combo, index) => (
-                  <BreedingComboCard
-                    key={`${combo.parent1.id}-${combo.parent2.id}-${index}`}
-                    parent1={combo.parent1}
-                    parent2={combo.parent2}
-                  />
+                  <div
+                    key={`${combo.parent1.id}-${combo.parent2.id}-${combo.genderHint ?? ""}-${index}`}
+                    className="space-y-1.5"
+                  >
+                    <BreedingComboCard
+                      parent1={combo.parent1}
+                      parent2={combo.parent2}
+                    />
+                    {combo.genderHint ? (
+                      <p className="px-1 text-xs font-medium text-primary">
+                        {t("genderResultHint", { hint: combo.genderHint })}
+                      </p>
+                    ) : null}
+                  </div>
                 ))}
               </div>
             )}
@@ -321,11 +410,13 @@ function StatPill({ label, value }: { label: string; value: number }) {
 function ChildResultPanel({
   pal,
   source,
+  genderHint,
   labels,
   onFindParents,
 }: {
   pal: Pal;
   source?: "unique" | "formula";
+  genderHint?: string;
   labels: {
     title: string;
     sourceUnique: string;
@@ -357,6 +448,9 @@ function ChildResultPanel({
             <span className="mx-1.5 text-border">·</span>
             {labels.rarity} {pal.rarity}
           </p>
+          {genderHint ? (
+            <p className="mt-1 text-sm font-medium text-primary">{genderHint}</p>
+          ) : null}
         </div>
         {source ? (
           <span

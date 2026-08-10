@@ -19,10 +19,23 @@ export interface BreedingDataFile {
   unique: BreedingCombination[];
 }
 
+export interface GenderedBreedingOption {
+  /** Species id that must be female for this outcome. */
+  femaleParentId: string;
+  /** Species id that must be male for this outcome. */
+  maleParentId: string;
+  child: PalSummary;
+}
+
 export interface BreedingResult {
   child: PalSummary | null;
   parents: [PalSummary, PalSummary];
   source?: "unique" | "formula";
+  /**
+   * Only for the rare gender-dependent unique pair (Katress × Wixen).
+   * When set and `child` is null, the UI should ask which parent is female.
+   */
+  genderOptions?: GenderedBreedingOption[];
 }
 
 export interface ReverseBreedingResult {
@@ -31,6 +44,8 @@ export interface ReverseBreedingResult {
     parent1: PalSummary;
     parent2: PalSummary;
     source?: "unique" | "formula";
+    /** e.g. "Female Katress + Male Wixen" when gender-locked. */
+    genderHint?: string;
   }>;
 }
 
@@ -41,6 +56,7 @@ export interface ParentBreedingResult {
     partner: PalSummary;
     child: PalSummary;
     source?: "unique" | "formula";
+    genderHint?: string;
   }>;
 }
 

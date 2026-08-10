@@ -106,11 +106,20 @@ export function BreedingPageCombos({
         ) : (
           <div className="grid gap-2.5 sm:grid-cols-2 xl:grid-cols-3">
             {filteredChild.map((combo, index) => (
-              <BreedingComboCard
-                key={`${combo.parent1.id}-${combo.parent2.id}-${index}`}
-                parent1={combo.parent1}
-                parent2={combo.parent2}
-              />
+              <div
+                key={`${combo.parent1.id}-${combo.parent2.id}-${combo.genderHint ?? ""}-${index}`}
+                className="space-y-1.5"
+              >
+                <BreedingComboCard
+                  parent1={combo.parent1}
+                  parent2={combo.parent2}
+                />
+                {combo.genderHint ? (
+                  <p className="px-1 text-xs font-medium text-primary">
+                    {t("genderHint", { hint: combo.genderHint })}
+                  </p>
+                ) : null}
+              </div>
             ))}
           </div>
         )}
@@ -148,12 +157,21 @@ export function BreedingPageCombos({
         ) : (
           <div className="grid gap-3 sm:grid-cols-2">
             {filteredParent.map((combo) => (
-              <BreedingComboCard
-                key={`${combo.partner.id}-${combo.child.id}`}
-                parent1={pal}
-                parent2={combo.partner}
-                child={combo.child}
-              />
+              <div
+                key={`${combo.partner.id}-${combo.child.id}-${combo.genderHint ?? ""}`}
+                className="space-y-1.5"
+              >
+                <BreedingComboCard
+                  parent1={pal}
+                  parent2={combo.partner}
+                  child={combo.child}
+                />
+                {combo.genderHint ? (
+                  <p className="px-1 text-xs font-medium text-primary">
+                    {t("genderHint", { hint: combo.genderHint })}
+                  </p>
+                ) : null}
+              </div>
             ))}
           </div>
         )}
