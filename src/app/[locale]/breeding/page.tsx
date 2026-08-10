@@ -131,6 +131,18 @@ export default async function BreedingHubPage({ params }: BreedingHubPageProps) 
       question: t("BreedingHub.faq3Q"),
       answer: t("BreedingHub.faq3A"),
     },
+    {
+      question: t("BreedingHub.faq4Q"),
+      answer: t("BreedingHub.faq4A"),
+    },
+    {
+      question: t("BreedingHub.faq5Q"),
+      answer: t("BreedingHub.faq5A"),
+    },
+    {
+      question: t("BreedingHub.faq6Q"),
+      answer: t("BreedingHub.faq6A"),
+    },
   ];
 
   return (

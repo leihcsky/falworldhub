@@ -83,6 +83,20 @@ export default async function PalsPage({ params }: PalsPageProps) {
       question: t("Pals.faq3Q"),
       answer: t("Pals.faq3A"),
     },
+    {
+      question: t("Pals.faq4Q"),
+      answer: t("Pals.faq4A", {
+        breedable: summary.breedable,
+      }),
+    },
+    {
+      question: t("Pals.faq5Q"),
+      answer: t("Pals.faq5A"),
+    },
+    {
+      question: t("Pals.faq6Q"),
+      answer: t("Pals.faq6A"),
+    },
   ];
 
   return (
