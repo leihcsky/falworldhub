@@ -111,22 +111,31 @@ settings that look for an `out` directory will fail.
 
 ### Cloudflare dashboard (Git integration)
 
-1. Create / use a **Workers** project connected to this repo (not a static Pages `out` site).
-2. Set **Node.js version** to `22` (repo includes `.node-version`).
-3. Build command:
-   ```bash
-   npx opennextjs-cloudflare build
-   ```
-4. Deploy command:
-   ```bash
-   npx opennextjs-cloudflare deploy
-   ```
-5. Leave **build output directory** empty / unset (do **not** use `out`).
-6. Environment variables:
-   ```bash
-   NEXT_PUBLIC_SITE_URL=https://palworldhub.best
-   NEXT_PUBLIC_CONTACT_EMAIL=contact@palworldhub.best
-   ```
+Use a **Workers** project (not a static Pages site with output `out`).
+
+Set these **exactly** under Build configuration:
+
+| Field | Value |
+| --- | --- |
+| Node.js version | `22` |
+| Build command | `npm run cf-build` |
+| Deploy command | `npm run cf-deploy` |
+| Non-production branch deploy command | `npm run cf-upload` |
+| Build output directory | *(leave empty — do not use `out`)* |
+
+Important:
+
+- `npm run build` only runs `next build` and does **not** create `.open-next/`.
+- Deploying with `npx wrangler deploy` often fails with  
+  `Could not find compiled Open Next config`.
+- `cf-build` must succeed first; `cf-deploy` / `cf-upload` consume that output.
+
+Environment variables:
+
+```bash
+NEXT_PUBLIC_SITE_URL=https://palworldhub.best
+NEXT_PUBLIC_CONTACT_EMAIL=contact@palworldhub.best
+```
 
 ### Local deploy
 
