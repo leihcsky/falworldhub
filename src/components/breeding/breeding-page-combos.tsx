@@ -11,6 +11,7 @@ import type {
 import { BreedingComboCard } from "@/components/breeding/breeding-combo-card";
 import { Input } from "@/components/ui/input";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { cn } from "@/lib/utils";
 
 type BreedingPageCombosProps = {
   pal: PalSummary;
@@ -51,19 +52,24 @@ export function BreedingPageCombos({
     return asParent.filter((combo) => matchesName(combo.partner, q));
   }, [asParent, parentQuery]);
 
+  const tabTriggerClass = cn(
+    "cursor-pointer px-3 py-2.5 text-sm font-semibold whitespace-normal transition-colors",
+    // Idle: readable, button-like
+    "border border-border/80 bg-background/80 text-foreground/75",
+    // Hover (inactive): clear click affordance
+    "hover:border-primary/45 hover:bg-primary/10 hover:text-foreground",
+    // Active
+    "data-active:border-primary data-active:bg-primary data-active:text-primary-foreground data-active:shadow-sm",
+    "data-active:hover:border-primary data-active:hover:bg-primary data-active:hover:text-primary-foreground"
+  );
+
   return (
     <Tabs defaultValue="as-child" className="gap-5">
-      <TabsList className="mx-auto grid h-auto w-full max-w-xl grid-cols-2 p-1">
-        <TabsTrigger
-          value="as-child"
-          className="px-3 py-2 text-sm whitespace-normal"
-        >
+      <TabsList className="mx-auto grid h-auto w-full max-w-xl grid-cols-2 gap-2 bg-transparent p-0">
+        <TabsTrigger value="as-child" className={tabTriggerClass}>
           {t("tabAsChild", { name: pal.name })}
         </TabsTrigger>
-        <TabsTrigger
-          value="as-parent"
-          className="px-3 py-2 text-sm whitespace-normal"
-        >
+        <TabsTrigger value="as-parent" className={tabTriggerClass}>
           {t("tabAsParent", { name: pal.name })}
         </TabsTrigger>
       </TabsList>

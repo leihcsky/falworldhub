@@ -81,9 +81,6 @@ export function PalSlot({
                 <span className="line-clamp-2 text-center text-sm font-semibold">
                   {selected.name}
                 </span>
-                <span className="text-[11px] text-muted-foreground">
-                  {t("combiRankShort", { rank: selected.combiRank })}
-                </span>
               </>
             ) : (
               <>
@@ -129,7 +126,7 @@ export function PalSlot({
                   return (
                     <CommandItem
                       key={pal.id}
-                      value={`${pal.name} ${pal.slug} ${pal.combiRank}`}
+                      value={`${pal.name} ${pal.slug}`}
                       onSelect={() => {
                         onChange(pal.id);
                         setOpen(false);
@@ -142,9 +139,6 @@ export function PalSlot({
                       <PalImage src={pal.image} alt={pal.name} size={32} />
                       <span className="min-w-0 flex-1 truncate font-medium">
                         {pal.name}
-                      </span>
-                      <span className="text-xs tabular-nums text-muted-foreground">
-                        {pal.combiRank}
                       </span>
                     </CommandItem>
                   );

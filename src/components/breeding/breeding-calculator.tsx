@@ -150,7 +150,6 @@ export function BreedingCalculator({
                 child: t("childPal"),
                 waiting: t("childWaiting"),
                 empty: t("noResult"),
-                rank: (rank: number) => t("combiRankShort", { rank }),
               }}
             />
           </div>
@@ -170,7 +169,6 @@ export function BreedingCalculator({
               defense: tPals("defense"),
               partnerSkill: tPals("partnerSkill"),
               work: t("childWork"),
-              rank: t("combiRankShort", { rank: childPal.combiRank }),
               viewChildDetails: t("viewChildDetails"),
               breedingGuide: t("breedingGuide"),
               findParents: t("findParentsForChild"),
@@ -253,7 +251,6 @@ function ChildResultSlot({
     child: string;
     waiting: string;
     empty: string;
-    rank: (rank: number) => string;
   };
 }) {
   return (
@@ -296,9 +293,6 @@ function ChildResultSlot({
                 })}
               </div>
             ) : null}
-            <span className="text-[11px] text-muted-foreground">
-              {labels.rank(child.combiRank)}
-            </span>
           </>
         ) : (
           <>
@@ -342,7 +336,6 @@ function ChildResultPanel({
     defense: string;
     partnerSkill: string;
     work: string;
-    rank: string;
     viewChildDetails: string;
     breedingGuide: string;
     findParents: string;
@@ -363,8 +356,6 @@ function ChildResultPanel({
             {formatDexNumber(pal.dexNumber, pal.dexSuffix)}
             <span className="mx-1.5 text-border">·</span>
             {labels.rarity} {pal.rarity}
-            <span className="mx-1.5 text-border">·</span>
-            {labels.rank}
           </p>
         </div>
         {source ? (

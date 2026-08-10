@@ -1,11 +1,11 @@
 import { toLocale } from "@/i18n/locale";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { SiteBreadcrumbs } from "@/components/layout/site-breadcrumbs";
 import { VersionBadge } from "@/components/layout/version-badge";
 import { PalSearch } from "@/components/pals/pal-search";
 import { PopularPalsStrip } from "@/components/pals/popular-pals-strip";
 import { JsonLd } from "@/components/seo/json-ld";
-import { buttonVariants } from "@/components/ui/button";
-import { Link } from "@/i18n/navigation";
+import { RelatedHubLinks } from "@/components/seo/related-hub-links";
 import { POPULAR_PAL_SLUGS } from "@/lib/constants";
 import { getGameDataMeta } from "@/lib/game-version";
 import {
@@ -21,7 +21,6 @@ import {
   faqPageJsonLd,
   itemListJsonLd,
 } from "@/lib/seo";
-import { cn } from "@/lib/utils";
 import { palRepository } from "@/repositories";
 
 type PalsPageProps = {
@@ -123,6 +122,15 @@ export default async function PalsPage({ params }: PalsPageProps) {
         ]}
       />
 
+      <SiteBreadcrumbs
+        className="mb-6"
+        items={[
+          { name: t("Nav.home"), path: "/" },
+          { name: t("Nav.pals") },
+        ]}
+        label={t("Common.breadcrumb")}
+      />
+
       <header className="mb-6 space-y-2 text-center">
         <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">
           {t("Pals.title")}
@@ -179,18 +187,7 @@ export default async function PalsPage({ params }: PalsPageProps) {
         </dl>
       </section>
 
-      <section className="space-y-4 border-t pt-12">
-        <h2 className="text-2xl font-semibold tracking-tight">
-          {t("Pals.ctaTitle")}
-        </h2>
-        <p className="max-w-2xl text-muted-foreground">{t("Pals.ctaBody")}</p>
-        <Link
-          href="/breeding-calculator"
-          className={cn(buttonVariants({ size: "lg" }))}
-        >
-          {t("Pals.ctaButton")}
-        </Link>
-      </section>
+      <RelatedHubLinks current="pals" />
     </div>
   );
 }

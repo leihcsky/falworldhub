@@ -80,7 +80,7 @@ export function PalCombobox({
                 return (
                   <CommandItem
                     key={pal.id}
-                    value={`${pal.name} ${pal.slug} ${pal.combiRank}`}
+                    value={`${pal.name} ${pal.slug}`}
                     onSelect={() => {
                       onChange(pal.id);
                       setOpen(false);
@@ -93,9 +93,6 @@ export function PalCombobox({
                     <PalImage src={pal.image} alt={pal.name} size={28} />
                     <span className="min-w-0 flex-1 truncate font-medium">
                       {pal.name}
-                    </span>
-                    <span className="text-xs tabular-nums text-muted-foreground">
-                      {pal.combiRank}
                     </span>
                   </CommandItem>
                 );

@@ -57,11 +57,14 @@ export default async function AboutPage({ params }: AboutPageProps) {
           <p>{t("About.s2Body")}</p>
         </LegalSection>
         <LegalSection title={t("About.s3Title")}>
-          <p>{t("About.s3Body", { siteName: SITE_NAME })}</p>
+          <p>{t("About.s3Body")}</p>
         </LegalSection>
         <LegalSection title={t("About.s4Title")}>
+          <p>{t("About.s4Body", { siteName: SITE_NAME })}</p>
+        </LegalSection>
+        <LegalSection title={t("About.s5Title")}>
           <p>
-            {t("About.s4Body")}{" "}
+            {t("About.s5Body")}{" "}
             <Link
               href="/contact"
               className="font-medium text-foreground underline-offset-4 hover:underline"

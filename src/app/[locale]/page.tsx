@@ -28,9 +28,11 @@ export async function generateMetadata({ params }: HomePageProps) {
     keywords: [
       "palworld hub",
       "palworld tools",
-      "palworld 1.0",
       "palworld guides",
       "palworld breeding tools",
+      "palworld breeding calculator",
+      "palworld pal database",
+      "palworld breeding combos",
     ],
   });
 }
@@ -66,7 +68,7 @@ export default async function HomePage({ params }: HomePageProps) {
           </p>
         </div>
 
-        <div className="mx-auto grid max-w-4xl gap-4 md:grid-cols-2">
+        <div className="mx-auto grid max-w-5xl gap-4 md:grid-cols-3">
           <Link
             href="/pals"
             className={cn(surfaceHoverClass(), "block space-y-3 p-6 text-left")}
@@ -95,6 +97,20 @@ export default async function HomePage({ params }: HomePageProps) {
               {t("Home.toolCalculatorCta")} →
             </span>
           </Link>
+          <Link
+            href="/breeding"
+            className={cn(surfaceHoverClass(), "block space-y-3 p-6 text-left")}
+          >
+            <h2 className="text-xl font-semibold tracking-tight">
+              {t("Home.toolCombosTitle")}
+            </h2>
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              {t("Home.toolCombosBody")}
+            </p>
+            <span className="inline-flex text-sm font-medium text-primary">
+              {t("Home.toolCombosCta")} →
+            </span>
+          </Link>
         </div>
       </section>
 
@@ -110,7 +126,16 @@ export default async function HomePage({ params }: HomePageProps) {
               </Link>
             </h3>
             <p className="text-sm leading-relaxed text-muted-foreground">
-              {t("Home.canDo2Body")}
+              {t.rich("Home.canDo2Body", {
+                pals: (chunks) => (
+                  <Link
+                    href="/pals"
+                    className="font-medium text-foreground underline-offset-4 hover:underline"
+                  >
+                    {chunks}
+                  </Link>
+                ),
+              })}
             </p>
           </div>
           <div className="space-y-2">
@@ -123,13 +148,46 @@ export default async function HomePage({ params }: HomePageProps) {
               </Link>
             </h3>
             <p className="text-sm leading-relaxed text-muted-foreground">
-              {t("Home.canDo1Body")}
+              {t.rich("Home.canDo1Body", {
+                calculator: (chunks) => (
+                  <Link
+                    href="/breeding-calculator"
+                    className="font-medium text-foreground underline-offset-4 hover:underline"
+                  >
+                    {chunks}
+                  </Link>
+                ),
+                combos: (chunks) => (
+                  <Link
+                    href="/breeding"
+                    className="font-medium text-foreground underline-offset-4 hover:underline"
+                  >
+                    {chunks}
+                  </Link>
+                ),
+              })}
             </p>
           </div>
           <div className="space-y-2">
-            <h3 className="font-medium tracking-tight">{t("Home.canDo3Title")}</h3>
+            <h3 className="font-medium tracking-tight">
+              <Link
+                href="/breeding"
+                className="underline-offset-4 hover:underline"
+              >
+                {t("Home.canDo3Title")}
+              </Link>
+            </h3>
             <p className="text-sm leading-relaxed text-muted-foreground">
-              {t("Home.canDo3Body")}
+              {t.rich("Home.canDo3Body", {
+                combos: (chunks) => (
+                  <Link
+                    href="/breeding"
+                    className="font-medium text-foreground underline-offset-4 hover:underline"
+                  >
+                    {chunks}
+                  </Link>
+                ),
+              })}
             </p>
           </div>
         </div>
@@ -137,11 +195,29 @@ export default async function HomePage({ params }: HomePageProps) {
 
       <section className="space-y-3 border-t py-12">
         <h2 className="text-2xl font-semibold tracking-tight">
-          {t("Home.versionTitle")}
+          {t("Home.howTitle")}
         </h2>
         <p className="max-w-3xl text-sm leading-relaxed text-muted-foreground md:text-base">
-          {t("Home.versionBody")}
+          {t("Home.howBody")}
         </p>
+        <p className="max-w-3xl text-sm leading-relaxed text-muted-foreground md:text-base">
+          {t("Home.howTip")}
+        </p>
+      </section>
+
+      <section className="space-y-4 border-t py-12">
+        <h2 className="text-2xl font-semibold tracking-tight">
+          {t("Home.combosTitle")}
+        </h2>
+        <p className="max-w-3xl text-sm leading-relaxed text-muted-foreground md:text-base">
+          {t("Home.combosBody")}
+        </p>
+        <Link
+          href="/breeding"
+          className={cn(buttonVariants({ variant: "secondary" }))}
+        >
+          {t("Home.combosCta")}
+        </Link>
       </section>
 
       <section className="space-y-4 border-t py-12">
@@ -179,6 +255,24 @@ export default async function HomePage({ params }: HomePageProps) {
         title={t("Home.popularPalsTitle")}
         description={t("Home.popularPalsDescription")}
       />
+
+      <section className="space-y-3 border-t py-12">
+        <h2 className="text-2xl font-semibold tracking-tight">
+          {t("Home.dataTitle")}
+        </h2>
+        <p className="max-w-3xl text-sm leading-relaxed text-muted-foreground md:text-base">
+          {t("Home.dataBody")}
+        </p>
+      </section>
+
+      <section className="space-y-3 border-t pt-12">
+        <h2 className="text-2xl font-semibold tracking-tight">
+          {t("Home.whoTitle")}
+        </h2>
+        <p className="max-w-3xl text-sm leading-relaxed text-muted-foreground md:text-base">
+          {t("Home.whoBody")}
+        </p>
+      </section>
     </div>
   );
 }

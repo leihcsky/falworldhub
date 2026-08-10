@@ -5,6 +5,7 @@ import { BreedingGuideSearch } from "@/components/breeding/breeding-guide-search
 import { SiteBreadcrumbs } from "@/components/layout/site-breadcrumbs";
 import { PalImage } from "@/components/pals/pal-image";
 import { JsonLd } from "@/components/seo/json-ld";
+import { RelatedHubLinks } from "@/components/seo/related-hub-links";
 import { buttonVariants } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
 import { POPULAR_PAL_SLUGS } from "@/lib/constants";
@@ -181,6 +182,12 @@ export default async function BreedingHubPage({ params }: BreedingHubPageProps) 
           >
             {t("BreedingHub.ctaCalculator")}
           </Link>
+          <Link
+            href="/pals"
+            className={cn(buttonVariants({ variant: "outline", size: "lg" }))}
+          >
+            {t("BreedingHub.ctaPals")}
+          </Link>
         </div>
       </header>
 
@@ -294,6 +301,8 @@ export default async function BreedingHubPage({ params }: BreedingHubPageProps) 
           ))}
         </dl>
       </section>
+
+      <RelatedHubLinks current="breeding" />
     </div>
   );
 }

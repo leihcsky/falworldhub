@@ -2,10 +2,11 @@ import { toLocale } from "@/i18n/locale";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Suspense } from "react";
 import { BreedingCalculator } from "@/components/breeding/breeding-calculator";
+import { SiteBreadcrumbs } from "@/components/layout/site-breadcrumbs";
 import { VersionBadge } from "@/components/layout/version-badge";
 import { PalImage } from "@/components/pals/pal-image";
 import { JsonLd } from "@/components/seo/json-ld";
-import { buttonVariants } from "@/components/ui/button";
+import { RelatedHubLinks } from "@/components/seo/related-hub-links";
 import { Link } from "@/i18n/navigation";
 import { POPULAR_PAL_SLUGS } from "@/lib/constants";
 import { getGameDataMeta } from "@/lib/game-version";
@@ -15,7 +16,6 @@ import {
   datasetJsonLd,
   faqPageJsonLd,
 } from "@/lib/seo";
-import { cn } from "@/lib/utils";
 import { breedingRepository, palRepository } from "@/repositories";
 
 type BreedingCalculatorPageProps = {
@@ -78,7 +78,11 @@ export default async function BreedingCalculatorPage({
     },
     {
       question: t("Calculator.faq4Q"),
-      answer: t("Calculator.faq4A", {
+      answer: t("Calculator.faq4A"),
+    },
+    {
+      question: t("Calculator.faq5Q"),
+      answer: t("Calculator.faq5A", {
         version: version.gameVersionLabel,
       }),
     },
@@ -103,6 +107,15 @@ export default async function BreedingCalculatorPage({
           ),
           faqPageJsonLd(faqs),
         ]}
+      />
+
+      <SiteBreadcrumbs
+        className="mb-6"
+        items={[
+          { name: t("Nav.home"), path: "/" },
+          { name: t("Nav.calculator") },
+        ]}
+        label={t("Common.breadcrumb")}
       />
 
       <header className="mb-6 space-y-3 text-center md:mb-8">
@@ -228,27 +241,7 @@ export default async function BreedingCalculatorPage({
         </dl>
       </section>
 
-      <section className="space-y-4 border-t pt-12">
-        <h2 className="text-2xl font-semibold tracking-tight">
-          {t("Calculator.exploreTitle")}
-        </h2>
-        <p className="max-w-2xl text-sm text-muted-foreground md:text-base">
-          {t("Calculator.exploreBody")}
-        </p>
-        <div className="flex flex-wrap gap-3">
-          <Link href="/pals" className={cn(buttonVariants({ size: "lg" }))}>
-            {t("Calculator.explorePals")}
-          </Link>
-          {popularTargets[0] ? (
-            <Link
-              href={`/breeding/${popularTargets[0].slug}`}
-              className={cn(buttonVariants({ variant: "outline", size: "lg" }))}
-            >
-              {t("Calculator.explorePopular")}
-            </Link>
-          ) : null}
-        </div>
-      </section>
+      <RelatedHubLinks current="calculator" />
     </div>
   );
 }

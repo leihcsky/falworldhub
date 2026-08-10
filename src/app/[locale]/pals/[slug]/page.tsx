@@ -144,7 +144,7 @@ export default async function PalDetailPage({ params }: PalDetailPageProps) {
         )}
         <div className="flex flex-wrap gap-2 pt-1">
           <Link href={`/breeding/${pal.slug}`} className={cn(buttonVariants())}>
-            {t("Pals.openBreedingPage")}
+            {t("Pals.openBreedingPage", { name: pal.name })}
           </Link>
           <Link
             href={`/breeding-calculator?target=${pal.id}`}
