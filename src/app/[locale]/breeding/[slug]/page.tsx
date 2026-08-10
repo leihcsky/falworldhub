@@ -17,6 +17,9 @@ type BreedingPageProps = {
   params: Promise<{ locale: string; slug: string }>;
 };
 
+/** Prerender only — reverse combo scans are too heavy for Workers Free CPU. */
+export const dynamic = "force-static";
+
 export async function generateStaticParams() {
   const pals = await palRepository.getAll();
   return pals.map((pal) => ({ slug: pal.slug }));

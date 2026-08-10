@@ -21,6 +21,8 @@ type PalDetailPageProps = {
   params: Promise<{ locale: string; slug: string }>;
 };
 
+export const dynamic = "force-static";
+
 export async function generateStaticParams() {
   const pals = await palRepository.getAll();
   return pals.map((pal) => ({ slug: pal.slug }));

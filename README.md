@@ -142,3 +142,13 @@ NEXT_PUBLIC_CONTACT_EMAIL=contact@palworldhub.best
 ```bash
 npm run deploy
 ```
+
+### Error 1102 (Worker exceeded resource limits)
+
+Workers **Free** allows only ~**10ms CPU** per request. This app is SSG and uses
+Workers Static Assets incremental cache + cache interception so prerendered pages
+bypass the Next server. After changing `open-next.config.ts`, redeploy with
+`npm run cf-build` then `npm run cf-deploy`.
+
+If 1102 still appears on cold hits to heavy routes, upgrade to **Workers Paid**
+($5/mo) or host on a VPS (`npm run build && npm run start`).

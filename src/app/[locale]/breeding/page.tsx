@@ -23,6 +23,8 @@ type BreedingHubPageProps = {
   params: Promise<{ locale: string }>;
 };
 
+export const dynamic = "force-static";
+
 function toSummary(pal: {
   id: string;
   name: string;
