@@ -85,8 +85,26 @@ function findUniqueChildIds(
 }
 
 /**
+ * Children listed in DT_PalCombiUnique (variants / special-only lines) are not
+ * eligible formula results — the rank search must skip them. Same-species and
+ * unique recipes still produce them via the unique table.
+ */
+function uniqueChildIdSet(unique: BreedingCombination[]): Set<string> {
+  return new Set(unique.map((combo) => combo.child));
+}
+
+function formulaChildCandidates(
+  pals: PalSummary[],
+  uniqueChildren: Set<string>
+): PalSummary[] {
+  return pals.filter(
+    (pal) => pal.breedable && !uniqueChildren.has(pal.id)
+  );
+}
+
+/**
  * Standard Palworld breeding power formula.
- * Target rank = floor((A + B + 1) / 2), then nearest breedable CombiRank.
+ * Target rank = floor((A + B + 1) / 2), then nearest formula-eligible CombiRank.
  */
 /**
  * Pick breedable Pal closest to `target` CombiRank.
@@ -181,15 +199,19 @@ function pickNearestByRank(
 export function findFormulaChildId(
   pals: PalSummary[],
   parent1: PalSummary,
-  parent2: PalSummary
+  parent2: PalSummary,
+  /** Required: unique-table children must be excluded from formula search. */
+  uniqueChildren: Set<string>
 ): string | null {
   if (!parent1.breedable || !parent2.breedable) return null;
 
   const target = Math.floor((parent1.combiRank + parent2.combiRank + 1) / 2);
   const best = pickNearestByRank(
-    pals.filter((pal) => pal.breedable),
+    formulaChildCandidates(pals, uniqueChildren),
     target
   );
+  // Defense in depth: never return a unique-only / variant child from formula.
+  if (best && uniqueChildren.has(best.id)) return null;
   return best?.id ?? null;
 }
 
@@ -205,6 +227,15 @@ export function findChildClient(
   const parent1 = asSummary(map, parent1Id);
   const parent2 = asSummary(map, parent2Id);
   const parents: [PalSummary, PalSummary] = [parent1, parent2];
+
+  // Same species always breeds true (also covered by many unique rows).
+  if (parent1Id === parent2Id) {
+    return {
+      parents,
+      child: parent1.breedable ? parent1 : null,
+      source: parent1.breedable ? "formula" : undefined,
+    };
+  }
 
   const uniqueChildIds = findUniqueChildIds(unique, parent1, parent2);
 
@@ -255,7 +286,13 @@ export function findChildClient(
     };
   }
 
-  const formulaChildId = findFormulaChildId(pals, parent1, parent2);
+  const uniqueChildren = uniqueChildIdSet(unique);
+  const formulaChildId = findFormulaChildId(
+    pals,
+    parent1,
+    parent2,
+    uniqueChildren
+  );
   return {
     parents,
     child: formulaChildId ? asSummary(map, formulaChildId) : null,
@@ -304,18 +341,23 @@ export function findParentsClient(
     });
   }
 
-  if (child.breedable) {
-    const breedable = pals
+  const uniqueChildren = uniqueChildIdSet(unique);
+  // Special/variant pals only come from unique (or same-species) recipes.
+  if (child.breedable && !uniqueChildren.has(childId)) {
+    const parentsPool = pals
       .filter((pal) => pal.breedable)
       .sort((a, b) => a.combiRank - b.combiRank);
+    const formulaPool = formulaChildCandidates(pals, uniqueChildren).sort(
+      (a, b) => a.combiRank - b.combiRank
+    );
 
-    for (let i = 0; i < breedable.length; i += 1) {
-      for (let j = i; j < breedable.length; j += 1) {
+    for (let i = 0; i < parentsPool.length; i += 1) {
+      for (let j = i; j < parentsPool.length; j += 1) {
         if (combinations.length >= formulaLimit) break;
-        const a = breedable[i];
-        const b = breedable[j];
+        const a = parentsPool[i];
+        const b = parentsPool[j];
         const target = Math.floor((a.combiRank + b.combiRank + 1) / 2);
-        const result = pickNearestByRank(breedable, target, true);
+        const result = pickNearestByRank(formulaPool, target, true);
         if (!result || result.id !== childId) continue;
         const key = normalizePair(a.id, b.id).join("|");
         if (seen.has(key)) continue;

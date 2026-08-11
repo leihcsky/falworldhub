@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
 type PalImageProps = {
@@ -21,7 +21,12 @@ export function PalImage({
   className,
   priority = false,
 }: PalImageProps) {
-  const [imageSrc, setImageSrc] = useState(src || FALLBACK);
+  const resolved = src || FALLBACK;
+  const [imageSrc, setImageSrc] = useState(resolved);
+
+  useEffect(() => {
+    setImageSrc(resolved);
+  }, [resolved]);
 
   return (
     <div
