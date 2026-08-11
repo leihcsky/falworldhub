@@ -144,6 +144,16 @@ const fixtures = [
     parents: ["Anubis", "Anubis"],
     expect: "Anubis",
   },
+  {
+    name: "Lyleen + Lyleen → Lyleen (same-species unique)",
+    parents: ["Lyleen", "Lyleen"],
+    expect: "Lyleen",
+  },
+  {
+    name: "Lyleen + Menasting → Lyleen Noct (unique)",
+    parents: ["Lyleen", "Menasting"],
+    expect: "Lyleen Noct",
+  },
 ];
 
 let failed = 0;

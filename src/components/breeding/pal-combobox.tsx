@@ -19,6 +19,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { PalImage } from "@/components/pals/pal-image";
+import { matchesPalQuery } from "@/lib/pal-search";
 import { cn } from "@/lib/utils";
 
 type PalComboboxProps = {
@@ -37,14 +38,25 @@ export function PalCombobox({
 }: PalComboboxProps) {
   const t = useTranslations("Calculator");
   const [open, setOpen] = useState(false);
+  const [query, setQuery] = useState("");
   const selected = pals.find((pal) => pal.id === value);
   const sortedPals = useMemo(
     () => [...pals].sort((a, b) => a.name.localeCompare(b.name)),
     [pals]
   );
+  const filteredPals = useMemo(
+    () => sortedPals.filter((pal) => matchesPalQuery(pal, query)),
+    [sortedPals, query]
+  );
 
   return (
-    <Popover open={open} onOpenChange={setOpen}>
+    <Popover
+      open={open}
+      onOpenChange={(next) => {
+        setOpen(next);
+        if (!next) setQuery("");
+      }}
+    >
       <PopoverTrigger
         render={
           <Button
@@ -70,20 +82,25 @@ export function PalCombobox({
         <ChevronsUpDown className="size-4 shrink-0 opacity-50" />
       </PopoverTrigger>
       <PopoverContent className="w-[var(--anchor-width)] p-0" align="start">
-        <Command>
-          <CommandInput placeholder={t("searchPal")} />
+        <Command shouldFilter={false}>
+          <CommandInput
+            placeholder={t("searchPal")}
+            value={query}
+            onValueChange={setQuery}
+          />
           <CommandList>
             <CommandEmpty>{t("noPalFound")}</CommandEmpty>
             <CommandGroup>
-              {sortedPals.map((pal) => {
+              {filteredPals.map((pal) => {
                 const isSelected = value === pal.id;
                 return (
                   <CommandItem
                     key={pal.id}
-                    value={`${pal.name} ${pal.slug}`}
+                    value={pal.id}
                     onSelect={() => {
                       onChange(pal.id);
                       setOpen(false);
+                      setQuery("");
                     }}
                     className={cn(
                       isSelected &&

@@ -20,6 +20,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { useRouter } from "@/i18n/navigation";
+import { matchesPalQuery } from "@/lib/pal-search";
 import { cn } from "@/lib/utils";
 
 type BreedingPalSwitcherProps = {
@@ -35,15 +36,26 @@ export function BreedingPalSwitcher({
   const t = useTranslations("BreedingPage");
   const router = useRouter();
   const [open, setOpen] = useState(false);
+  const [query, setQuery] = useState("");
 
   const sortedPals = useMemo(
     () => [...pals].sort((a, b) => a.name.localeCompare(b.name)),
     [pals]
   );
+  const filteredPals = useMemo(
+    () => sortedPals.filter((pal) => matchesPalQuery(pal, query)),
+    [sortedPals, query]
+  );
   const current = pals.find((pal) => pal.slug === currentSlug);
 
   return (
-    <Popover open={open} onOpenChange={setOpen}>
+    <Popover
+      open={open}
+      onOpenChange={(next) => {
+        setOpen(next);
+        if (!next) setQuery("");
+      }}
+    >
       <PopoverTrigger
         render={
           <Button
@@ -70,19 +82,24 @@ export function BreedingPalSwitcher({
         <ChevronsUpDown className="size-3.5 shrink-0 text-primary sm:hidden" />
       </PopoverTrigger>
       <PopoverContent className="w-72 p-0" align="start">
-        <Command>
-          <CommandInput placeholder={t("switchSearch")} />
+        <Command shouldFilter={false}>
+          <CommandInput
+            placeholder={t("switchSearch")}
+            value={query}
+            onValueChange={setQuery}
+          />
           <CommandList>
             <CommandEmpty>{t("switchEmpty")}</CommandEmpty>
             <CommandGroup>
-              {sortedPals.map((pal) => {
+              {filteredPals.map((pal) => {
                 const isSelected = pal.slug === currentSlug;
                 return (
                   <CommandItem
                     key={pal.id}
-                    value={`${pal.name} ${pal.slug}`}
+                    value={pal.id}
                     onSelect={() => {
                       setOpen(false);
+                      setQuery("");
                       if (pal.slug === currentSlug) return;
                       router.push(`/breeding/${pal.slug}`);
                     }}

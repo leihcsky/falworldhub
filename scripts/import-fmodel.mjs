@@ -994,6 +994,21 @@ function main() {
   });
 
   const unique = buildUniqueBreeding(uniqueRows, pals);
+
+  // IgnoreCombi means "skip in the average-rank formula", not "cannot breed".
+  // In 1.0, Lyleen / Grizzbolt / legendaries etc. still breed via same-species
+  // or other unique rows — keep listed participants selectable in breeding tools.
+  const uniqueParticipantIds = new Set();
+  for (const combo of unique) {
+    uniqueParticipantIds.add(combo.parent1);
+    uniqueParticipantIds.add(combo.parent2);
+    uniqueParticipantIds.add(combo.child);
+  }
+  for (const pal of pals) {
+    if (pal.listed === false) continue;
+    if (uniqueParticipantIds.has(pal.id)) pal.breedable = true;
+  }
+
   const imageStats = copyImages(
     pals,
     path.join(ROOT, "public", "images", "pals"),

@@ -18,6 +18,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { PalImage } from "@/components/pals/pal-image";
+import { matchesPalQuery } from "@/lib/pal-search";
 import { surfaceClass } from "@/lib/surface";
 import { cn } from "@/lib/utils";
 
@@ -40,11 +41,17 @@ export function PalSlot({
 }: PalSlotProps) {
   const t = useTranslations("Calculator");
   const [open, setOpen] = useState(false);
+  const [query, setQuery] = useState("");
   const selected = pals.find((pal) => pal.id === value);
 
   const sortedPals = useMemo(
     () => [...pals].sort((a, b) => a.name.localeCompare(b.name)),
     [pals]
+  );
+
+  const filteredPals = useMemo(
+    () => sortedPals.filter((pal) => matchesPalQuery(pal, query)),
+    [sortedPals, query]
   );
 
   const isLarge = size === "lg";
@@ -57,7 +64,13 @@ export function PalSlot({
         </p>
       ) : null}
 
-      <Popover open={open} onOpenChange={setOpen}>
+      <Popover
+        open={open}
+        onOpenChange={(next) => {
+          setOpen(next);
+          if (!next) setQuery("");
+        }}
+      >
         <div className="relative">
           <PopoverTrigger
             className={cn(
@@ -116,20 +129,25 @@ export function PalSlot({
         </div>
 
         <PopoverContent className="w-[300px] p-0" align="center">
-          <Command>
-            <CommandInput placeholder={t("searchPal")} />
+          <Command shouldFilter={false}>
+            <CommandInput
+              placeholder={t("searchPal")}
+              value={query}
+              onValueChange={setQuery}
+            />
             <CommandList>
               <CommandEmpty>{t("noPalFound")}</CommandEmpty>
               <CommandGroup>
-                {sortedPals.map((pal) => {
+                {filteredPals.map((pal) => {
                   const isSelected = value === pal.id;
                   return (
                     <CommandItem
                       key={pal.id}
-                      value={`${pal.name} ${pal.slug}`}
+                      value={pal.id}
                       onSelect={() => {
                         onChange(pal.id);
                         setOpen(false);
+                        setQuery("");
                       }}
                       className={cn(
                         isSelected &&
