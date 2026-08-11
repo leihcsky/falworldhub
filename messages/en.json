@@ -35,7 +35,10 @@
     "contact": "Contact",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
-    "copyright": "Copyright"
+    "copyright": "Copyright",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mobileNav": "Site"
   },
   "Common": {
     "viewDetails": "View Details",
