@@ -130,6 +130,8 @@ export function datasetJsonLd(
     description,
     url: absoluteUrl(path, locale),
     inLanguage: locale,
+    license: absoluteUrl("/terms", locale),
+    isAccessibleForFree: true,
     creator: {
       "@type": "Organization",
       name: SITE_NAME,
