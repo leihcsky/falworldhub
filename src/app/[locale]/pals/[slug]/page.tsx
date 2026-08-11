@@ -17,6 +17,12 @@ import { absoluteUrl, breadcrumbJsonLd, buildMetadata } from "@/lib/seo";
 import { cn } from "@/lib/utils";
 import { breedingRepository, palRepository } from "@/repositories";
 
+function palDexLabel(dexNumber: number, dexSuffix?: string): string {
+  // Search-friendly form: "100", "100B" (matches “palworld pal 100” habits).
+  if (!dexNumber || dexNumber < 0) return "???";
+  return `${dexNumber}${dexSuffix || ""}`;
+}
+
 type PalDetailPageProps = {
   params: Promise<{ locale: string; slug: string }>;
 };
@@ -43,12 +49,13 @@ export async function generateMetadata({ params }: PalDetailPageProps) {
     });
   }
 
+  const dex = palDexLabel(pal.dexNumber, pal.dexSuffix);
   const description = buildPalMetaDescription(pal, (values) =>
     t("palDetailDescription", values)
   );
 
   return buildMetadata({
-    title: t("palDetailTitle", { name: pal.name }),
+    title: t("palDetailTitle", { name: pal.name, dex }),
     description,
     path: `/pals/${pal.slug}`,
     locale,

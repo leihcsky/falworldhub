@@ -23,6 +23,7 @@ export function buildPalMetaDescription(
   pal: Pal,
   template: (values: {
     name: string;
+    dex: string;
     elements: string;
     hp: number;
     attack: number;
@@ -37,10 +38,15 @@ export function buildPalMetaDescription(
     .slice(0, 3)
     .map((work) => `${work.name} ${work.level}`)
     .join(", ");
+  const dex =
+    pal.dexNumber && pal.dexNumber > 0
+      ? `${pal.dexNumber}${pal.dexSuffix || ""}`
+      : "???";
 
   return trimMetaDescription(
     template({
       name: pal.name,
+      dex,
       elements,
       hp: pal.stats.hp,
       attack: pal.stats.attack,
@@ -53,6 +59,10 @@ export function buildPalMetaDescription(
 
 export function buildPalMetaKeywords(pal: Pal): string[] {
   const name = pal.name.toLowerCase();
+  const dex =
+    pal.dexNumber && pal.dexNumber > 0
+      ? `${pal.dexNumber}${pal.dexSuffix || ""}`
+      : "";
   const keywords = [
     `${name} palworld`,
     `palworld ${name}`,
@@ -60,6 +70,10 @@ export function buildPalMetaKeywords(pal: Pal): string[] {
     `${name} breeding`,
     `how to breed ${name}`,
   ];
+
+  if (dex) {
+    keywords.push(`palworld pal ${dex}`, `pal ${dex}`, `palworld #${dex}`);
+  }
 
   for (const element of pal.type) {
     keywords.push(`palworld ${element.toLowerCase()} pal`);
