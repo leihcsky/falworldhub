@@ -212,7 +212,7 @@ export default async function BreedingCalculatorPage({
                       {t("Calculator.popularOpenGuide")}
                     </Link>
                     <Link
-                      href={`/breeding-calculator?target=${pal.id}`}
+                      href={`/breeding-calculator?target=${pal.slug}`}
                       className="text-muted-foreground underline-offset-4 hover:underline"
                     >
                       {t("Calculator.popularUseCalculator")}
