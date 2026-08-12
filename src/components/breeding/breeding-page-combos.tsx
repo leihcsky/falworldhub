@@ -2,7 +2,7 @@
 
 import { SearchIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { useMemo, useState, useTransition } from "react";
+import { useDeferredValue, useMemo, useState } from "react";
 import type {
   PalSummary,
   ParentBreedingResult,
@@ -35,22 +35,23 @@ export function BreedingPageCombos({
   const t = useTranslations("BreedingPage");
   const [childQuery, setChildQuery] = useState("");
   const [parentQuery, setParentQuery] = useState("");
-  const [, startTransition] = useTransition();
+  const deferredChildQuery = useDeferredValue(childQuery);
+  const deferredParentQuery = useDeferredValue(parentQuery);
 
   const filteredChild = useMemo(() => {
-    const q = childQuery.trim();
+    const q = deferredChildQuery.trim();
     if (!q) return asChild;
     return asChild.filter(
       (combo) =>
         matchesName(combo.parent1, q) || matchesName(combo.parent2, q)
     );
-  }, [asChild, childQuery]);
+  }, [asChild, deferredChildQuery]);
 
   const filteredParent = useMemo(() => {
-    const q = parentQuery.trim();
+    const q = deferredParentQuery.trim();
     if (!q) return asParent;
     return asParent.filter((combo) => matchesName(combo.partner, q));
-  }, [asParent, parentQuery]);
+  }, [asParent, deferredParentQuery]);
 
   const tabTriggerClass = cn(
     "cursor-pointer px-3 py-2.5 text-sm font-semibold whitespace-normal transition-colors",
@@ -94,7 +95,7 @@ export function BreedingPageCombos({
           label={t("searchAsChildLabel", { name: pal.name })}
           placeholder={t("searchAsChildPlaceholder")}
           value={childQuery}
-          onChange={(value) => startTransition(() => setChildQuery(value))}
+          onChange={setChildQuery}
         />
 
         {asChild.length === 0 ? (
@@ -145,7 +146,7 @@ export function BreedingPageCombos({
           label={t("searchAsParentLabel", { name: pal.name })}
           placeholder={t("searchAsParentPlaceholder")}
           value={parentQuery}
-          onChange={(value) => startTransition(() => setParentQuery(value))}
+          onChange={setParentQuery}
         />
 
         {asParent.length === 0 ? (

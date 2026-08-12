@@ -2,7 +2,7 @@
 
 import { SearchIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { useMemo, useState, useTransition } from "react";
+import { useDeferredValue, useMemo, useState } from "react";
 import type { Pal } from "@/types";
 import { PalImage } from "@/components/pals/pal-image";
 import { Input } from "@/components/ui/input";
@@ -16,10 +16,11 @@ type BreedingGuideSearchProps = {
 export function BreedingGuideSearch({ pals }: BreedingGuideSearchProps) {
   const t = useTranslations("BreedingHub");
   const [query, setQuery] = useState("");
-  const [isPending, startTransition] = useTransition();
+  const deferredQuery = useDeferredValue(query);
+  const isPending = query !== deferredQuery;
 
   const filtered = useMemo(() => {
-    const normalized = query.trim().toLowerCase();
+    const normalized = deferredQuery.trim().toLowerCase();
     if (!normalized) return pals;
     return pals.filter(
       (pal) =>
@@ -27,7 +28,7 @@ export function BreedingGuideSearch({ pals }: BreedingGuideSearchProps) {
         pal.slug.toLowerCase().includes(normalized) ||
         String(pal.dexNumber).includes(normalized)
     );
-  }, [pals, query]);
+  }, [pals, deferredQuery]);
 
   return (
     <div className="space-y-4">
@@ -40,10 +41,7 @@ export function BreedingGuideSearch({ pals }: BreedingGuideSearchProps) {
           aria-label={t("searchLabel")}
           placeholder={t("searchPlaceholder")}
           value={query}
-          onChange={(event) => {
-            const value = event.target.value;
-            startTransition(() => setQuery(value));
-          }}
+          onChange={(event) => setQuery(event.target.value)}
           className="h-10 border-border/80 bg-card pr-16 pl-9"
         />
         <span className="pointer-events-none absolute top-1/2 right-3 -translate-y-1/2 text-xs tabular-nums text-muted-foreground">

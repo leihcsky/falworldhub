@@ -2,7 +2,7 @@
 
 import { SearchIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { useMemo, useState, useTransition } from "react";
+import { useDeferredValue, useMemo, useState, useTransition } from "react";
 import type { Pal, PalElement } from "@/types";
 import type { ElementCount, WorkCount } from "@/lib/pal-insights";
 import { MetaIcon } from "@/components/pals/meta-icon";
@@ -35,10 +35,14 @@ function toggleValue(values: string[], value: string): string[] {
 export function PalSearch({ pals, elements, workTypes }: PalSearchProps) {
   const t = useTranslations("Pals");
   const [query, setQuery] = useState("");
+  const deferredQuery = useDeferredValue(query);
   const [selectedElements, setSelectedElements] = useState<string[]>([]);
   const [selectedWorks, setSelectedWorks] = useState<string[]>([]);
   const [sort, setSort] = useState<SortKey>("dex");
-  const [isPending, startTransition] = useTransition();
+  const [isFilterPending, startTransition] = useTransition();
+
+  const isSearchPending = query !== deferredQuery;
+  const isPending = isSearchPending || isFilterPending;
 
   const hasFilters =
     query.trim().length > 0 ||
@@ -47,7 +51,7 @@ export function PalSearch({ pals, elements, workTypes }: PalSearchProps) {
     sort !== "dex";
 
   const filtered = useMemo(() => {
-    const normalized = query.trim().toLowerCase();
+    const normalized = deferredQuery.trim().toLowerCase();
 
     const next = pals.filter((pal) => {
       const matchesQuery =
@@ -84,11 +88,11 @@ export function PalSearch({ pals, elements, workTypes }: PalSearchProps) {
     });
 
     return next;
-  }, [pals, query, selectedElements, selectedWorks, sort]);
+  }, [pals, deferredQuery, selectedElements, selectedWorks, sort]);
 
   function resetFilters() {
+    setQuery("");
     startTransition(() => {
-      setQuery("");
       setSelectedElements([]);
       setSelectedWorks([]);
       setSort("dex");
@@ -108,10 +112,7 @@ export function PalSearch({ pals, elements, workTypes }: PalSearchProps) {
             aria-label={t("searchLabel")}
             placeholder={t("searchPlaceholder")}
             value={query}
-            onChange={(event) => {
-              const value = event.target.value;
-              startTransition(() => setQuery(value));
-            }}
+            onChange={(event) => setQuery(event.target.value)}
             className="h-10 border-border/80 bg-background pr-16 pl-9 shadow-none placeholder:text-muted-foreground/80"
           />
           <span
