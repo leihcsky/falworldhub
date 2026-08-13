@@ -22,20 +22,35 @@ export function Footer() {
             {t("Footer.blurb")}
           </p>
           <VersionBadge variant="detailed" />
-          <a
-            href="https://saasgrow.app?ref=palworldhub.best"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block"
-          >
-            {/* External badge asset; plain img avoids next/image remote config. */}
-            <img
-              src="https://saasgrow.app/api/badge?type=featured&style=light"
-              alt="palworld hub on SaaSGrow"
-              width={240}
-              height={54}
-            />
-          </a>
+          <div className="flex flex-wrap items-center gap-3">
+            <a
+              href="https://saasgrow.app?ref=palworldhub.best"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
+            >
+              {/* External badge assets; plain img avoids next/image remote config. */}
+              <img
+                src="https://saasgrow.app/api/badge?type=featured&style=light"
+                alt="palworld hub on SaaSGrow"
+                width={240}
+                height={54}
+              />
+            </a>
+            <a
+              href="https://findly.tools/palworld-hub?utm_source=palworld-hub"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
+            >
+              <img
+                src="https://findly.tools/badges/findly-tools-badge-light.svg"
+                alt="Featured on Findly.tools"
+                width={175}
+                height={55}
+              />
+            </a>
+          </div>
         </div>
 
         <div className="space-y-3 text-sm">
