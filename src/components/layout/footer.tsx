@@ -50,6 +50,19 @@ export function Footer() {
                 height={55}
               />
             </a>
+            <a
+              href="https://shipstry.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
+            >
+              <img
+                src="https://shipstry.com/badges/featured.svg"
+                alt="Featured on Shipstry"
+                width={220}
+                height={52}
+              />
+            </a>
           </div>
         </div>
 
