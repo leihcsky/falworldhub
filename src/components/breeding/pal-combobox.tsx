@@ -19,6 +19,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { PalImage } from "@/components/pals/pal-image";
+import { formatDexNumber } from "@/lib/pal-format";
 import { matchesPalQuery } from "@/lib/pal-search";
 import { cn } from "@/lib/utils";
 
@@ -108,8 +109,13 @@ export function PalCombobox({
                     )}
                   >
                     <PalImage src={pal.image} alt={pal.name} size={28} />
-                    <span className="min-w-0 flex-1 truncate font-medium">
-                      {pal.name}
+                    <span className="min-w-0 flex-1">
+                      <span className="block truncate font-medium">
+                        {pal.name}
+                      </span>
+                      <span className="text-xs tabular-nums text-muted-foreground">
+                        {formatDexNumber(pal.dexNumber, pal.dexSuffix)}
+                      </span>
                     </span>
                   </CommandItem>
                 );

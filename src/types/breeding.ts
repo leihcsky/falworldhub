@@ -67,6 +67,8 @@ export interface PalSummary {
   image: string;
   type: string[];
   tribe: string;
+  dexNumber: number;
+  dexSuffix?: string;
   combiRank: number;
   combiDuplicatePriority: number;
   breedable: boolean;

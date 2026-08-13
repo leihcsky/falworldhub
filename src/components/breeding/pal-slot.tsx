@@ -17,8 +17,11 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+import { MetaIcon } from "@/components/pals/meta-icon";
 import { PalImage } from "@/components/pals/pal-image";
+import { formatDexNumber } from "@/lib/pal-format";
 import { matchesPalQuery } from "@/lib/pal-search";
+import { getElementMeta } from "@/lib/pal-meta";
 import { surfaceClass } from "@/lib/surface";
 import { cn } from "@/lib/utils";
 
@@ -45,7 +48,11 @@ export function PalSlot({
   const selected = pals.find((pal) => pal.id === value);
 
   const sortedPals = useMemo(
-    () => [...pals].sort((a, b) => a.name.localeCompare(b.name)),
+    () =>
+      [...pals].sort((a, b) => {
+        if (a.dexNumber !== b.dexNumber) return a.dexNumber - b.dexNumber;
+        return (a.dexSuffix || "").localeCompare(b.dexSuffix || "");
+      }),
     [pals]
   );
 
@@ -94,6 +101,9 @@ export function PalSlot({
                 <span className="line-clamp-2 text-center text-sm font-semibold">
                   {selected.name}
                 </span>
+                <span className="text-xs tabular-nums text-muted-foreground">
+                  {formatDexNumber(selected.dexNumber, selected.dexSuffix)}
+                </span>
               </>
             ) : (
               <>
@@ -128,7 +138,7 @@ export function PalSlot({
           ) : null}
         </div>
 
-        <PopoverContent className="w-[300px] p-0" align="center">
+        <PopoverContent className="w-[min(22rem,calc(100vw-2rem))] p-0" align="center">
           <Command shouldFilter={false}>
             <CommandInput
               placeholder={t("searchPal")}
@@ -150,13 +160,38 @@ export function PalSlot({
                         setQuery("");
                       }}
                       className={cn(
+                        "items-center gap-2.5 py-2",
                         isSelected &&
                           "bg-primary/10 text-foreground data-selected:bg-primary/15"
                       )}
                     >
-                      <PalImage src={pal.image} alt={pal.name} size={32} />
-                      <span className="min-w-0 flex-1 truncate font-medium">
-                        {pal.name}
+                      <PalImage src={pal.image} alt="" size={36} className="rounded-md" />
+                      <span className="min-w-0 flex-1">
+                        <span className="block truncate font-medium">
+                          {pal.name}
+                        </span>
+                        <span className="mt-0.5 flex items-center gap-1.5 text-xs text-muted-foreground">
+                          <span className="tabular-nums">
+                            {formatDexNumber(pal.dexNumber, pal.dexSuffix)}
+                          </span>
+                          {pal.type.length > 0 ? (
+                            <span className="inline-flex items-center gap-0.5">
+                              {pal.type.slice(0, 2).map((type) => {
+                                const meta = getElementMeta(type);
+                                return (
+                                  <MetaIcon
+                                    key={type}
+                                    kind="element"
+                                    id={meta?.id ?? type.toLowerCase()}
+                                    label={type}
+                                    icon={meta?.icon}
+                                    className="size-3.5 opacity-80"
+                                  />
+                                );
+                              })}
+                            </span>
+                          ) : null}
+                        </span>
                       </span>
                     </CommandItem>
                   );

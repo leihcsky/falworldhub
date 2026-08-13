@@ -23,7 +23,9 @@ function matchesName(pal: PalSummary, query: string): boolean {
   if (!query) return true;
   const q = query.toLowerCase();
   return (
-    pal.name.toLowerCase().includes(q) || pal.slug.toLowerCase().includes(q)
+    pal.name.toLowerCase().includes(q) ||
+    pal.slug.toLowerCase().includes(q) ||
+    String(pal.dexNumber).includes(q)
   );
 }
 

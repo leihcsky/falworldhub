@@ -46,6 +46,7 @@ function asSummary(map: Map<string, PalSummary>, id: string): PalSummary {
       image: "/images/pals/placeholder.svg",
       type: [],
       tribe: id,
+      dexNumber: 0,
       combiRank: 0,
       combiDuplicatePriority: 0,
       breedable: false,

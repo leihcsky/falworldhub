@@ -33,6 +33,8 @@ function toSummary(pal: {
   image: string;
   type: string[];
   tribe: string;
+  dexNumber: number;
+  dexSuffix?: string;
   combiRank: number;
   combiDuplicatePriority: number;
   breedable: boolean;
@@ -44,6 +46,8 @@ function toSummary(pal: {
     image: pal.image,
     type: pal.type,
     tribe: pal.tribe,
+    dexNumber: pal.dexNumber,
+    dexSuffix: pal.dexSuffix,
     combiRank: pal.combiRank,
     combiDuplicatePriority: pal.combiDuplicatePriority,
     breedable: pal.breedable,

@@ -85,6 +85,8 @@ export default async function BreedingSeoPage({ params }: BreedingPageProps) {
     image: pal.image,
     type: pal.type,
     tribe: pal.tribe,
+    dexNumber: pal.dexNumber,
+    dexSuffix: pal.dexSuffix,
     combiRank: pal.combiRank,
     combiDuplicatePriority: pal.combiDuplicatePriority,
     breedable: pal.breedable,
