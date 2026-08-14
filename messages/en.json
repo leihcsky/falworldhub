@@ -22,7 +22,7 @@
     "breedingHubTitle": "Palworld Breeding Combos - Unique Recipes & Parent Pairs",
     "breedingHubDescription": "Browse Palworld breeding combos with real parent + parent = child examples, unique recipes, and searchable guides for every breedable Pal.",
     "breedingTitle": "{name} Breeding Combos - How to Breed {name} in Palworld",
-    "breedingDescription": "Palworld breeding combos for {name}: parent pairs that produce {name}, plus what {name} breeds with other Pals. Searchable combo lists included.",
+    "breedingDescription": "How to breed {name} in Palworld: browse parent pairs that hatch {name}, see breeding combinations when {name} is a parent, and jump to the calculator for a live lookup.",
     "notFoundTitle": "Pal Not Found"
   },
   "Nav": {
@@ -321,8 +321,8 @@
   },
   "BreedingPage": {
     "headline": "{name} Breeding Combos",
-    "intro": "Explore Palworld breeding combos for {name}: parent pairs that produce {name}, and outcomes when {name} is used as a parent with another Pal.",
-    "comboCount": "{asChild} ways to breed {name} · {asParent} outcomes as a parent",
+    "intro": "Looking for how to breed {name}? This page lists the Palworld breeding combinations that hatch {name}, then shows what egg you get when {name} is one of the parents. Same two species → same child, so you can plan the Breeding Farm before you spend Cake.",
+    "comboCount": "{asChild} parent pairs for {name} · {asParent} results with {name} as a parent",
     "switchLabel": "Switch Pal",
     "switchHint": "Switch",
     "switchPlaceholder": "Select a Pal…",
@@ -331,11 +331,11 @@
     "viewDetails": "View {name} stats",
     "tabAsChild": "Breed {name}",
     "tabAsParent": "{name} as parent",
-    "combinationsTitle": "Parent pairs that produce {name}",
-    "combinationsBody": "Each row is a parent pair that can hatch {name}. Search by either parent name to narrow the list.",
-    "noCombinations": "No breeding combos are available for {name} in the current dataset.",
-    "asParentTitle": "What {name} can breed",
-    "asParentBody": "Pair {name} with another Pal to see the child. Search by the other parent’s name to find a specific pairing.",
+    "combinationsTitle": "Parent pairs that hatch {name}",
+    "combinationsBody": "Every row is a breeding combination for {name}. Filter by either parent if you already know who you can field, then pick a pair that fits your catch list.",
+    "noCombinations": "No breeding combinations for {name} are in the current dataset yet.",
+    "asParentTitle": "What {name} produces as a parent",
+    "asParentBody": "Use this when you already own {name} and want to know the child with each partner. Search the other parent’s name to jump to a specific pairing.",
     "noAsParent": "{name} has no parent pairings in the current dataset.",
     "searchAsChildLabel": "Search parents for {name}",
     "searchAsChildPlaceholder": "Filter by either parent name…",
@@ -345,11 +345,11 @@
     "showingCount": "Showing {shown} of {total}",
     "genderHint": "{hint}",
     "howTitle": "How to breed {name} in Palworld",
-    "howBody": "Place one male and one female Pal in a Breeding Farm with Cake. For almost every pair the child species is fixed; Katress × Wixen is the rare exception where the female parent decides between Katress Ignis and Wixen Noct. Use the Breed tab to farm {name}, or the As parent tab to plan what {name} produces with other partners.",
-    "calculatorTitle": "Need a live lookup?",
-    "calculatorBody": "Open the Palworld breeding calculator with {name} preselected to reverse look up more pairs or test other parents.",
+    "howBody": "Assign one male and one female to a Breeding Farm and keep Cake in the chest. The child species comes from the two parents you pick—not from which one is male or female—except the rare Katress × Wixen case, where the female parent chooses between Katress Ignis and Wixen Noct. On this guide, open Breed {name} for parent pairs that hatch {name}, or {name} as parent to plan the next egg from a {name} you already have.",
+    "calculatorTitle": "Prefer a live breeding calculator?",
+    "calculatorBody": "Open the calculator with {name} selected to reverse-look up pairs quickly, or switch to Parents → Child to test other combinations without leaving your farm plan.",
     "calculatorCta": "Breeding calculator for {name}",
-    "browseMore": "Palworld breeding combos"
+    "browseMore": "More Palworld breeding combos"
   },
   "About": {
     "title": "About {siteName}",
