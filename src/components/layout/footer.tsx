@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { SiteLogo } from "@/components/brand/site-logo";
+import { FooterFeaturedBadges } from "@/components/layout/footer-featured-badges";
 import { VersionBadge } from "@/components/layout/version-badge";
 import { Link } from "@/i18n/navigation";
 import {
@@ -22,48 +23,7 @@ export function Footer() {
             {t("Footer.blurb")}
           </p>
           <VersionBadge variant="detailed" />
-          <div className="flex flex-wrap items-center gap-3">
-            <a
-              href="https://saasgrow.app?ref=palworldhub.best"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block"
-            >
-              {/* External badge assets; plain img avoids next/image remote config. */}
-              <img
-                src="https://saasgrow.app/api/badge?type=featured&style=light"
-                alt="palworld hub on SaaSGrow"
-                width={240}
-                height={54}
-              />
-            </a>
-            <a
-              href="https://findly.tools/palworld-hub?utm_source=palworld-hub"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block"
-            >
-              <img
-                src="https://findly.tools/badges/findly-tools-badge-light.svg"
-                alt="Featured on Findly.tools"
-                width={175}
-                height={55}
-              />
-            </a>
-            <a
-              href="https://shipstry.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block"
-            >
-              <img
-                src="https://shipstry.com/badges/featured.svg"
-                alt="Featured on Shipstry"
-                width={220}
-                height={52}
-              />
-            </a>
-          </div>
+          <FooterFeaturedBadges />
         </div>
 
         <div className="space-y-3 text-sm">

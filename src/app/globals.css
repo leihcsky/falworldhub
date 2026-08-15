@@ -137,3 +137,53 @@
     @apply font-sans;
   }
 }
+
+/* Footer featured-badge strip: fixed width, seamless loop. */
+@keyframes footer-badge-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.footer-badge-marquee {
+  overflow: hidden;
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 12px,
+    #000 calc(100% - 12px),
+    transparent
+  );
+}
+
+.footer-badge-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: footer-badge-marquee 32s linear infinite;
+}
+
+.footer-badge-marquee:hover .footer-badge-marquee-track,
+.footer-badge-marquee:focus-within .footer-badge-marquee-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer-badge-marquee {
+    overflow: visible;
+    mask-image: none;
+  }
+
+  .footer-badge-marquee-track {
+    animation: none;
+    flex-wrap: wrap;
+    width: auto;
+    max-width: 100%;
+  }
+
+  .footer-badge-marquee-track > [aria-hidden="true"] {
+    display: none;
+  }
+}
