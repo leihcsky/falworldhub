@@ -31,10 +31,17 @@ const FEATURED_BADGES = [
     href: "https://showmebest.ai",
     // Hosted locally: showmebest.ai serves CORP: same-origin + CF challenge,
     // so cross-site <img> hotlinks break even when the URL opens fine in a tab.
-    src: "/badges/showmebest-feature-badge-white.webp",
+    src: "/badges/feature-badge-white.webp",
     alt: "Featured on ShowMeBestAI",
     width: 220,
     height: 60,
+  },
+  {
+    href: "https://lovableapp.org",
+    src: "https://lovableapp.org/lovable-app-badge.svg",
+    alt: "Lovable App Badge",
+    width: 160,
+    height: 54,
   },
 ] as const;
 
