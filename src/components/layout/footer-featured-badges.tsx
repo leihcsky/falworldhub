@@ -43,6 +43,20 @@ const FEATURED_BADGES = [
     width: 160,
     height: 54,
   },
+  {
+    href: "https://wired.business",
+    src: "https://wired.business/badge0-white.svg",
+    alt: "Featured on Wired Business",
+    width: 200,
+    height: 54,
+  },
+  {
+    href: "https://wayfindio.com",
+    src: "https://wayfindio.com/badge/badge_light.svg",
+    alt: "Featured on Wayfindio",
+    width: 200,
+    height: 54,
+  },
 ] as const;
 
 function BadgeRow({
